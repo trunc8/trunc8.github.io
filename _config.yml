@@ -1,4 +1,61 @@
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+title: Siddharth Saha
+description: >- # this means to ignore newlines until "baseurl:"
+  A minimal Homepage.
+# baseurl: "/bay" # the subpath of the site
+url: "https://trunc8.github.io" # the base hostname & protocol for the site
+og_image: /assets/img/profile-pic.jpg
+# google_analytics: "UA-121636368-3"
+
+header:
+  pages:
+    - name: Home
+      slug: /
+    - name: Work
+    - name: Blog
+
+footer:
+  contact:
+    - name: Email
+      value: sahasiddharth611@outlook.com
+      link: mailto:sahasiddharth611@outlook.com
+    # - name: WeChat
+    #   value: YourWeChatUsername
+    #   link: "#"
+  follow:
+    - name: Twitter
+      link: http://twitter.com/trunc8s
+      username: "@trunc8s"
+    - name: Facebook
+      link: http://facebook.com/sahasiddharth611
+    - name: LinkedIn
+      link: http://linkedin.com/in/sahasiddharth611
+    - name: GitHub
+      link: http://github.com/trunc8
+    - name: RSS
+      link: /feed.xml
+
+# Build settings
+markdown: kramdown
+sass:
+    style: :compressed
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
+
+# Excluded items
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - feed.xml
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Used for defeating caching
+version: 1
