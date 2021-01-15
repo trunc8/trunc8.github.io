@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Paper Review: Detection  and  Tracking  of  2D  Geometric  Obstacles  from  LRF  Data"
-date:   2021-1-14 20:00:40
-blurb: "A look at an example post using Bay Jekyll theme."
+date:   2021-01-14 20:00:40
+blurb: ""
 og_image: /assets/img/content/obstacle-detector/Banner.png
 ---
 
@@ -11,11 +11,11 @@ og_image: /assets/img/content/obstacle-detector/Banner.png
 <br />
 
 
-## Pre-requisite Knowledge
+### Pre-requisite Knowledge
 1. **Mixed pixels**: A "mixed pixel" results from the fact that individual areas consisting of different features or classes may be below (are smaller than) the resolution of the sensor. The resulting spectral content is then a composite or weighted average of the spectral responses from each internal class
 2. **Iterative End Point Fit algorithm**: An algorithm that decimates a curve composed of line segments to a similar curve with fewer points. The steps are succinctly listed in the [Wikipedia page](https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm#Algorithm)
 
-## Obstacle Detection
+### Obstacle Detection
 1. Grouping: Provide a collection of point subsets representing possibly separate objects
 2. Splitting: Examine possibility of splitting into separate objects using Iterative End Point Fit algorithm
 3. Segmentation: Represent the point subset by a line segment model using total least squares regression
@@ -25,7 +25,7 @@ og_image: /assets/img/content/obstacle-detector/Banner.png
 The extracted segments constitute set L
 5. Extracting circles: Consider the line segment to be the base of an equilateral triangle and draw its circumcircle. It the resulting is less than user-defined threshold, the circle is added to the set C
 
-## Obstacle Tracking
+### Obstacle Tracking
 This is applied only to circular obstacles  
 1. Correspondence problem: We want to know which obstacles at sample k-1 correspond to which at sample k. The [Hungarian method](https://www.geeksforgeeks.org/hungarian-algorithm-assignment-problem-set-1-introduction/) is used to solve this assignment problem.
     - If new obstacle has no corresponding old obstacle, it is marked as untracked
