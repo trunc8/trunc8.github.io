@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Paper Review: Detection  and  Tracking  of  2D  Geometric  Obstacles  from  LRF  Data"
-date:   2021-01-14 20:00:40
+date:   2021-01-14 20:00:00
 blurb: ""
 og_image: /assets/img/content/obstacle-detector/Banner.png
 ---
