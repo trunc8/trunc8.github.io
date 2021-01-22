@@ -38,6 +38,7 @@ footer:
       link: /feed.xml
 
 # Build settings
+timezone: Asia/Kolkata
 markdown: kramdown
 sass:
     style: :compressed
