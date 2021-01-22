@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Project Documentation: Two-Wheeled Self-Balancing Bot"
-date:   2020-12-15 12:00:00
+date:   2020-12-15 12:00:00 +0530
 blurb: ""
 og_image: https://drive.google.com/uc?export=view&id=1rcNvNYsFVB1gD53sSZDeMY9jsPG_-MVd
 ---
