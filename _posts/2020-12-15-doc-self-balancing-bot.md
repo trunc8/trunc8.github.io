@@ -6,6 +6,10 @@ blurb: ""
 og_image: https://drive.google.com/uc?export=view&id=1rcNvNYsFVB1gD53sSZDeMY9jsPG_-MVd
 ---
 
+<img src="{{ "/assets/img/content/self-balancing-bot/Banner.jpg" | absolute_url }}" alt="bay" class="post-pic" width=300/>
+<br />
+<br />
+
 ### Problem Definition
 Demonstrate the inverted pendulum problem using a two-wheeled bot and input from gyroscope+accelerometer module
 
@@ -20,22 +24,20 @@ Demonstrate the inverted pendulum problem using a two-wheeled bot and input from
 - SMPS Power Supply
 
 ### Setup picture
-![Setup](https://drive.google.com/uc?export=view&id=1rcNvNYsFVB1gD53sSZDeMY9jsPG_-MVd){:width="300px"}
-<br />
-![Top view](https://drive.google.com/uc?export=view&id=1mP7h74WsNAFpZM_YsvvMDWKt1dw0facA){:width="300px"}
-![Front view](https://drive.google.com/uc?export=view&id=1bg_S1AHhZK-gHUshxIrYfyenvD8KdMCe){:width="300px"}
+![Top view](/assets/img/content/self-balancing-bot/top_setup.jpg){:width="300px"}
+![Front view](/assets/img/content/self-balancing-bot/front_setup.jpg){:width="300px"}
 
 
 ### Preliminaries/Learning
 
 ##### Circuit diagram
-![Circuit](https://drive.google.com/uc?export=view&id=1cDbWtCxjrUfJVoNLGPj99qQ5-iv488So){:width="600px" height="400px"}
+![Circuit](/assets/img/content/self-balancing-bot/circuit.jpg){:width="600px" height="400px"}
 
 ##### Control equations
-![Controls](https://drive.google.com/uc?export=view&id=1dBBVt9U_n886CcJT5n7GS9cWwQJgQz5Y){:width="600px" height="600px"}
+![Controls](/assets/img/content/self-balancing-bot/maths.jpg){:width="600px" height="600px"}
 
 ##### Used an SMPS for the first time
-![SMPS](https://drive.google.com/uc?export=view&id=1GmDltEXaGWgTUilP63WYu0Hzm2IvS-mo){:width="400px" height="600px"}
+![SMPS](/assets/img/content/self-balancing-bot/smps.jpg){:width="400px" height="600px"}
 
 
 ### Videos
