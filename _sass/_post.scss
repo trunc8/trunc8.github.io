@@ -3,14 +3,15 @@
 }
 
 .post-title {
-  font-size: 40px;
-  letter-spacing: -1px;
+  font-size: 32px;
+  letter-spacing: 0px;
   line-height: 1.2;
+  color: #0D5BB9;
 
   font-family: $base-font-family;
 
   @include media-query($on-mobile) {
-    font-size: 34px;
+    font-size: 32px;
   }
 }
 
