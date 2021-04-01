@@ -2,7 +2,7 @@
 layout: post
 title:  "Solved all the levels of OverTheWire Bandit"
 date:   2020-12-11 10:00:00 +0530
-blurb: "A look at an example post using Bay Jekyll theme."
+blurb: ""
 og_image: /assets/img/content/otw-bandit/Banner.png
 ---
 
