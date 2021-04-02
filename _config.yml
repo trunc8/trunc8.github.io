@@ -33,13 +33,11 @@ footer:
       value: trunc8
     - name: Facebook
       link: http://facebook.com/sahasiddharth611
-      # value: sahasiddharth611
     - name: Twitter
       link: http://twitter.com/trunc8s
       value: "@trunc8s"
     - name: LinkedIn
       link: http://linkedin.com/in/sahasiddharth611
-      # value: sahasiddharth611
     - name: RSS
       link: /feed.xml
     - name: YouTube
