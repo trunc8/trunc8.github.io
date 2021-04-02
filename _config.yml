@@ -15,7 +15,7 @@ header:
       slug: /
     - name: Work
     - name: CV
-      slug: assets/pdf/Siddharth-Saha-CV.pdf
+      slug: cv/Siddharth-Saha-CV.pdf
     - name: Blog
 
 footer:
