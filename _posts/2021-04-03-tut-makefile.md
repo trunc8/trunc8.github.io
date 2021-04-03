@@ -75,3 +75,7 @@ clean:
 1. `<*.h>` is used for standard libraries, `"*.h"` is used for header files defined in the project.
 2. `#ifndef` is needed as the header file is called multiple times. This prevents multiple declarations of `getX()` which would otherwise cause an error.
 3. You can't have more than 1 `main()` while building a single target.
+
+
+**Similar quick guide** for [cmake and CMakeLists.txt](https://riptutorial.com/cmake/example/22391/-hello-world--with-multiple-source-files)
+
