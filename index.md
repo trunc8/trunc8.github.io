@@ -9,5 +9,5 @@ profile_picture:
   Welcome! I am Siddharth Saha. This website is a quick outlet for my <a href="blog">thoughts and life events</a>.
 </p>
 <p>
-  You can also read more about my <a href="work">professional experience</a>.
+  You can also read more about my <a href="work">professional experience and projects</a>.
 </p>
