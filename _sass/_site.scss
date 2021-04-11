@@ -2,11 +2,15 @@
   float: right;
   border: #ccc 1px solid;
   margin-left: 20px;
+  width: 35%;
 
   @include media-query($on-mobile) {
     float: none;
     margin-bottom: 20px;
-    margin-left: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
   }
 }
 
