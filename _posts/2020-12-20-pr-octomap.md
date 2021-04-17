@@ -20,15 +20,19 @@ The key characteristics that contribute to the efficiency of OctoMap are noted b
 
 - **Probabilistic Sensor Fusion Model**  
   $P(n\|z_{1:t})$ represents the probability of leaf node $n$ to be occupied given sensor measurements $z_{1:t}$  
+
   $$P(n\|z_{1:t}) = \left[1 + \frac{1-P(n\|z_t)}{P(n\|z_t)} \frac{1-P(n\|z_{1:t-1})}{P(n\|z_{1:t-1})} \frac{P(n)}{1-P(n)} \right]^{-1}$$    
 
   We introduce the log-odds notation and assume a uniform prior $P(n) = 0.5$  
+
   $$L(n) = log\left(\frac{P(n)}{1-P(n)}\right)$$  
 
   This allows us to simplify the update equation as follows  
+
   $$L(n\|z_{1:t}) = L(n\|z_{1:t-1}) + L(n\|z_{t})$$
 
-- **Clamping the Update Policy** This enables the map to adapt to dynamic changes in the environment.  
+- **Clamping the Update Policy** This enables the map to adapt to dynamic changes in the environment.
+
   $$L(n\|z_{1:t}) = max( min(L(n\|z_{1:t-1})+L(n\|z_t), l_{max}), l_{min})$$  
 
 - **Tree pruning**  
