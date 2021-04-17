@@ -10,6 +10,10 @@ og_image: /assets/img/content/pr-octomap/Banner.png
 <br />
 <br />
 
+### In One Line
+This paper[^1] attempts to efficiently build a probabilistic 3D occupancy map using the octree data structure
+
+### Review
 The key characteristics that contribute to the efficiency of OctoMap are noted below:
 
 - **Volumetric Model**
@@ -37,3 +41,7 @@ The key characteristics that contribute to the efficiency of OctoMap are noted b
 
 - **Tree pruning**  
   If all the children of an inner node of the octree are known to be have the same occupancy probability, the children are pruned. This is lossless as the parent still contains the occupancy probability value. Tree pruning carried out recursively drastically reduces memory utilisation and speeds up map updates.
+
+### References
+
+[^1]: [Hornung, A., Wurm, K.M., Bennewitz, M. et al. OctoMap: an efficient probabilistic 3D mapping framework based on octrees. Auton Robot 34, 189–206 (2013). https://doi.org/10.1007/s10514-012-9321-0](http://www.arminhornung.de/Research/pub/hornung13auro.pdf)

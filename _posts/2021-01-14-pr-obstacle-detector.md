@@ -13,7 +13,7 @@ og_image: /assets/img/content/obstacle-detector/Banner.png
 
 ### Pre-requisite Knowledge
 1. **Mixed pixels**: A "mixed pixel" results from the fact that individual areas consisting of different features or classes may be below (are smaller than) the resolution of the sensor. The resulting spectral content is then a composite or weighted average of the spectral responses from each internal class
-2. **Iterative End Point Fit algorithm**: An algorithm that decimates a curve composed of line segments to a similar curve with fewer points. The steps are succinctly listed in the [Wikipedia page](https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm#Algorithm)
+2. **Iterative End Point Fit algorithm**: An algorithm that decimates a curve composed of line segments to a similar curve with fewer points. The steps are succinctly listed in the Wikipedia page[^1]
 
 ### Obstacle Detection
 1. Grouping: Provide a collection of point subsets representing possibly separate objects
@@ -27,8 +27,13 @@ The extracted segments constitute set L
 
 ### Obstacle Tracking
 This is applied only to circular obstacles  
-1. Correspondence problem: We want to know which obstacles at sample k-1 correspond to which at sample k. The [Hungarian method](https://www.geeksforgeeks.org/hungarian-algorithm-assignment-problem-set-1-introduction/) is used to solve this assignment problem.
+1. Correspondence problem: We want to know which obstacles at sample k-1 correspond to which at sample k. The Hungarian method[^2] is used to solve this assignment problem.
     - If new obstacle has no corresponding old obstacle, it is marked as untracked
     - If there is one-to-one correspondence, the new obstacle is marked as tracked
     - The remaining cases involve obstacle fusion and fission and the new obstacles are marked as tracked
 2. Update problem: For each obstacle marked as tracked, we create a separate Kalman filter and a counter. The counter is decremented at every time sample. If the corresponding obstacle is detected at the current time sample, the counter is restarted. This enables us to preserve the obstacle even if it is occluded temporarily. If the counter reaches zero, the obstacle is deemed out-dated and discarded
+
+### References
+
+[^1]: [Ramer–Douglas–Peucker Algorithm](https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm#Algorithm)  
+[^2]: [Hungarian Method](https://www.geeksforgeeks.org/hungarian-algorithm-assignment-problem-set-1-introduction/)

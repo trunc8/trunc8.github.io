@@ -11,6 +11,12 @@ draft: true
 <br />
 <br />
 
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID_HERE" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+
 This is an example of blog post.
 Picture by [Bethany Legg](https://unsplash.com/@bkotynski).
 

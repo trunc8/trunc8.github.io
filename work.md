@@ -7,7 +7,7 @@ professional:
     image:
       src: /assets/img/work/gs-logo.png
       alt: Goldman Sachs
-    description: I interned in the Mortgage Structuring Strategies team in the Securities division. We achieved drastic improvement in arbitrage by optimizing cash-flows through different derivative instruments.
+    description: I interned in the Mortgage Structuring Strategies team in the Securities division. We achieved a sharp improvement in arbitrage by optimizing cash-flows through different derivative instruments.
   - title: Special Auditing Student
     company: Hiroshima University, Japan
     image:

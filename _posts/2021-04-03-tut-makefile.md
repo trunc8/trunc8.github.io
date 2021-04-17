@@ -10,7 +10,7 @@ og_image: /assets/img/content/placeholder-img/Banner.jpg
 <br />
 <br />
 
-bar.h
+#### bar.h
 ```
 #ifndef __myproject_h__
 #define __myproject_h__
@@ -20,7 +20,7 @@ int getX();
 #endif
 ```
 
-bar.cpp
+#### bar.cpp
 ```
 #include <iostream>
 #include "bar.h"
@@ -32,7 +32,7 @@ int getX() {
 }
 ```
 
-foo.cpp
+#### foo.cpp
 ```
 #include <iostream>
 #include "bar.h"
@@ -46,7 +46,7 @@ int main() {
 }
 ```
 
-Makefile
+#### Makefile
 ```
 CXX = g++
 CFLAGS = -Wall
