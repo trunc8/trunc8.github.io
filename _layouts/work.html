@@ -25,7 +25,6 @@
           </div>
           {% endfor %}
 
-          {% comment %}TODO: Add Projects and PORs
           <h1 class="page-heading">Key Projects</h1>
           {% for item in page.projects %}
           <div class="work-item">
@@ -40,8 +39,8 @@
               {{ item.description }}
             </span>
           </div>
-          {% endfor %}{% endcomment %}
-          {{ content }}
+          {% endfor %}
+          {% comment %}{{ content }}{% endcomment %}
           
         </div>
       </div>

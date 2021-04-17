@@ -20,6 +20,38 @@ professional:
       src: /assets/img/work/mosbi-logo.png
       alt: Mosambee
     description: The firm offers payment solutions by providing EMV enabled mobile Point of Sale (POS) devices. My team delivered a Java platform to migrate existing Transaction Manager to Apache Kafka in order to process 100+ transaction requests/second
+
+projects:
+  - title: Autonomous Drone Exploration
+    image:
+      src: /assets/img/work/interiit.png
+      alt: 
+    description: Capable of navigating in a complex static environment by avoiding on-field obstacle-collision and reaching the target destination after its correct detection
+  - title: International Micromouse Challenge
+    image:
+      src: /assets/img/work/comp-imc.png
+      alt: 
+    description: Reach from the corner square to the center of an unknown maze in the shortest time
+  - title: Two-wheeled Self-Balancing Bot
+    image:
+      src: /assets/img/work/self-balancing-bot.jpg
+      alt: 
+    description: Demonstrates the inverted pendulum problem using a two-wheeled bot and input from gyroscope+accelerometer module
+  - title: Automated Graph Reader
+    image:
+      src: /assets/img/work/auto-graph-reader-demo.png
+      alt: 
+    description: Deployed live on Heroku server, the web-app accepts queries for y-values in simple input graphs. The solution is purely based on image processing and OCR
+  - title: Panoramic Mosaicing
+    image:
+      src: /assets/img/work/panorama.jpg
+      alt: 
+    description: Uses ORB feature extractor, Brute Force Matcher with Hamming Norm, and RANSAC algorithm to mosaic any number of input images
+  - title: Quadruped Robot
+    image:
+      src: /assets/img/work/stride.png
+      alt: 
+    description: Founding member of an institute technical team to solve the international urban search and rescue challenge- RoboCup Rescue League
 ---
 ## Projects
 - **Autonomous Drone Exploration** --- Capable of navigating in a complex static environment by avoiding on-field obstacle-collision and reaching the target destination after its correct detection
