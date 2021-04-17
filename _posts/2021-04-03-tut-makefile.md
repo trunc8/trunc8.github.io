@@ -3,7 +3,12 @@ layout: post
 title:  "Tutorial: Quick guide to using make and Makefile"
 date:   2021-04-03 01:20:00 +0530
 blurb: ""
+og_image: /assets/img/content/placeholder-img/Banner.jpg
 ---
+
+<img src="{{ "/assets/img/content/placeholder-img/Banner.jpg" | absolute_url }}" alt="makefile-tut" class="post-pic"/>
+<br />
+<br />
 
 bar.h
 ```

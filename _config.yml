@@ -24,9 +24,6 @@ footer:
       value: sahasiddharth611@outlook.com
       link: mailto:sahasiddharth611@outlook.com
       icon: fa fa-envelope
-    # - name: WeChat
-    #   value: YourWeChatUsername
-    #   link: "#"
   follow:
     - name: GitHub
       link: http://github.com/trunc8
