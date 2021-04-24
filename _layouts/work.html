@@ -37,6 +37,13 @@
               <strong>{{ item.title }}</strong>
               &mdash;
               {{ item.description }}
+              <br/>
+              {% if item.repo%}
+                » <a href={{ item.repo }}>Repository</a>
+              {% endif %}
+              {% if item.blog%}
+                » <a href={{ item.repo }}>Blog</a>
+              {% endif %}
             </span>
           </div>
           {% endfor %}

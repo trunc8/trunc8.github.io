@@ -27,26 +27,32 @@ projects:
       src: /assets/img/work/interiit.png
       alt: 
     description: Capable of navigating in a complex static environment by avoiding on-field obstacle-collision and reaching the target destination after its correct detection
+    repo: https://github.com/trunc8/drdo-drone-challenge
   - title: International Micromouse Challenge
     image:
       src: /assets/img/work/comp-imc.png
       alt: 
     description: Reach from the corner square to the center of an unknown maze in the shortest time
+    repo: https://github.com/trunc8/international-micromouse-techfest2020
+    blog: https://trunc8.github.io/2020/12/28/comp-imc
   - title: Two-wheeled Self-Balancing Bot
     image:
       src: /assets/img/work/self-balancing-bot.jpg
       alt: 
     description: Demonstrates the inverted pendulum problem using a two-wheeled bot and input from gyroscope+accelerometer module
+    blog: https://trunc8.github.io/2020/12/15/doc-self-balancing-bot
   - title: Automated Graph Reader
     image:
       src: /assets/img/work/auto-graph-reader-demo.png
       alt: 
     description: Deployed live on Heroku server, the web-app accepts queries for y-values in simple input graphs. The solution is purely based on image processing and OCR
+    repo: https://github.com/trunc8/auto-graph-reader-webapp
   - title: Panoramic Mosaicing
     image:
       src: /assets/img/work/panorama.jpg
       alt: 
     description: Uses ORB feature extractor, Brute Force Matcher with Hamming Norm, and RANSAC algorithm to mosaic any number of input images
+    repo: https://github.com/trunc8/panoramic-mosaicing
   - title: Quadruped Robot
     image:
       src: /assets/img/work/stride.png
