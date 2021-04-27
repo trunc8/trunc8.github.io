@@ -43,19 +43,22 @@ Demonstrate the inverted pendulum problem using a two-wheeled bot and input from
 
 ### Videos
 
-*Note: Webpage takes too long to load when videos are embedded. Thus, links of the videos have been posted here*
-
-##### Single motor feedback to tilt
+#### Single motor feedback to tilt
 [Link](https://drive.google.com/uc?export=view&id=1txB1wECq1SekcQoCvZviClIgD5hpdTyJ)
 
-##### High Kp dance
+#### High Kp dance
 [Link](https://drive.google.com/uc?export=view&id=10bm4_1NTQzhSNADEQV_8h9a8oLu4mA-Y)
 
-##### Cord (Arduino powered through USB cable)
+#### Cord (Arduino powered through USB cable)
 [Link](https://drive.google.com/uc?export=view&id=1ph00gV7dFbrdqpeK0FsKof0Ds0b58oQw)
 
-##### Final Demo: Cordless (Arduino powered by SMPS)
-[Link](https://drive.google.com/uc?export=view&id=11Vv4a78ACT_ELX9CO-pQlDlRg6kWfgtv)
+#### Final Demo: Cordless (Arduino powered by SMPS)
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/zCnvgg1dpSY" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+<br />
 
 
 ### Other Learnings
