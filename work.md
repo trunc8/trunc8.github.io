@@ -2,6 +2,12 @@
 layout: work
 slug: /work
 professional:
+  - title: Student Developer
+    company: Google Summer of Code @JdeRobot
+    image:
+      src: /assets/img/work/gsoc-logo.png
+      alt: Google Summer of Code
+    description: I am working on the project titled ROS2-RADI and Amazon warehouse exercise in web-based template for ROS2
   - title: Quantitative Summer Analyst
     company: Goldman Sachs, Bengaluru
     image:
