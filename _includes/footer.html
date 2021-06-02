@@ -11,7 +11,7 @@
             src="{{ contact_icon_path }}"
             alt="{{ contact.name | downcase }}"
           />{% endcomment %}
-          <span class="wrap-link-contact">
+          <span class="wrap-link contact">
             <i class="{{ contact.icon | downcase }}" aria-hidden="true"></i>
             <a href="{{ contact.link }}" id="{{ contact.name | downcase }}-link"  target="_blank">
               {% if contact.value and contact.value != "" and contact.value != nil %}
@@ -25,10 +25,9 @@
 
         {% endfor %}
 
-        <span class="wrap-link-contact">
+        <span class="wrap-link contact">
           <i class="fa fa-copyright" aria-hidden="true"></i> trunc8, Eliott Vincent
         </span>
-        <br />
         <br />
 
       </div>
@@ -37,7 +36,7 @@
         <h4>FOLLOW</h4>
 
         {% for follow in site.footer.follow %}
-          <span class="wrap-link">
+          <span class="wrap-link follow">
 
             {% comment %}{% assign follow_icon_path = "/assets/img/icons/" | append: follow.name | downcase | append: ".png" | absolute_url %}
             <img
