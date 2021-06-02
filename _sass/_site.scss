@@ -35,6 +35,15 @@
     margin-top: 0;
   }
 
+  span.wrap-link-contact {
+    width: 65%;
+    float: left;
+    display: block;
+    margin-right: 2px;
+    text-wrap: none;
+    min-width: 7em;
+  }
+
   span.wrap-link {
     width: 35%;
     float: left;

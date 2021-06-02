@@ -11,19 +11,23 @@
             src="{{ contact_icon_path }}"
             alt="{{ contact.name | downcase }}"
           />{% endcomment %}
-          <i class="{{ contact.icon | downcase }}" aria-hidden="true"></i>
-          <a href="{{ contact.link }}" id="{{ contact.name | downcase }}-link"  target="_blank">
-            {% if contact.value and contact.value != "" and contact.value != nil %}
-              {{ contact.value }}
-            {% else %}
-              {{ contact.name }}
-            {% endif %}
-          </a>
+          <span class="wrap-link-contact">
+            <i class="{{ contact.icon | downcase }}" aria-hidden="true"></i>
+            <a href="{{ contact.link }}" id="{{ contact.name | downcase }}-link"  target="_blank">
+              {% if contact.value and contact.value != "" and contact.value != nil %}
+                {{ contact.value }}
+              {% else %}
+                {{ contact.name }}
+              {% endif %}
+            </a>
+          </span>
           <br />
 
         {% endfor %}
 
-        <i class="fa fa-copyright" aria-hidden="true"></i> trunc8, Eliott Vincent
+        <span class="wrap-link-contact">
+          <i class="fa fa-copyright" aria-hidden="true"></i> trunc8, Eliott Vincent
+        </span>
 
       </div>
 
