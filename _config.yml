@@ -15,11 +15,11 @@ header:
   pages:
     - name: Home
       slug: /
-    - name: Work
-    - name: Projects
+    - name: Blog
     - name: CV
       slug: cv/Siddharth-Saha-CV.pdf
-    - name: Blog
+    - name: Project
+    - name: Work
 
 footer:
   contact:
