@@ -16,6 +16,7 @@ header:
     - name: Home
       slug: /
     - name: Work
+    - name: Projects
     - name: CV
       slug: cv/Siddharth-Saha-CV.pdf
     - name: Blog

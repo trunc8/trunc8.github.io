@@ -9,8 +9,8 @@
       <div class="wrapper">
         <div class="work">
           
-          <h1 class="page-heading">Professional Experience and International Exchange</h1>
-          {% for item in page.professional %}
+          <h1 class="page-heading">Key Projects</h1>
+          {% for item in page.projects %}
           <div class="work-item">
             <img
               src="{{ item.image.src | absolute_url }}"
@@ -18,9 +18,16 @@
               class="work-bubble"
             />
             <span class="work-text">
-              <strong>{{ item.title }}</strong> | <em>{{ item.company }}</em>
+              <strong>{{ item.title }}</strong>
               &mdash;
               {{ item.description }}
+              <br/>
+              {% if item.repo%}
+                » <a href={{ item.repo }}>Repository</a>
+              {% endif %}
+              {% if item.blog%}
+                » <a href={{ item.repo }}>Blog</a>
+              {% endif %}
             </span>
           </div>
           {% endfor %}
