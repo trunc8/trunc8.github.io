@@ -1,6 +1,6 @@
 ---
-layout: projects
-slug: /projects
+layout: project
+slug: /project
 projects:
   - title: Quadruped Robot
     image:
