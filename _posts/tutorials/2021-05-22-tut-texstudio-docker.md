@@ -28,7 +28,7 @@ category: tutorials
 1. TeXstudio's GUI should appear if all went well
 
 #### Dockerfile
-```
+```docker
 FROM ubuntu:focal
 
 # setup timezone
@@ -62,7 +62,7 @@ WORKDIR /home/developer/workspace
 ```
 
 #### start_texstudio.sh
-```
+```sh
 #!/bin/sh
 docker build -t tex_image .
 

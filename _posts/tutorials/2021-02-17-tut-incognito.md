@@ -19,7 +19,7 @@ category: tutorials
 1. `touch incognito-policy.json`
 
 #### incognito-policy.json
-```
+```json
 {
     "IncognitoModeAvailability":    1
 }
