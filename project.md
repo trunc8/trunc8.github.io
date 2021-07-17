@@ -94,6 +94,18 @@ projects:
     description: Implementation of mutual exclusion in computer networks. The Ricart-Agrawala algorithm provides an optimal solution to the problem of mutually exclusive access to a critical section in computer networks, whose nodes communicate only by messages and do not share memory.
     repo: https://github.com/trunc8/ricart-agrawala-algorithm
   
+  - title: Wifi De-auth Attacker
+    image:
+      src: /assets/img/project/default.jpg
+      alt: 
+    description: Programmed ESP8266 (Wi-Fi chip) to send de-authentication frames, exploiting vulnerability in IEEE 802.11
+  
+  - title: Gyro Brick Breaker
+    image:
+      src: /assets/img/project/default.jpg
+      alt: 
+    description: Led 5-membered team to develop a hand-gesture controlled brick-breaking game coded in Processing IDE
+  
   - title: Conway’s Game of Life
     image:
       src: /assets/img/project/default.jpg
