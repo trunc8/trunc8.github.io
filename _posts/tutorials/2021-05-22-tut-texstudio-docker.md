@@ -40,7 +40,7 @@ RUN echo 'Etc/UTC' > /etc/timezone && \
 
 # install packages
 RUN apt-get update \
-    && apt-get install -y texlive-latex-extra texlive-fonts-extra texstudio \
+    && apt-get install -y texlive-latex-extra texlive-fonts-extra texstudio cm-super \
     && apt-get clean
 
 RUN apt-get install -y sudo \
