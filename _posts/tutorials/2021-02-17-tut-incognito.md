@@ -7,7 +7,7 @@ og_image: /assets/img/content/placeholder-img/Banner.jpg
 category: tutorials
 ---
 
-<img src="{{ "/assets/img/content/placeholder-img/Banner.jpg" | absolute_url }}" alt="makefile-tut" class="post-pic"/>
+<img src="{{ "/assets/img/content/placeholder-img/Banner.jpg" | absolute_url }}" alt="banner" class="post-pic"/>
 <br />
 <br />
 
