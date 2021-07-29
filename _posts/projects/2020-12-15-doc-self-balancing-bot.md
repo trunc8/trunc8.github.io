@@ -24,21 +24,22 @@ Demonstrate the inverted pendulum problem using a two-wheeled bot and input from
 - Phone box as chassis
 - SMPS Power Supply
 
+
 ### Setup picture
-![Top view](/assets/img/content/self-balancing-bot/top_setup.jpg){:width="300px"}
-![Front view](/assets/img/content/self-balancing-bot/front_setup.jpg){:width="300px"}
+![Top view]({{ "/assets/img/content/self-balancing-bot/top_setup.jpg" | absolute_url }}){:width="300px"}
+![Front view]({{ "/assets/img/content/self-balancing-bot/front_setup.jpg" | absolute_url }}){:width="300px"}
 
 
 ### Preliminaries/Learning
 
 ##### Circuit diagram
-![Circuit](/assets/img/content/self-balancing-bot/circuit.jpg){:width="600px" height="400px"}
+![Circuit]({{ "/assets/img/content/self-balancing-bot/circuit.jpg" | absolute_url }}){:width="600px" height="400px"}
 
 ##### Control equations
-![Controls](/assets/img/content/self-balancing-bot/maths.jpg){:width="600px" height="600px"}
+![Controls]({{ "/assets/img/content/self-balancing-bot/maths.jpg" | absolute_url }}){:width="600px" height="600px"}
 
 ##### Used an SMPS for the first time
-![SMPS](/assets/img/content/self-balancing-bot/smps.jpg){:width="400px" height="600px"}
+![SMPS]({{ "/assets/img/content/self-balancing-bot/smps.jpg" | absolute_url }}){:width="400px" height="600px"}
 
 
 ### Videos
