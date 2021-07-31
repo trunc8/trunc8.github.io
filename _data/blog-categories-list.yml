@@ -1,0 +1,18 @@
+- name: Paper Reviews
+  category: paper-reviews
+
+- name: Tutorials
+  category: tutorials
+
+- name: Personal Anecdotes & Life Events
+  category: life-events
+
+- name: Project Documentation
+  category: projects
+
+- name: Penetration Testing
+  category: hack
+
+- name: Miscellany
+  category: miscellany
+
