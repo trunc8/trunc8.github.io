@@ -4,7 +4,7 @@ title:  "Solved all the levels of OverTheWire Bandit"
 date:   2020-12-11 10:00:00 +0530
 blurb: ""
 og_image: /assets/img/content/otw-bandit/Banner.png
-category: life-events
+category: hack
 ---
 
 <img src="{{ "/assets/img/content/otw-bandit/Banner.png" | absolute_url }}" alt="otw-bandit" class="post-pic"/>
