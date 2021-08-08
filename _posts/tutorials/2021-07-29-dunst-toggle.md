@@ -23,11 +23,11 @@ I didn't want to get to the bottom of the issue, so I discarded `dunstctl` and i
 
 
 ### Demo
-Pressing `Super+F5`:
+Pressing `Super+F1`:
 
 ![Disabled]({{ "/assets/img/content/tut-dunst-toggle/disabled.png" | absolute_url }})
 
-Pressing `Super+F5` again:
+Pressing `Super+F1` again:
 
 ![Enabled]({{ "/assets/img/content/tut-dunst-toggle/enabled.png" | absolute_url }})
 
@@ -37,7 +37,7 @@ The core of this solution is that notifications can be toggled using `notify-sen
 
 My complete [i3 config dotfiles](https://github.com/trunc8/dotfiles/tree/master/.config/i3) are available on GitHub. The relevant changes have been higlighted below.
 
-#### ~/.config/i3/scripts/toggle_dunst_pause.sh
+#### ~/bin/toggle_dunst_pause
 ```sh
 #!/usr/bin/env bash
 
@@ -68,7 +68,7 @@ pause=$([[ -f "$pause_status_file" ]] && cat $pause_status_file)
 # dunst_status=1 means dunst enabled
 dunst_status=$((1-pause))
 
-# Toggle dunst's state icon
+## Toggle dunst's state icon
 case $dunst_status in
     0)
     echo " <PASTE FROM FONTAWESOME: BELL_SLASH ICON> "
@@ -84,15 +84,22 @@ esac
 
 exit 0;
 ```
-Make both of the above executable
+> Make both of the above scripts executable
 
-#### Add below two lines to ~/.config/i3/i3blocks.conf
+#### Append to ~/.config/i3/i3blocks.conf
 ```rust
 [dunst_status]
 interval=1
 ```
 
-#### Add below line to ~/.config/i3/config
+#### Append to ~/.config/i3/config
 ```sh
-bindsym $mod+F5 exec --no-startup-id ~/.config/i3/scripts/toggle_dunst_pause.sh
+## Toggling dunst notifications in i3 (inside ~/bin)
+bindsym $mod+F1 exec --no-startup-id toggle_dunst_pause
+```
+
+#### Ensure below line is present in ~/.zshrc or ~/.bashrc
+```sh
+## In order to use the executable scripts inside ~/bin directly
+export PATH=$HOME/bin:$PATH
 ```
