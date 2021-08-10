@@ -7,7 +7,7 @@ og_image: /assets/img/content/gsoc/first-post/Banner.png
 category: life-events
 ---
 
-<img src="{{ "/assets/img/content/gsoc/first-post/Banner.png" | absolute_url }}" alt="otw-bandit" class="post-pic"/>
+<img src="{{ "/assets/img/content/gsoc/first-post/Banner.png" | absolute_url }}" alt="Banner image" class="post-pic"/>
 <br />
 <br />
 

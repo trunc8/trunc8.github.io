@@ -7,7 +7,7 @@ og_image: /assets/img/content/otw-bandit/Banner.png
 category: hack
 ---
 
-<img src="{{ "/assets/img/content/otw-bandit/Banner.png" | absolute_url }}" alt="otw-bandit" class="post-pic"/>
+<img src="{{ "/assets/img/content/otw-bandit/Banner.png" | absolute_url }}" alt="Banner image" class="post-pic"/>
 <br />
 <br />
 

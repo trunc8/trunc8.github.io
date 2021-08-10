@@ -7,7 +7,7 @@ og_image: /assets/img/content/tut-texstudio/Banner.png
 category: tutorials
 ---
 
-<img src="{{ "/assets/img/content/tut-texstudio/Banner.png" | absolute_url }}" alt="makefile-tut" class="post-pic"/>
+<img src="{{ "/assets/img/content/tut-texstudio/Banner.png" | absolute_url }}" alt="Banner image" class="post-pic"/>
 <br />
 <br />
 

@@ -7,7 +7,7 @@ og_image: /assets/img/content/pr-octomap/Banner.png
 category: paper-reviews
 ---
 
-<img src="{{ "/assets/img/content/pr-octomap/Banner.png" | absolute_url }}" alt="Octomap example" class="post-pic"/>
+<img src="{{ "/assets/img/content/pr-octomap/Banner.png" | absolute_url }}" alt="Banner image" class="post-pic"/>
 <br />
 <br />
 

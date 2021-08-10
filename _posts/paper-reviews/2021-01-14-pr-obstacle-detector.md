@@ -7,7 +7,7 @@ og_image: /assets/img/content/obstacle-detector/Banner.png
 category: paper-reviews
 ---
 
-<img src="{{ "/assets/img/content/obstacle-detector/Banner.png" | absolute_url }}" alt="Obstacle Detector Demo" class="post-pic"/>
+<img src="{{ "/assets/img/content/obstacle-detector/Banner.png" | absolute_url }}" alt="Banner image" class="post-pic"/>
 <br />
 <br />
 

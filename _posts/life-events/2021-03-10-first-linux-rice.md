@@ -7,7 +7,7 @@ og_image: /assets/img/content/first-rice/Banner.png
 category: life-events
 ---
 
-<img src="{{ "/assets/img/content/first-rice/Banner.png" | absolute_url }}" alt="first-rice" class="post-pic"/>
+<img src="{{ "/assets/img/content/first-rice/Banner.png" | absolute_url }}" alt="Banner image" class="post-pic"/>
 <br />
 <br />
 
