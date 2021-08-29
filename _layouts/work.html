@@ -20,7 +20,7 @@
             <span class="work-text">
               <strong>{{ item.title }}</strong> | <em>{{ item.company }}</em>
               &mdash;
-              {{ item.description }}
+              {{ item.description | markdownify }}
             </span>
           </div>
           {% endfor %}
