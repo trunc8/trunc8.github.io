@@ -21,7 +21,8 @@
             <span class="work-text">
               <strong>{{ item.title }}</strong>
               &mdash;
-              {{ item.description | markdownify }}
+              <!-- Credits: https://github.com/jekyll/jekyll/issues/2248#issuecomment-42508332 -->
+              {{ item.description | markdownify  | remove: '<p>' | remove: '</p>' | strip }}
               <br/>
               {% if item.repo%}
                 » <a href={{ item.repo }}>Repository</a>
