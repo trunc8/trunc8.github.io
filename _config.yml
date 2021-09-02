@@ -11,16 +11,6 @@ google_analytics: "UA-193570686-1"
 
 permalink: /:year/:month/:day/:title
 
-header:
-  pages:
-    - name: Home
-      slug: /
-    - name: Blog
-    - name: CV
-      slug: cv/Siddharth-Saha-CV.pdf
-    - name: Project
-    - name: Work
-
 footer:
   contact:
     - name: Email

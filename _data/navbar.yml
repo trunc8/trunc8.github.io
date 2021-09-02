@@ -1,0 +1,11 @@
+- name: Home
+  slug: /
+
+- name: Blog
+
+- name: CV
+  slug: cv/Siddharth-Saha-CV.pdf
+
+- name: Project
+
+- name: Work

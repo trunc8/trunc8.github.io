@@ -16,7 +16,7 @@
             <br/>
             <ol>
 
-              {% for member in site.data.blog-categories-list %}
+              {% for member in site.data.blog-categories %}
                 <li><a href="#{{ member.category }}">{{ member.name }}</a></li>
               {% endfor %}
 
@@ -26,7 +26,7 @@
           </details>
           <br/>
 
-          {% for member in site.data.blog-categories-list %}
+          {% for member in site.data.blog-categories %}
             <h2 id="{{ member.category }}">{{ member.name }}</h2>
             {% include category-posts.html %}
           {% endfor %}
