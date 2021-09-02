@@ -8,6 +8,7 @@
 $base-url: "{{ site.baseurl }}";
 
 // Credits: https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face
+// San Francisco font: https://stackoverflow.com/a/36412339/7589046
 @font-face {
   font-family: "San Francisco";
   font-weight: 400;
@@ -41,4 +42,4 @@ $on-laptop: 800px;
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import "base", "layout", "site", "work", "blog", "post", "404";
+@import "base", "layout", "site", "work", "blog", "post", "404", "syntax";
