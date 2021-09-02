@@ -1,11 +1,11 @@
 - name: Paper Reviews
   category: paper-reviews
 
-- name: Tutorials
-  category: tutorials
-
 - name: Personal Anecdotes & Life Events
   category: life-events
+
+- name: Tutorials
+  category: tutorials
 
 - name: Project Documentation
   category: projects
