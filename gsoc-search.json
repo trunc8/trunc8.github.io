@@ -1,17 +1,5 @@
----
----
 [
-  {% for post in site.posts %}
-    {
-
-      "title"    : "{{ post.title | escape }}",
-      "url"      : "{{ site.baseurl }}{{ post.url }}",
-      "category" : "{{ post.category }}",
-      "date"     : "{{ post.date }}"
-
-    } {% unless forloop.last %},{% endunless %},
-  {% endfor %}
-
+  
     {
 
       "title"    : "Mismatch of Jekyll versions and the trouble caused",
@@ -335,4 +323,5 @@
       "date"     : "2019-10-26 15:30:40 +0530"
 
     } 
+  
 ]
