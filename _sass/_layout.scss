@@ -81,6 +81,8 @@
 
     .menu {
       clear: both;
+      opacity: 0.8;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
       display: none;
       background-color: #ffffff;
       min-width: 10em;
@@ -88,6 +90,7 @@
     }
 
     .page-link {
+      color: #333;
       font-size: 16px;
       display: block;
       padding: 6px 16px;
