@@ -4,7 +4,7 @@
       <div class="footer-col footer-col-1 social-links">
         <h4>CONTACT</h4>
 
-        {% for contact in site.footer.contact %}
+        {% for contact in site.data.footer.contact %}
 
           {% comment %}{% assign contact_icon_path = "/assets/img/icons/" | append: contact.name | downcase | append: ".png" | absolute_url %}
           <img
@@ -35,7 +35,7 @@
       <div class="footer-col footer-col-2 social-links">
         <h4>FOLLOW</h4>
 
-        {% for follow in site.footer.follow %}
+        {% for follow in site.data.footer.follow %}
           <span class="wrap-link follow">
 
             {% comment %}{% assign follow_icon_path = "/assets/img/icons/" | append: follow.name | downcase | append: ".png" | absolute_url %}
