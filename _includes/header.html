@@ -4,23 +4,24 @@
       <img src="{{ "/assets/img/title.png" | absolute_url }}" alt="{{ site.title }}" />
     </a>
 
-    <nav class="site-nav">
+    <!-- Remove "stroke" to disable underline effect -->
+    <nav class="site-nav stroke">
       <a href="#" class="menu-icon"></a>
 
       <div class="menu">
-        {% for page in site.data.navbar %}
+        {% for nav_item in site.data.navbar %}
           
-          <!-- First obtaining page_link -->
-          {% if page.slug and page.slug != "" and page.slug != nil %}
-            {% assign page_link = page.slug %}
+          <!-- First obtaining nav_link -->
+          {% if nav_item.slug and nav_item.slug != "" and nav_item.slug != nil %}
+            {% assign nav_link = nav_item.slug %}
           {% else %}
-            {% assign page_link = "/" | append: page.name | downcase %}
+            {% assign nav_link = "/" | append: nav_item.name | downcase %}
           {% endif %}
-          {% assign page_link = page_link | absolute_url %}
+          {% assign nav_link = nav_link | absolute_url %}
           
-          <!-- Displaying page name with anchor to page_link -->
-          <a class="page-link" href="{{ page_link }}">
-            {{ page.name }}
+          <!-- Displaying nav_item name with anchor to nav_link -->
+          <a class="nav-link" href="{{ nav_link }}">
+            {{ nav_item.name }}
           </a>
           
         {% endfor %}

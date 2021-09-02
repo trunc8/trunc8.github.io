@@ -111,16 +111,16 @@ h4 {
  * Links
  */
 a {
+  transition: all .2s;
   color: $brand-color;
   text-decoration: none;
-  //
+  
   // &:visited {
   //   color: darken($brand-color, 15%);
   // }
 
   &:hover {
     color: $text-color;
-    text-decoration: underline;
   }
 }
 
@@ -207,9 +207,11 @@ pre {
   }
 }
 
+// Obsolete perhaps
 /**
  * Icons
  */
+/**
 .icon {
   > svg {
     display: inline-block;
@@ -222,6 +224,7 @@ pre {
     }
   }
 }
+*/
 
 .styled-table {
     // margin: 25px 0;

@@ -24,10 +24,13 @@
 
   float: left;
 
-  &,
-  &:visited {
-    color: $grey-color-dark;
-  }
+  // Obsolete settings: I'm using an image instead of text
+  /**
+   * &,
+   * &:visited {
+   *   color: $grey-color-dark;
+   * }
+   */
 }
 
 /**
@@ -42,7 +45,7 @@
     display: none;
   }
 
-  .page-link {
+  .nav-link {
     color: $grey-color;
     line-height: $base-line-height;
     text-decoration: none;
@@ -53,9 +56,6 @@
       margin-left: 20px;
     }
 
-    &:hover {
-      color: #333;
-    }
   }
 
   @include media-query($on-mobile) {
@@ -88,13 +88,48 @@
       padding-bottom: 5px;
     }
 
-    .page-link {
-      color: #333;
+    .nav-link {
+      color: $grey-color-dark;
       font-size: 16px;
       display: block;
       padding: 6px 16px;
+
+      &:not(:first-child) {
+        margin-left: 0px;
+      }
     }
   }
+}
+
+/* mouse effects on nav links */
+a.nav-link,
+a.nav-link:after,
+a.nav-link:before {
+  transition: all .4s;
+  // This overrides transition setting in _base.scss
+}
+a.nav-link:hover {
+  color: $grey-color-dark;
+}
+
+/* stroke */
+.stroke a.nav-link {
+  position: relative;
+}
+.stroke a.nav-link:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+.stroke a.nav-link:hover:after {
+  width: 100%;
 }
 
 /**
