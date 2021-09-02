@@ -14,6 +14,7 @@ $base-url: "{{ site.baseurl }}";
   font-weight: 400;
   // src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
   src: url("{{ "/assets/fonts/sanfranciscodisplay-regular-webfont.woff" | absolute_url }}") format("woff");
+  font-display: swap;
 }
 
 $base-font-family: 'San Francisco', Georgia, Helvetica, Arial, sans-serif;
