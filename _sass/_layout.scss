@@ -46,6 +46,7 @@
     color: $grey-color;
     line-height: $base-line-height;
     text-decoration: none;
+    font-family: "Futura", sans-serif;
 
     // Gaps between nav items, but not on the first one
     &:not(:first-child) {

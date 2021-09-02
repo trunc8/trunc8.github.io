@@ -7,7 +7,16 @@
 // Our variables
 $base-url: "{{ site.baseurl }}";
 
-$base-font-family: Charter, Georgia, Helvetica, Arial, sans-serif;
+// Credits: https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  // src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+  src: url("{{ "/assets/fonts/sanfranciscodisplay-regular-webfont.woff" | absolute_url }}") format("woff");
+}
+
+$base-font-family: 'San Francisco', Georgia, Helvetica, Arial, sans-serif;
+// $base-font-family: Charter, Georgia, Helvetica, Arial, sans-serif;
 $base-font-size: 14px;
 $small-font-size: $base-font-size * 0.875;
 $base-line-height: 1.7;
