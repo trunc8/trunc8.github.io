@@ -9,3 +9,6 @@
 - name: Project
 
 - name: Work
+
+- name: <i class="fa fa-search"></i>
+  slug: search
