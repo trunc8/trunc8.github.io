@@ -1,35 +1,5 @@
 ---
 layout: work
+title: Professional Experience and International Exchange
 slug: /work
-professional:
-  - title: Structuring Analyst
-    company: Goldman Sachs, Bengaluru
-    image:
-      src: /assets/img/work/gs-logo.png
-      alt: Goldman Sachs
-    description: I returned to a full-time role in the Mortgage Structuring Strategies team, Global Markets Division
-  - title: Student Developer
-    company: Google Summer of Code @JdeRobot
-    image:
-      src: /assets/img/work/gsoc-logo.png
-      alt: Google Summer of Code
-    description: I worked on the project titled *ROS2-RADI and Amazon warehouse exercise in web-based template for ROS2*
-  - title: Quantitative Summer Analyst
-    company: Goldman Sachs, Bengaluru
-    image:
-      src: /assets/img/work/gs-logo.png
-      alt: Goldman Sachs
-    description: I interned in the Mortgage Structuring Strategies team, GMD. We achieved a sharp improvement in arbitrage by optimizing cash-flows through different derivative instruments
-  - title: Special Auditing Student
-    company: Hiroshima University, Japan
-    image:
-      src: /assets/img/work/hu-logo.png
-      alt: Hiroshima University
-    description: My visit was under the Sakura Research Exchange Programme spanning a week. I was among 15 students from India to be awarded the Sakura Science Plan scholarship ’19 from Japan Science & Technology Agency
-  - title: Developer Intern
-    company: Synergistic Financial Network Pvt Ltd, Mumbai
-    image:
-      src: /assets/img/work/mosbi-logo.png
-      alt: Mosambee
-    description: The firm offers payment solutions by providing EMV enabled mobile Point of Sale (POS) devices. My team delivered a Java platform to migrate existing Transaction Manager to Apache Kafka in order to process 100+ transaction requests/second
 ---

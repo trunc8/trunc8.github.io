@@ -8,9 +8,10 @@
     <div class="page-content">
       <div class="wrapper">
         <div class="work">
+          <h1 class="page-heading">{{ page.title }}</h1>
+          {{ content }}
           
-          <h1 class="page-heading">Professional Experience and International Exchange</h1>
-          {% for item in page.professional %}
+          {% for item in site.data.professional %}
           <div class="work-item">
             <img
               src="{{ item.image.src | absolute_url }}"
