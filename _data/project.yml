@@ -12,7 +12,7 @@
   image:
     src: /assets/img/project/dynamic-octomap.png
     alt: 
-  description: As part of my Bachelor's Thesis, designed & implemented novel clustering algorithm in ROS OctoMap to reject nodes with high dynamic activity
+  description: As part of my Bachelor's Thesis, I designed & implemented a novel clustering algorithm in ROS OctoMap to reject nodes with high dynamic activity
   links:
     repo: https://github.com/trunc8/Dynamic-Octomap
     demo: https://youtu.be/rUUqPmobm1k
@@ -21,7 +21,7 @@
   image:
     src: /assets/img/project/stride.png
     alt: 
-  description: Founding member of an institute technical team to solve the international urban search and rescue challenge- RoboCup Rescue League
+  description: Founding member of an institute technical team to solve the international urban search and rescue challenge - RoboCup Rescue League
 
 - title: Two-wheeled Self-Balancing Bot
   image:
@@ -36,7 +36,7 @@
   image:
     src: /assets/img/project/interiit.png
     alt: 
-  description: (Team leader in *Inter IIT Tech Meet '21*) Simulated quadrotor capable of navigating in a complex static environment by avoiding on-field obstacle-collision and reaching the target destination after its correct detection
+  description: (Team leader in *Inter IIT Tech Meet '21* ) Quadrotor simulation capable of navigating in a complex static environment by avoiding on-field obstacle-collision and reaching the target destination after its correct detection. 
   links:
     repo: https://github.com/trunc8/drdo-drone-challenge
 
@@ -44,7 +44,7 @@
   image:
     src: /assets/img/project/mespp.png
     alt: 
-  description: Capture of a moving target using Mixed Integer Linear Programming. Implementation from scratch of 'MILP Models for Multi-Robot Non-Adversarial Search' paper.
+  description: Capture of a moving target using Mixed Integer Linear Programming. Implementation from scratch of 'MILP Models for Multi-Robot Non-Adversarial Search' paper
   links:
     repo: https://github.com/trunc8/multirobot-efficient-search-path-planning
     blog: https://trunc8.github.io/2021/04/01/pr-mespp
@@ -63,7 +63,7 @@
   image:
     src: /assets/img/project/auto-graph-reader-demo.png
     alt: 
-  description: Deployed live on Heroku server, the web-app accepts queries for y-values in simple input graphs. The solution is purely based on image processing and OCR
+  description: Deployed live on Heroku server, the web-app accepts queries for y-values in simple input graphs. The solution is based on image processing, OCR, and a lot of algorithm design
   links:
     repo: https://github.com/trunc8/auto-graph-reader-webapp
 
@@ -95,7 +95,7 @@
   image:
     src: /assets/img/project/image-quilting.png
     alt: 
-  description: This achieves *Texture Transfer* using simple memoization-based Image Quilting technique (where people are nowadays using deep learning techniques). The *Texture Synthesis* implementation is useful for creating background in video games with cheap computation.
+  description: This achieves *Texture Transfer* using simple memoization-based Image Quilting technique (where people are nowadays using deep learning techniques). The *Texture Synthesis* implementation is useful for creating background in video games with cheap computation
   links:
     repo: https://github.com/trunc8/image-quilting
 
@@ -103,7 +103,7 @@
   image:
     src: /assets/img/project/sudoku-block-printer.png
     alt: 
-  description: Implemented a Raspian-based automated Machine to physically fill into any given unsolved Sudoku grid using computer-vision.
+  description: Implemented a Raspian-based automated Machine to physically fill into any given unsolved Sudoku grid using computer-vision
   links:
     repo: https://github.com/trunc8/sudoku-solver-itsp-2018
     demo: https://youtu.be/3ukm6GfWYAw
@@ -121,34 +121,34 @@
   image:
     src: /assets/img/project/ricart-agrawal.png
     alt: 
-  description: Implementation of mutual exclusion in computer networks. The Ricart-Agrawala algorithm provides an optimal solution to the problem of mutually exclusive access to a critical section in computer networks, whose nodes communicate only by messages and do not share memory.
+  description: Implementation of mutual exclusion in computer networks. The Ricart-Agrawala algorithm provides an optimal solution to the problem of mutually exclusive access to a critical section in computer networks, whose nodes communicate only by messages and do not share memory
   links:
     repo: https://github.com/trunc8/ricart-agrawala-algorithm
 
 - title: Wifi De-auth Attacker
   image:
-    src: /assets/img/project/default.jpg
+    src: /assets/img/project/esp8266.jpg
     alt: 
-  description: Programmed ESP8266 (Wi-Fi chip) to send de-authentication frames, exploiting vulnerability in IEEE 802.11
+  description: Programmed ESP8266 (Wi-Fi microchip) to spoof an access point and send de-authentication frames, exploiting vulnerability in IEEE 802.11 standards of the absence of encryption for management frames
 
 - title: Gyro Brick Breaker
   image:
     src: /assets/img/project/default.jpg
     alt: 
-  description: Led 5-membered team to develop a hand-gesture controlled brick-breaking game coded in Processing IDE
+  description: Led 5-membered team to develop a hand-gesture controlled brick-breaking game coded in Processing IDE. One among 3 projects showcased at the Undergraduate Freshmen Technical Orientation 2018
 
 - title: Conway’s Game of Life
   image:
-    src: /assets/img/project/default.jpg
+    src: /assets/img/project/conway.png
     alt: 
-  description: Terminal based game of the hacker's favorite game. The source code is accompanied with unittesting.
+  description: Terminal based version of the hacker's favorite game. The source code is accompanied with unittesting. Developed as part of JdeRobot's GSoC Python Challenge
   links:
     repo: https://github.com/trunc8/conways-game-of-life
 
 - title: Labyrinth CMake app
   image:
-    src: /assets/img/project/default.jpg
+    src: /assets/img/project/labyrinth.png
     alt: 
-  description: CMakeLists based app to find the longest route in a text map
+  description: CMakeLists based app to find the longest route in a text map. Developed as part of JdeRobot's GSoC C++ Challenge
   links:
     repo: https://github.com/trunc8/labyrinth-cmake-app
