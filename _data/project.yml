@@ -1,3 +1,20 @@
+- title: ROS2 RADI and Amazon warehouse exercise
+  image:
+    src: /assets/img/project/amazon-single-slam.gif
+    alt: 
+  description: Done as part of my Google Summer of Code project at JdeRobot
+  repo: https://github.com/TheRoboticsClub/gsoc2021-Siddharth_Saha
+  demo: https://youtu.be/RfW2hI_8j74
+  blog: https://theroboticsclub.github.io/gsoc2021-Siddharth_Saha/milestones/2021/08/21/final-report
+
+- title: Mapping Regions of Dynamic Activity & Building Dynamic-free 3D Occupancy Maps
+  image:
+    src: /assets/img/project/dynamic-octomap.png
+    alt: 
+  description: As part of my Bachelor's Thesis, designed & implemented novel clustering algorithm in ROS OctoMap to reject nodes with high dynamic activity
+  repo: https://github.com/trunc8/Dynamic-Octomap
+  demo: https://youtu.be/rUUqPmobm1k
+
 - title: Quadruped Robot
   image:
     src: /assets/img/project/stride.png
@@ -9,6 +26,7 @@
     src: /assets/img/project/self-balancing-bot.jpg
     alt: 
   description: Demonstrates the inverted pendulum problem using a two-wheeled bot and input from gyroscope+accelerometer module
+  demo: https://youtu.be/zCnvgg1dpSY
   blog: https://trunc8.github.io/2020/12/15/doc-self-balancing-bot
 
 - title: Autonomous Drone Exploration
@@ -32,6 +50,7 @@
     alt: 
   description: Reach from the corner square to the center of an unknown maze in the shortest time
   repo: https://github.com/trunc8/international-micromouse-techfest2020
+  demo: https://youtu.be/PcbNQ-tVwQw?t=107
   blog: https://trunc8.github.io/2020/12/28/comp-imc
 
 - title: Automated Graph Reader
