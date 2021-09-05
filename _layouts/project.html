@@ -24,14 +24,14 @@
               <!-- Credits: https://github.com/jekyll/jekyll/issues/2248#issuecomment-42508332 -->
               {{ item.description | markdownify  | remove: '<p>' | remove: '</p>' | strip }}
               <br/>
-              {% if item.repo %}
-                » <a href={{ item.repo }}>Repository</a>
+              {% if item.links.repo %}
+                » <a href={{ item.links.repo }}>Repository</a>
               {% endif %}
-              {% if item.demo %}
-                » <a href={{ item.demo }}>Demo</a>
+              {% if item.links.demo %}
+                » <a href={{ item.links.demo }}>Demo</a>
               {% endif %}
-              {% if item.blog %}
-                » <a href={{ item.blog }}>Blog</a>
+              {% if item.links.blog %}
+                » <a href={{ item.links.blog }}>Blog</a>
               {% endif %}
             </span>
           </div>
