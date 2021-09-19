@@ -14,6 +14,7 @@ category: paper-reviews
 ### In One Line
 This paper[^1] attempts to efficiently build a probabilistic 3D occupancy map using the octree data structure
 
+
 ### Review
 The key characteristics that contribute to the efficiency of OctoMap are noted below:
 
@@ -42,6 +43,7 @@ The key characteristics that contribute to the efficiency of OctoMap are noted b
 
 - **Tree pruning**  
   If all the children of an inner node of the octree are known to be have the same occupancy probability, the children are pruned. This is lossless as the parent still contains the occupancy probability value. Tree pruning carried out recursively drastically reduces memory utilisation and speeds up map updates.
+
 
 ### References
 
