@@ -3,19 +3,19 @@
   image:
     src: /assets/img/work/gs-logo.png
     alt: Goldman Sachs
-  description: I returned to a full-time role in the Mortgage Structuring Strategies team, Global Markets Division
+  description: Returned to a full-time role in the Mortgage Structuring Strategies team, Global Markets Division
 - title: Student Developer
   company: Google Summer of Code @JdeRobot
   image:
     src: /assets/img/work/gsoc-logo.png
     alt: Google Summer of Code
-  description: I worked on the project titled *ROS2-RADI and Amazon warehouse exercise in web-based template for ROS2*
+  description: Worked on the project titled *ROS2-RADI and Amazon warehouse exercise in web-based template for ROS2*
 - title: Quantitative Summer Analyst
   company: Goldman Sachs, Bengaluru
   image:
     src: /assets/img/work/gs-logo.png
     alt: Goldman Sachs
-  description: I interned in the Mortgage Structuring Strategies team, GMD. We achieved a sharp improvement in arbitrage by optimizing cash-flows through different derivative instruments
+  description: Interned in the Mortgage Structuring Strategies team, GMD. We achieved a sharp improvement in arbitrage by optimizing cash-flows through different derivative instruments
 - title: Special Auditing Student
   company: Hiroshima University, Japan
   image:
