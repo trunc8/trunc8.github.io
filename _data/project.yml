@@ -59,6 +59,14 @@
     demo: https://youtu.be/PcbNQ-tVwQw?t=107
     blog: https://trunc8.github.io/2020/12/28/comp-imc
 
+- title: Shortest Path in a Maze using Reinforcement Learning
+  image:
+    src: /assets/img/project/gridworld_maze.png
+    alt: 
+  description: Modelled 2D maze as an MDP with appropriate states, actions, rewards & transition probabilities. Implemented Howard’s Policy Iteration, Value Iteration and Linear Programming to find best policy that minimizes number of steps between 2 given points while following constraints
+  links:
+    repo: https://github.com/trunc8/cs747-assignments
+
 - title: Automated Graph Reader
   image:
     src: /assets/img/project/auto-graph-reader-demo.png
@@ -74,14 +82,6 @@
   description: Comparison of standard library functions and our own implementations of genetic algorithm, simulated annealing, and particle swarm optimization for the vehicle suspension optimization
   links:
     repo: https://github.com/trunc8/optimization-project
-
-- title: Shortest Path in a Maze using Reinforcement Learning
-  image:
-    src: /assets/img/project/gridworld_maze.png
-    alt: 
-  description: Modelled 2D maze as an MDP with appropriate states, actions, rewards & transition probabilities. Implemented Howard’s Policy Iteration, Value Iteration and Linear Programming to find best policy that minimizes number of steps between 2 given points while following constraints
-  links:
-    repo: https://github.com/trunc8/cs747-assignments
 
 - title: Snippet-to-text Extraction
   image:
