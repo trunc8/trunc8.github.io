@@ -143,7 +143,7 @@
   image:
     src: /assets/img/project/gyro-brick-breaker.jpg
     alt: 
-  description: Led 5-membered team to develop a hand-gesture controlled brick-breaking game coded in Processing IDE. One among 3 projects showcased at the Undergraduate Freshmen Technical Orientation 2018
+  description: Led 5-membered team to develop hand-gesture controlled brick-breaking game coded in Processing IDE. Arduino Uno converted into joystick using dfu-programmer. MPU6050 mounted on it used to control paddle in the game. One among 3 projects showcased at Undergraduate Freshmen Technical Orientation 2018
 
 - title: Conway’s Game of Life
   image:
