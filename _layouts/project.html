@@ -13,11 +13,21 @@
           
           {% for item in site.data.project %}
           <div class="work-item">
-            <img
+            <!-- <img
               src="{{ item.image.src | absolute_url }}"
               alt="{{ item.image.alt }}"
               class="work-bubble"
-            />
+            /> -->
+            <div class="work-bubble-with-date">
+              <img
+                src="{{ item.image.src | absolute_url }}"
+                alt="{{ item.image.alt }}"
+                class="work-bubble"
+              />
+              {% if item.date %}
+                <h6>{{ item.date }}</h6>
+              {% endif %}
+            </div>
             <span class="work-text">
               <strong>{{ item.title }}</strong>
               &mdash;

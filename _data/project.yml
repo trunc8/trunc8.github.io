@@ -1,8 +1,9 @@
-- title: ROS2 RADI and Amazon warehouse exercise
+- title: ROS2 RADI and single-robot warehouse exercise
   image:
     src: /assets/img/project/amazon-single-slam.gif
     alt: 
-  description: Done as part of my Google Summer of Code project at JdeRobot
+  date: Jun '21 - Aug '21
+  description: Google Summer of Code project at JdeRobot. Built RADI 4 based on ROS2 Foxy, implemented BT (Behavior Tree) Navigator, and extended warehouse pick-and-delivery exercise to ROS2 web-based template
   links:
     repo: https://github.com/TheRoboticsClub/gsoc2021-Siddharth_Saha
     demo: https://youtu.be/RfW2hI_8j74
@@ -12,7 +13,8 @@
   image:
     src: /assets/img/project/dynamic-octomap.png
     alt: 
-  description: As part of my Bachelor's Thesis, I designed & implemented a novel clustering algorithm in ROS OctoMap to reject nodes with high dynamic activity
+  date: Jun '20 - Jul '21
+  description: Bachelor's Thesis at IIT Bombay under Prof. Vachhani. Designed and implemented a novel clustering algorithm in ROS OctoMap to reject nodes with high dynamic activity
   links:
     repo: https://github.com/trunc8/Dynamic-Octomap
     demo: https://youtu.be/rUUqPmobm1k
@@ -21,12 +23,35 @@
   image:
     src: /assets/img/project/stride.png
     alt: 
-  description: Founding member of an institute technical team to solve the international urban search and rescue challenge - RoboCup Rescue League
+  date: Dec '19 - May '21
+  description: Founding member and Team Lead of an institute funded team to solve the urban search and rescue challenge -- RoboCup Rescue League. Simulated gait trajectory, and implemented sensor fusion between Intel D435 and IMU
+
+- title: Hilti SLAM Challenge | IROS '21, Prague
+  image:
+    src: /assets/img/project/hilti.jpg
+    alt: 
+  date: Sep '21
+  description: Explored Visual Inertial Odometry. Understood and calibrated Kannala-brandt camera model. Used VINS-Fusion. Calibrated IMU noise parameters using imu_utils on provided bag files
+
+- title: Robot Vision Scene Understanding Challenge | CVPR '21
+  image:
+    src: /assets/img/project/rvsu.jpg
+    alt: 
+  date: Mar '21 - Apr '21
+  description: Implemented multiple approaches using Votenet, GroupFree3D, Votenet Ensemble. Trained Votenet model on subset of sunrgbd dataset. Trained YOLOv4 on subset of MS COCO dataset, and executed it in parallel to achieve higher confidence through a consensus mechanism
+
+- title: F1/10th — Autonomous Grand Prix | IROS ’20, Las Vegas
+  image:
+    src: /assets/img/project/f1tenth.png
+    alt: 
+  date: Oct '20
+  description: Used Bernstein polynomial based local trajectory planner. Optimized global reference path using an OSQP solver. Implemented obstacle detection.
 
 - title: Two-wheeled Self-Balancing Bot
   image:
     src: /assets/img/project/self-balancing-bot.jpg
     alt: 
+  date: Aug '20 - Nov '20
   description: Demonstrates the inverted pendulum problem using a two-wheeled bot and input from gyroscope+accelerometer module
   links:
     demo: https://youtu.be/zCnvgg1dpSY
@@ -36,6 +61,7 @@
   image:
     src: /assets/img/project/interiit.png
     alt: 
+  date: Mar '21
   description: (Team leader in *Inter IIT Tech Meet '21* ) Quadrotor simulation capable of navigating in a complex static environment by avoiding on-field obstacle-collision and reaching the target destination after its correct detection. 
   links:
     repo: https://github.com/trunc8/drdo-drone-challenge
@@ -44,6 +70,7 @@
   image:
     src: /assets/img/project/mespp.png
     alt: 
+  date: Mar '21 - Apr '21
   description: Capture of a moving target using Mixed Integer Linear Programming. Implementation from scratch of 'MILP Models for Multi-Robot Non-Adversarial Search' paper
   links:
     repo: https://github.com/trunc8/multirobot-efficient-search-path-planning
@@ -53,16 +80,18 @@
   image:
     src: /assets/img/project/comp-imc.png
     alt: 
+  date: Dec '20
   description: Reach from the corner square to the center of an unknown maze in the shortest time
   links:
     repo: https://github.com/trunc8/international-micromouse-techfest2020
     demo: https://youtu.be/PcbNQ-tVwQw?t=107
     blog: https://trunc8.github.io/2020/12/28/comp-imc
 
-- title: Shortest Path in a Maze using Reinforcement Learning
+- title: Shortest Path in Maze using Reinforcement Learning
   image:
     src: /assets/img/project/gridworld_maze.png
     alt: 
+  date: Oct '20 - Nov '20
   description: Modelled 2D maze as an MDP with appropriate states, actions, rewards & transition probabilities. Implemented Howard’s Policy Iteration, Value Iteration and Linear Programming to find best policy that minimizes number of steps between 2 given points while following constraints
   links:
     repo: https://github.com/trunc8/cs747-assignments
@@ -71,6 +100,7 @@
   image:
     src: /assets/img/project/auto-graph-reader-demo.png
     alt: 
+  date: Aug '20 - Nov '20
   description: Deployed live on Heroku server, the web-app accepts queries for y-values in simple input graphs. The solution is based on image processing, OCR, and a lot of algorithm design
   links:
     repo: https://github.com/trunc8/auto-graph-reader-webapp
@@ -79,6 +109,7 @@
   image:
     src: /assets/img/project/suspension.png
     alt: 
+  date: Jan '21 - Apr '21
   description: Comparison of standard library functions and our own implementations of genetic algorithm, simulated annealing, and particle swarm optimization for the vehicle suspension optimization
   links:
     repo: https://github.com/trunc8/optimization-project
@@ -87,6 +118,7 @@
   image:
     src: /assets/img/project/snippet-to-text-demo.png
     alt: 
+  date: Aug '20 - Nov '20
   description: Deployed live on Heroku server, the web-app allows you to read image snippets as continuous text
   links:
     repo: https://github.com/trunc8/snippet-to-text-webapp
@@ -95,6 +127,7 @@
   image:
     src: /assets/img/project/panorama.jpg
     alt: 
+  date: Mar '21
   description: Uses ORB feature extractor, Brute Force Matcher with Hamming Norm, and RANSAC algorithm to mosaic any number of input images
   links:
     repo: https://github.com/trunc8/panoramic-mosaicing
@@ -103,6 +136,7 @@
   image:
     src: /assets/img/project/image-quilting.png
     alt: 
+  date: Sep '19 - Oct '19
   description: This achieves *Texture Transfer* using simple memoization-based Image Quilting technique (where people are nowadays using deep learning techniques). The *Texture Synthesis* implementation is useful for creating background in video games with cheap computation
   links:
     repo: https://github.com/trunc8/image-quilting
@@ -111,6 +145,7 @@
   image:
     src: /assets/img/project/sudoku-block-printer.png
     alt: 
+  date: Apr '18 - May '18
   description: Implemented a Raspian-based automated Machine to physically fill into any given unsolved Sudoku grid using computer-vision
   links:
     repo: https://github.com/trunc8/sudoku-solver-itsp-2018
@@ -120,6 +155,7 @@
   image:
     src: /assets/img/project/ball-tracking.png
     alt: 
+  date: Oct '20
   description: Python implementation of Ball tracking using OpenCV and CvBridge in ROS1
   links:
     repo: https://github.com/trunc8/ball-tracking-opencv-and-ros
@@ -129,6 +165,7 @@
   image:
     src: /assets/img/project/ricart-agrawal.png
     alt: 
+  date: Aug '19 - Nov '19
   description: Implementation of mutual exclusion in computer networks. The Ricart-Agrawala algorithm provides an optimal solution to the problem of mutually exclusive access to a critical section in computer networks, whose nodes communicate only by messages and do not share memory
   links:
     repo: https://github.com/trunc8/ricart-agrawala-algorithm
@@ -137,18 +174,21 @@
   image:
     src: /assets/img/project/esp8266.jpg
     alt: 
+  date: Mar '19
   description: Programmed ESP8266 (Wi-Fi microchip) to spoof an access point and send de-authentication frames, exploiting vulnerability in IEEE 802.11 standards of the absence of encryption for management frames
 
 - title: Gyro Brick Breaker
   image:
     src: /assets/img/project/gyro-brick-breaker.jpg
     alt: 
+  date: Jul '18
   description: Led 5-membered team to develop hand-gesture controlled brick-breaking game coded in Processing IDE. Arduino Uno converted into joystick using dfu-programmer. MPU6050 mounted on it used to control paddle in the game. One among 3 projects showcased at Undergraduate Freshmen Technical Orientation 2018
 
 - title: Conway’s Game of Life
   image:
     src: /assets/img/project/conway.png
     alt: 
+  date: Apr '21
   description: Terminal based version of the hacker's favorite game. The source code is accompanied with unittesting. Developed as part of JdeRobot's GSoC Python Challenge
   links:
     repo: https://github.com/trunc8/conways-game-of-life
@@ -157,6 +197,7 @@
   image:
     src: /assets/img/project/labyrinth.png
     alt: 
+  date: Apr '21
   description: CMakeLists based app to find the longest route in a text map. Developed as part of JdeRobot's GSoC C++ Challenge
   links:
     repo: https://github.com/trunc8/labyrinth-cmake-app
