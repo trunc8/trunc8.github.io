@@ -5,7 +5,7 @@ profile_picture:
     alt: Siddharth Saha
 ---
 
-Welcome! I am Siddharth Saha. I graduated from [IIT Bombay](https://www.iitb.ac.in/) in 2021 fulfilling the requirements for Bacherlor's in [Mechanical Engineering](https://www.me.iitb.ac.in/) with Honors and with Minor in the [Department of Computer Science](https://www.cse.iitb.ac.in/)
+Welcome! I am Siddharth Saha. I graduated from [IIT Bombay](https://www.iitb.ac.in/) in 2021, attaining a Bachelor's (with Honors) in [Mechanical Engineering](https://www.me.iitb.ac.in/) and a Minor degree in the [Department of Computer Science](https://www.cse.iitb.ac.in/)
 
 During my undergraduate, I was fortunate to work under the guidance of wonderful mentors. I worked with [Prof. Leena Vachhani](https://www.sc.iitb.ac.in/~leena/) on my Undergraduate Thesis and [Prof. Prasanna Gandhi](https://www.me.iitb.ac.in/~gandhi/) on another research project related to modeling ultra-flexible inverted pendulum
 
