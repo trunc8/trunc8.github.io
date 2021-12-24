@@ -84,9 +84,11 @@ ol {
 }
 
 li {
+  padding-left: 10px;
   > ul,
   > ol {
     margin-bottom: 0;
+
   }
 }
 

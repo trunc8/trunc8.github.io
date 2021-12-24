@@ -60,21 +60,8 @@
     <meta property="twitter:site" content="{{ twitter_username }}"/>
   {% endif %}
 
-  <!-- if browser doesn't support JavaScript then use normal link tags to load CSS -->
-  <noscript>
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-  </noscript>
-
-  <!-- load fontawesome.css -->
-  <script>
-  (function() {
-      var cssFa = document.createElement('link');
-      cssFa.href = 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
-      cssFa.rel = 'stylesheet';
-      cssFa.type = 'text/css';
-      document.getElementsByTagName('head')[0].appendChild(cssFa);
-  })();
-  </script>
+  <script src="https://kit.fontawesome.com/952ada6405.js" crossorigin="anonymous"></script>
+  
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | absolute_url }}"/>
   <link rel="canonical" href="{{ page_url }}"/>
   <link rel="shortcut icon" href="{{ "/favicon.ico" | absolute_url }}" type="image/x-icon"/>
