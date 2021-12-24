@@ -1,14 +1,14 @@
 - name: Paper Reviews
   category: paper-reviews
 
-- name: Personal Anecdotes & Life Events
+- name: Personal Anecdotes
   category: life-events
+
+- name: Robotics
+  category: robotics
 
 - name: Tutorials
   category: tutorials
-
-- name: Project Documentation
-  category: projects
 
 - name: Penetration Testing
   category: hack

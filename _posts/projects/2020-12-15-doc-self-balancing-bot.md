@@ -4,7 +4,7 @@ title:  "Project Documentation: Two-Wheeled Self-Balancing Bot"
 date:   2020-12-15 12:00:00 +0530
 blurb: ""
 og_image: /assets/img/content/self-balancing-bot/Banner.jpg
-category: projects
+category: robotics
 ---
 
 <img src="{{ "/assets/img/content/self-balancing-bot/Banner.jpg" | absolute_url }}" alt="self-balancing-bot-doc" class="post-pic" width=300/>
