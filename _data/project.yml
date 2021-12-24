@@ -32,6 +32,8 @@
     alt: 
   date: Sep '21
   description: Explored Visual Inertial Odometry. Understood and calibrated Kannala-brandt camera model. Used VINS-Fusion. Calibrated IMU noise parameters using imu_utils on provided bag files
+  links:
+    blog: https://trunc8.github.io/2021/09/08/doc-hilti
 
 - title: Robot Vision Scene Understanding Challenge | CVPR '21
   image:
@@ -166,7 +168,7 @@
     src: /assets/img/project/ricart-agrawal.png
     alt: 
   date: Aug '19 - Nov '19
-  description: Implementation of mutual exclusion in computer networks. The Ricart-Agrawala algorithm provides an optimal solution to the problem of mutually exclusive access to a critical section in computer networks, whose nodes communicate only by messages and do not share memory
+  description: The Ricart-Agrawala algorithm provides an optimal solution to the problem of mutually exclusive access to a critical section in computer networks, whose nodes communicate only by messages and do not share memory
   links:
     repo: https://github.com/trunc8/ricart-agrawala-algorithm
 
