@@ -28,7 +28,7 @@
                 <h6>{{ item.date }}</h6>
               {% endif %}
             </div>
-            <span class="work-text">
+            <p class="work-text">
               <strong>{{ item.title }}</strong>
               &mdash;
               <!-- Credits: https://github.com/jekyll/jekyll/issues/2248#issuecomment-42508332 -->
@@ -43,7 +43,7 @@
               {% if item.links.blog %}
                 » <a href={{ item.links.blog }}>Blog</a>
               {% endif %}
-            </span>
+            </p>
           </div>
           {% endfor %}
           
