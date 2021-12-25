@@ -1,11 +1,21 @@
-<p class="blog-post-list">            
+<div class="blog-post-list">            
   {% for post in site.categories[member.category] %}
     {% if post.draft != true %}
-      <span class="blog-post-date">{{ post.date | date: "%b %-d, %y" }}</span> »
-      <a href="{{ post.url }}" class="blog-post-title">
-        {{ post.title | replace:'Paper Review: ','' | replace:'Tutorial: ','' | replace:'Project Documentation: ',''}}
-      </a>
+      
+      <div class="blog-post-date">
+        {{ post.date | date: "%b %-d, '%y" }}
+      </div> 
+
+      <p class="blog-post-title">
+        <a href="{{ post.url }}">
+          {{ post.title | replace:'Paper Review: ','' | replace:'Tutorial: ','' | replace:'Project Documentation: ',''}}
+        </a>
+      </p>
+      
       <br />
+
     {% endif %}
   {% endfor %}
-</p>
+</div>
+
+<p/> <!-- To create whitespace at end of category list -->
