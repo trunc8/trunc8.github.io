@@ -14,14 +14,15 @@ category: robotics
 
 ### Listing the jargons
 - [x] $H_2$ control
+- [ ] Full state feedback (aka Pole placement)
 - [ ] Controllability; Observability; controller canonical form; observer canonical form
 - [ ] Duality
 - [x] Classical v/s Modern control
 - [x] Optimal control
 - [x] Cost-to-go function
-- [ ] RDE (Ricatti Difference Equation)
-- [x] LQR (Linear Quadratic Regulator), LQE (Linear Quadratic Estimator)
-- [x] LQG (Linear Quadratic Gaussian), Separation Principle
+- [x] Ricatti Equation
+- [x] LQR (Linear Quadratic Regulator)
+- [x] LQE (Linear Quadratic Estimator), LQG (Linear Quadratic Gaussian), Separation Principle
 - [x] MPC (Model Predictive Control), GPC (Global Predictive Control), DMC (Dynamic Matrix Control)
 - [x] System Identification
 - [x] Underactuation
@@ -30,6 +31,7 @@ category: robotics
 - [ ] Backstepping control
 - [ ] HZD (Hybrid Zero Dynamics)
 - [x] Model-free control
+- [ ] Jacobian
 
 
 ---
@@ -64,11 +66,31 @@ $$J_{j\rightarrow N} (x_j , u_j, u_{j+1}, . . . , u_{N−1}) = p(x_N ) + \sum_{k
 The cost-to-go function emphasizes the cost of final state and cost of journey to that state. In comparison, an objective function can be more general (e.g. just cost of final state).
 
 
-#### LQR and LQE
+#### Ricatti Equation
+Any first-order ordinary differential equation that is quadratic in the unknown function. That is, of the form-
+
+$$
+y^{\prime}(x)=q_{0}(x)+q_{1}(x) y(x)+q_{2}(x) y^{2}(x)
+$$
+
+In continuous time, called Ricatti Differential Equation. In discrete time, called Ricatti Difference Equation.
+
+The steady-state (non-dynamic) version of the matrix version of Ricatti Equation is referred to as the algebraic Riccati equation. It arises in the context of infinite-horizon optimal control problems in continuous time (CARE: Continuous-time Algebraic Ricatti Equation)-
+
+$$
+A^{T} P+P A-P B R^{-1} B^{T} P+Q=0
+$$
+
+or discrete time (DARE: Discrete-time Algebraic Ricatti Equation)-
+
+$$
+P=A^{T} P A-\left(A^{T} P B\right)\left(R+B^{T} P B\right)^{-1}\left(B^{T} P A\right)+Q
+$$
+
+#### LQR
 - The case where the system dynamics are described by a set of linear differential equations and the cost is described by a quadratic function is called the LQ problem. LQ usually refers to LQR
 - One of the main results in the theory is that the solution is provided by the LQR (linear–quadratic regulator)
 - LQR is the best possible controller under some assumptions
-- LQE (inear–quadratic estimator) is the best possible estimator under some assumptions
 
 $$
 \min _{u(\cdot)} \int_{0}^{T}\left(x^{T} Q x+u^{T} R u\right) d t+x(T)^{T} Q_{f} x(T)
@@ -78,9 +100,13 @@ $$\begin{array}{ll}\text { subject to } & \dot{x}=A x+B u \\ & y=x \\ & x(0)-\te
 
 $x$ is system state, $y$ is output, $u$ is input  
 Optimal controller is of the form $u(t) = K.x(t)$  
-where $K$ is obtained from the Ricatti Difference Equation
+where $K$ is obtained from the Ricatti Equation
 
-#### LQG and Separation Principle
+- Difficulty in finding the right weighting factors limits the application of the LQR based controller synthesis
+
+
+#### LQE, LQG and Separation Principle
+- LQE (Linear–quadratic estimator) is the best possible estimator under some assumptions. Under the assumption of Gaussian noise, we can use the Kalman filter as our LQE
 - LQG (Linear–quadratic–Gaussian) just means using LQR and LQE at the same time
 - Concerns linear systems driven by additive white Gaussian noise
 - Simply a combination of a Kalman filter (a linear–quadratic state estimator (LQE)) together with a linear–quadratic regulator (LQR).
@@ -94,7 +120,7 @@ $$\begin{array}{ll}\text { subject to } & \dot{x}=A x+B u+w \\ & y=C x+v \\ & x(
 
 $x$ is system state, $y$ is output, $u$ is input  
 Optimal controller is of the form $u(t) = K.x'(t)$  
-where $K$ is obtained from the Ricatti Difference Equation and  
+where $K$ is obtained from the Ricatti Equation and  
 $x'$ is estimate of the state  
 Due to random noise the state $x$ is not directly observed. Thus, estimate of the state $x'$ is obtained from the output $y$ using a Kalman filter
 
