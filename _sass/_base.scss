@@ -255,3 +255,8 @@ pre {
 .styled-table td {
     padding: 12px 15px;
 }
+
+// Background color while selecting/highlighting text
+::selection{
+  background: aliceblue;
+}
