@@ -6,8 +6,15 @@
         {{ post.date | date: "%b %-d, '%y" }}
       </div> 
 
+
       <p class="blog-post-title">
+      {% if post.highlight %}
+        <a href="{{ post.url }}" style="background-color: #FDFFE3; padding: 0px;">
+      {% else %}
         <a href="{{ post.url }}">
+      {% endif %}
+
+      
           {{ post.title | replace:'Paper Review: ','' | replace:'Tutorial: ','' | replace:'Project Documentation: ',''}}
         </a>
       </p>
