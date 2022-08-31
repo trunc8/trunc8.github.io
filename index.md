@@ -20,14 +20,6 @@ You can also read more about my [professional experience](work) & [key projects]
 ## Research Interests
 <!-- My research interests lie at the intersection of exploration, optimization, trajectory planning, and SLAM. -->
 
-- **Task and motion planning during robot exploration** -- Two types of problems:
-    + Non-exploratory, well-defined task (like filling a cup from a tap after fetching it from a shelf across the kitchen)
-    + Exploratory, abstract tasks (like searching for lost keys inside a house)  
-    In the latter problem, the mobile robot may have to open a drawer, search underneath a heap of clothes, twist the doorknob to search another room, etc. The robot does not just passively understand the environment but “actively” interacts with it to learn more. The following questions on both above problems fascinate me:
-        * How can decision-making algorithms be designed to solve such task planning problems? 
-        * How to sync motion between the manipulator and the robot base? 
-        * How should the robot deal with uncertainty? 
-        * What if there’s a dynamic object?
 - **Multi-modality during Legged locomotion** -- Some questions that bother me: 
     + What gait patterns could be more energy efficient than their wheeled counterparts? [Current research](https://www.researchgate.net/publication/332374021_Leg_Trajectory_Planning_for_Quadruped_Robots_with_High-Speed_Trot_Gait)
     + How does the control generalize over complex foothold constraints, like steep stairs, slippery terrain, sharp rocks, rubble? 
@@ -37,5 +29,13 @@ You can also read more about my [professional experience](work) & [key projects]
     + Trajectory and gait optimization
     + Pose graph optimization
     + Policy optimization
+- **Task and motion planning during robot exploration** -- Two types of problems:
+    + Non-exploratory, well-defined task (like filling a cup from a tap after fetching it from a shelf across the kitchen)
+    + Exploratory, abstract tasks (like searching for lost keys inside a house)  
+    In the latter problem, the mobile robot may have to open a drawer, search underneath a heap of clothes, twist the doorknob to search another room, etc. The robot does not just passively understand the environment but “actively” interacts with it to learn more. The following questions on both above problems fascinate me:
+        * How can decision-making algorithms be designed to solve such task planning problems? 
+        * How to sync motion between the manipulator and the robot base? 
+        * How should the robot deal with uncertainty? 
+        * What if there’s a dynamic object?
 
 
