@@ -41,4 +41,5 @@ Add this to your `~/.config/i3/config` or `~/.*shrc` to automatically remap at e
 
 
 ### References
-After a good deal of self-debugging, helped me locate the file to be modified: [https://askubuntu.com/a/1413490](hhttps://askubuntu.com/a/1413490)
+- Why it happened: [https://askubuntu.com/questions/1403490/xmodmap-doesnt-work-anymore-after-upgrading-to-22-04](https://askubuntu.com/questions/1403490/xmodmap-doesnt-work-anymore-after-upgrading-to-22-04)
+- And after a good deal of self-debugging, helped me locate the file to be modified: [https://askubuntu.com/a/1413490](hhttps://askubuntu.com/a/1413490)
