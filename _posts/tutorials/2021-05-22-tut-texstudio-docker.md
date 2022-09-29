@@ -11,7 +11,7 @@ category: tutorials
 <br />
 <br />
 
-### Background
+### Motivation
 - Overleaf's compilation time is too slow. I switched to TeXLive+TeXstudio and loved it
 - On installing `texlive-fonts-extra`, I was afflicted by fonts conflict with `fonts-font-awesome` that render the cool icons on my [i3 taskbar](/2021/03/10/first-linux-rice)
 - [Asked it](https://askubuntu.com/questions/1339453/installing-texlive-fonts-extra-messing-up-i3s-font-awesome-icons) on AskUbuntu. I was able to solve it, albeit unsatisfactorily, and answered it too
