@@ -1,3 +1,14 @@
+- title: Heterogeneous Multi-robot Search and Rescue
+  image:
+    src: /assets/img/project/mespp.png
+    alt: 
+  date: Sep '22 - Dec '23
+  description: Capstone Project at CMU Robotics Institute under Prof. Sebastian Scherer
+  # links:
+  #   repo: https://github.com/trunc8/Dynamic-Octomap
+  #   demo: https://youtu.be/rUUqPmobm1k
+
+
 - title: ROS2 RADI and single-robot warehouse exercise
   image:
     src: /assets/img/project/amazon-single-slam.gif
