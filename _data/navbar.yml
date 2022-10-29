@@ -1,12 +1,15 @@
-- name: Home
+- name: <i class="fa fa-home"></i>
   slug: /
 
 - name: Blog
 
-- name: CV
-  slug: cv/Siddharth-Saha-CV.pdf
+# - name: CV
+#   slug: cv/Siddharth-Saha-CV.pdf
 
-- name: Project
+- name: Projects
+
+- name: Resume
+  slug: resume/Siddharth-Saha-Resume.pdf
 
 - name: Work
 

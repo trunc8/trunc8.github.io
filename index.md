@@ -7,9 +7,10 @@ profile_picture:
 
 Welcome! I am Siddharth Saha. Please call me *Saha*. 
 
-I am currently at the mecca of robotics --- [CMU Robotics Institute](https://www.ri.cmu.edu/). I will be conferred the [MRSD](https://mrsd.ri.cmu.edu/) (M.S. in Robotic Systems Development) degree in 2024. I graduated from [IIT Bombay](https://www.iitb.ac.in/) in 2021, attaining a Bachelor's (with Honors) in [Mechanical Engineering](https://www.me.iitb.ac.in/) and a Minor degree in the [Department of Computer Science](https://www.cse.iitb.ac.in/)
+I am currently at the mecca of robotics --- [CMU Robotics Institute](https://www.ri.cmu.edu/). I will be conferred the [MRSD](https://mrsd.ri.cmu.edu/) (M.S. in Robotic Systems Development) degree in 2024. In my capstone project, I am working on the topic of *Heterogeneous Multi-robot Search and Rescue* with [Prof. Sebastian Scherer](https://www.ri.cmu.edu/ri-faculty/sebastian-scherer/), [AirLab](https://www.ri.cmu.edu/robotics-groups/air-lab/)
 
-During my undergraduate, I was fortunate to work under the guidance of wonderful mentors. I worked with [Prof. Leena Vachhani](https://www.sc.iitb.ac.in/~leena/) on my Undergraduate Thesis and [Prof. Prasanna Gandhi](https://www.me.iitb.ac.in/~gandhi/) on another research project related to modeling ultra-flexible inverted pendulum
+
+I graduated from [IIT Bombay](https://www.iitb.ac.in/) in 2021, attaining a Bachelor's (with Honors) in [Mechanical Engineering](https://www.me.iitb.ac.in/) and a Minor degree in the [Department of Computer Science](https://www.cse.iitb.ac.in/). During my undergraduate, I was fortunate to work under the guidance of wonderful mentors. I worked with [Prof. Leena Vachhani](https://www.sc.iitb.ac.in/~leena/) on my Undergraduate Thesis and [Prof. Prasanna Gandhi](https://www.me.iitb.ac.in/~gandhi/) on another research project related to modeling ultra-flexible inverted pendulum
 
 At the institute, I was the founding member of a fully-funded technical team building a quadruped robot and motivated to solve the international urban search and rescue challenge [RoboCup Rescue League](https://www.robocup.org/leagues/10)
 
@@ -19,10 +20,10 @@ You can also read more about my [professional experience](work) & [key projects]
 
 
 
-## Research Interests
+## Questions That Inspire Me
 <!-- My research interests lie at the intersection of exploration, optimization, trajectory planning, and SLAM. -->
 
-- **Multi-modality during Legged locomotion** -- Some questions that bother me: 
+- **Multi-modality during Legged locomotion**: 
     + What gait patterns could be more energy efficient than their wheeled counterparts? [Current research](https://www.researchgate.net/publication/332374021_Leg_Trajectory_Planning_for_Quadruped_Robots_with_High-Speed_Trot_Gait)
     + How does the control generalize over complex foothold constraints, like steep stairs, slippery terrain, sharp rocks, rubble? 
     + Can we design perception/sensing algorithms to infer foothold constraints from the world in real-time? 
