@@ -3,17 +3,17 @@ layout: post
 title:  "MRSD Capstone: Project DarkBot by Team NightWalker"
 date:   2022-11-03 06:08:00 +0530
 blurb: ""
-og_image: /assets/img/content/placeholder-img/Banner.jpg
+og_image: /assets/img/content/capstone-first-progress/Banner.png
 category: life-events
-draft: True
 ---
 
-<img src="{{ "/assets/img/content/placeholder-img/Banner.jpg" | absolute_url }}" alt="Banner image" class="post-pic"/>
-<br />
-<br />
+<img src="{{ "/assets/img/content/capstone-first-progress/Banner.png" | absolute_url }}" alt="Banner image" class="post-pic"/>
 
 
 I just got done with my MRSD team's first progress presentation for our capstone project. I feel super good!
+
+[Link to the entire presentation](https://share.icloud.com/photos/0bbKpzkzFM5IXo0CnxkDfXRcQ)
+
 
 ### Some background
 My MRSD capstone project runs over 3 semesters (Sep 2022 --- Dec 2023). The end-goal in the first semester is concept development and working out the systems design. At the end of semester two and three, we have the behemoths of Spring Validation Demo (SVD) and Fall Validation Demo (FVD) respectively.
