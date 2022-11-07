@@ -1,10 +1,11 @@
-- title: Heterogeneous Multi-robot Search and Rescue
+- title: Project DarkBot
   image:
-    src: /assets/img/project/mespp.png
+    src: /assets/img/project/darkbot.png
     alt: 
   date: Sep '22 - Dec '23
-  description: Capstone Project at CMU Robotics Institute under Prof. Sebastian Scherer
-  # links:
+  description: Human-robot collaborative Search-&-Rescue in low-light and narrow, cluttered environments. Capstone Project at CMU Robotics Institute under Prof. Sebastian Scherer, AirLab
+  links:
+    blog: https://trunc8.github.io/2022/11/03/capstone-first-progress
   #   repo: https://github.com/trunc8/Dynamic-Octomap
   #   demo: https://youtu.be/rUUqPmobm1k
 
