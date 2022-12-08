@@ -12,7 +12,7 @@ category: life-events
 
 I just got done with my MRSD team's first progress presentation for our capstone project. I feel super good!
 
-[Link to recording of the entire presentation](https://share.icloud.com/photos/0bbKpzkzFM5IXo0CnxkDfXRcQ)
+[Link to recording of the entire presentation](https://youtu.be/vRf8UzTPDPk)
 
 
 ### Some background
