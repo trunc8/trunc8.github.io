@@ -7,7 +7,7 @@ profile_picture:
 
 Welcome! I am Siddharth Saha. Please call me *Saha*. 
 
-I am currently at the mecca of robotics --- [CMU Robotics Institute](https://www.ri.cmu.edu/). I will be conferred the [MRSD](https://mrsd.ri.cmu.edu/) (M.S. in Robotic Systems Development) degree in 2024. In my capstone project, I am working on the topic of *Heterogeneous Multi-robot Search and Rescue* with [Prof. Sebastian Scherer](https://www.ri.cmu.edu/ri-faculty/sebastian-scherer/), [AirLab](https://www.ri.cmu.edu/robotics-groups/air-lab/)
+I am currently at the mecca of robotics --- [CMU Robotics Institute](https://www.ri.cmu.edu/). I will be conferred the [MRSD](https://mrsd.ri.cmu.edu/) (M.S. in Robotic Systems Development) degree in 2024. My capstone project is *Quadruped Robot for Assistive Search in Narrow and Cluttered Environment* with [Prof. Sebastian Scherer](https://www.ri.cmu.edu/ri-faculty/sebastian-scherer/), [AirLab](https://www.ri.cmu.edu/robotics-groups/air-lab/).
 
 
 I graduated from [IIT Bombay](https://www.iitb.ac.in/) in 2021, attaining a Bachelor's (with Honors) in [Mechanical Engineering](https://www.me.iitb.ac.in/) and a Minor degree in the [Department of Computer Science](https://www.cse.iitb.ac.in/). During my undergraduate, I was fortunate to work under the guidance of wonderful mentors. I worked with [Prof. Leena Vachhani](https://www.sc.iitb.ac.in/~leena/) on my Undergraduate Thesis and [Prof. Prasanna Gandhi](https://www.me.iitb.ac.in/~gandhi/) on another research project related to modeling ultra-flexible inverted pendulum
