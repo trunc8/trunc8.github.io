@@ -1,11 +1,11 @@
+- name: Robotics
+  category: robotics
+
 - name: Personal Anecdotes
   category: life-events
 
 - name: Paper Reviews
   category: paper-reviews
-
-- name: Robotics
-  category: robotics
 
 - name: Hacking
   category: tutorials
@@ -16,3 +16,5 @@
 - name: Miscellany
   category: miscellany
 
+- name: Scribbles and Thoughts
+  category: scribbles
