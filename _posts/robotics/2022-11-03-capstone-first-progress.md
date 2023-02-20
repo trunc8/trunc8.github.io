@@ -4,7 +4,7 @@ title:  "MRSD Capstone: Project DarkBot by Team NightWalker"
 date:   2022-11-03 06:08:00 +0530
 blurb: ""
 og_image: /assets/img/content/capstone-first-progress/Banner.png
-category: life-events
+category: robotics
 ---
 
 <img src="{{ "/assets/img/content/capstone-first-progress/Banner.png" | absolute_url }}" alt="Banner image" class="post-pic"/>
