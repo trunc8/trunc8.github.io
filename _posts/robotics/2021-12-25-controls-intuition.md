@@ -3,11 +3,11 @@ layout: post
 title:  "Finding intuitive sense in controls jargons"
 date:   2021-12-25 00:00:00 +0530
 blurb: ""
-og_image: /assets/img/content/placeholder-img/Banner.jpg
+og_image: /assets/img/content/PLACEHOLDER-IMG/Banner.jpg
 category: robotics
 ---
 
-<img src="{{ "/assets/img/content/placeholder-img/Banner.jpg" | absolute_url }}" alt="Banner image" class="post-pic"/>
+<img src="{{ "/assets/img/content/PLACEHOLDER-IMG/Banner.jpg" | absolute_url }}" alt="Banner image" class="post-pic"/>
 <br />
 <br />
 
