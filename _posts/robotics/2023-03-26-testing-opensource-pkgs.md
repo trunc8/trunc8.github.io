@@ -67,6 +67,17 @@ catkin build grid_map
 ### Simpletest package
 [trunc8/grid_map_simpletest](https://github.com/trunc8/grid_map_simpletest)
 
+Learned a new aspect of ROS CMakeLists.txt while writing the above simpletest. The `grid_map` library source code is not accessible even if you include the relevant package names. You have to link to the library using the following code --
+
+```cmake
+target_link_libraries(${PROJECT_NAME}_node
+  ${catkin_LIBRARIES}
+)
+```
+
+I created this grid map after figuring out the APIs from `grid_map` source code ---
+
+![RViz Demo](/assets/img/content/testing-opensource/grid_map_simpletest.png)
 
 ## Elevation Mapping
 *Summary:* The [elevation_mapping](https://github.com/ANYbotics/elevation_mapping) package creates a local heightmap around the robot. It needs to be provided with range sensor data and robot pose estimation.
