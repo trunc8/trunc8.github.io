@@ -102,9 +102,15 @@ I created this grid map after figuring out the APIs from `grid_map` source code 
     + [kindr_ros](https://github.com/anybotics/kindr_ros)
     + [message_logger](https://github.com/ANYbotics/message_logger)
     + [grid_map](https://github.com/ANYbotics/grid_map)
-    + [turtlebot3_simulations](https://github.com/ROBOTIS-GIT/turtlebot3_simulations)
-    + [turtlebot3](https://github.com/ROBOTIS-GIT/turtlebot3)
-    + [point_cloud_io](https://github.com/ANYbotics/point_cloud_io.git)
+    + *(optional)* [turtlebot3_simulations](https://github.com/ROBOTIS-GIT/turtlebot3_simulations)
+    + *(optional)* [turtlebot3](https://github.com/ROBOTIS-GIT/turtlebot3)
+    + *(optional)* [point_cloud_io](https://github.com/ANYbotics/point_cloud_io.git)
+```sh
+cd $ROOT_DIR
+cd opensource_ws/src
+git clone https://github.com/ANYbotics/grid_map.git
+catkin build grid_map
+```
 
 *Aside --- I tried building it on ROS Melodic as well. Melodic fixes below:*
 
@@ -127,6 +133,42 @@ I created this grid map after figuring out the APIs from `grid_map` source code 
 
 ### Compilation Steps
 - Environment: ROS Noetic
+- Packages that I cloned and built in the same workspace:
+    + [ocs2](https://github.com/leggedrobotics/ocs2)
+    + [pinocchio](https://github.com/leggedrobotics/pinocchio.git)
+    + [hpp-fcl](https://github.com/leggedrobotics/hpp-fcl.git)
+    + [ocs2_robotic_assets](https://github.com/leggedrobotics/ocs2_robotic_assets.git)
+- Apt installed
+    + liburdfdom-dev liboctomap-dev libassimp-dev
 
+```sh
+cd $ROOT_DIR
+cd opensource_ws/src
+mkdir legged_control_pkgs && cd legged_control_pkgs
+
+# Clone legged_control
+git clone git@github.com:qiayuanliao/legged_control.git
+# Clone OCS2
+git clone git@github.com:leggedrobotics/ocs2.git
+# Clone pinocchio
+git clone --recurse-submodules https://github.com/leggedrobotics/pinocchio.git
+# Clone hpp-fcl
+git clone --recurse-submodules https://github.com/leggedrobotics/hpp-fcl.git
+# Clone ocs2_robotic_assets
+git clone https://github.com/leggedrobotics/ocs2_robotic_assets.git
+# Install dependencies
+sudo apt install liburdfdom-dev liboctomap-dev libassimp-dev
+
+catkin config -DCMAKE_BUILD_TYPE=RelWithDebInfo
+catkin build ocs2_legged_robot_ros ocs2_self_collision_visualization
+```
+
+### Simpletest
+```sh
+source $ROOT_DIR/devel/setup.zsh
+roslaunch ocs2_legged_robot_ros legged_robot_ddp.launch
+```
+
+---
 
 ## Acknowledgements
