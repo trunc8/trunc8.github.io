@@ -32,6 +32,14 @@ catkin init
 catkin build
 ```
 
+#### Table of Contents
+1. [Kindr](#kindr)
+1. [Grid Map](#grid-map)
+1. [Elevation Mapping](#elevation-mapping)
+1. [Legged Control](#legged-control)
+1. [Acknowledgements](#acknowledgements)
+
+
 ## Kindr
 *Summary:* The [kindr](https://github.com/anybotics/kindr) package provides interfaces to standard mathematical quantities encountered in kinematics and dynamics for robotics.
 
@@ -48,6 +56,7 @@ catkin build kindr
 ### Simpletest package
 [trunc8/kindr_simpletest](https://github.com/trunc8/kindr_simpletest)
 
+---
 
 ## Grid Map
 *Summary:* The [grid_map](https://github.com/ANYbotics/grid_map) is intended for 2.5-dimensional grid mapping, i.e., heightmaps. It is intended to be used as a local data map and it uses a circular buffer to shift the data as the robot moves.
@@ -79,8 +88,12 @@ I created this grid map after figuring out the APIs from `grid_map` source code 
 
 ![RViz Demo](/assets/img/content/testing-opensource/grid_map_simpletest.png)
 
+---
+
 ## Elevation Mapping
 *Summary:* The [elevation_mapping](https://github.com/ANYbotics/elevation_mapping) package creates a local heightmap around the robot. It needs to be provided with range sensor data and robot pose estimation.
+
+*Latest as of:* Mar 28, 2023
 
 ### Compilation Steps
 - Environment: ROS Noetic
@@ -102,3 +115,18 @@ I created this grid map after figuring out the APIs from `grid_map` source code 
     ```
 - https://github.com/ANYbotics/elevation_mapping/issues/151They seem to have fixed this in Noetic, not in Melodic. Changed `PCL_MAKE_ALIGNED_OPERATOR_NEW` to `EIGEN_MAKE_ALIGNED_OPERATOR_NEW` in elevation_mapping package `PointXYZRGBConfidenceRatio.hpp`.
 
+### Simpletest package
+[trunc8/elevation_mapping_simpletest](https://github.com/trunc8/elevation_mapping_simpletest)
+
+---
+
+## Legged Control
+*Summary:* The [legged_control](https://github.com/qiayuanliao/legged_control) package is a legged robot control stack based on NMPC (Nonlinear Model Predictive Control) and WBC (Whole Body Controller).
+
+*Latest as of:* Apr 01, 2023
+
+### Compilation Steps
+- Environment: ROS Noetic
+
+
+## Acknowledgements
