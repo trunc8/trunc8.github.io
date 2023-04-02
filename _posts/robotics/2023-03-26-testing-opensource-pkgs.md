@@ -105,6 +105,7 @@ I created this grid map after figuring out the APIs from `grid_map` source code 
     + *(optional)* [turtlebot3_simulations](https://github.com/ROBOTIS-GIT/turtlebot3_simulations)
     + *(optional)* [turtlebot3](https://github.com/ROBOTIS-GIT/turtlebot3)
     + *(optional)* [point_cloud_io](https://github.com/ANYbotics/point_cloud_io.git)
+
 ```sh
 cd $ROOT_DIR
 cd opensource_ws/src
