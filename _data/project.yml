@@ -190,13 +190,15 @@
     alt: 
   date: Mar '19
   description: Programmed ESP8266 (Wi-Fi microchip) to spoof an access point and send de-authentication frames, exploiting vulnerability in IEEE 802.11 standards of the absence of encryption for management frames
+  links:
+    demo: https://youtu.be/HFHVBlhADvA
 
 - title: Gyro Brick Breaker
   image:
     src: /assets/img/project/gyro-brick-breaker.jpg
     alt: 
   date: Jul '18
-  description: Led 5-membered team to develop hand-gesture controlled brick-breaking game coded in Processing IDE. Arduino Uno converted into joystick using dfu-programmer. MPU6050 mounted on it used to control paddle in the game. One among 3 projects showcased at Undergraduate Freshmen Technical Orientation 2018
+  description: Led 5-membered team to develop hand-gesture controlled brick-breaking game coded in Processing IDE. One among 3 projects showcased at Undergraduate Freshmen Technical Orientation 2018
 
 - title: Conway’s Game of Life
   image:
