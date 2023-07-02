@@ -9,10 +9,10 @@
 - name: Projects
   slug: project
 
-- name: Resume
+- name: CV
   slug: resume/Siddharth-Saha-Resume.pdf
 
-- name: Work
+- name: Experience
 
 - name: <i class="fa fa-search"></i>
   slug: search

@@ -3,7 +3,7 @@
     src: /assets/img/project/darkbot.png
     alt: 
   date: Sep '22 - Dec '23
-  description: Human-robot collaborative Search-&-Rescue in low-light and narrow, cluttered environments. Capstone Project at CMU Robotics Institute under Prof. Sebastian Scherer, AirLab
+  description: Quadruped Robot for Assistive Search in Narrow and Cluttered Environment. Capstone Project at CMU Robotics Institute under Prof. Sebastian Scherer, AirLab
   links:
     blog: https://trunc8.github.io/2022/11/03/capstone-first-progress
   #   repo: https://github.com/trunc8/Dynamic-Octomap
