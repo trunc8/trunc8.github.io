@@ -199,6 +199,8 @@
     alt: 
   date: Jul '18
   description: Led 5-membered team to develop hand-gesture controlled brick-breaking game coded in Processing IDE. One among 3 projects showcased at Undergraduate Freshmen Technical Orientation 2018
+  links:
+    demo: https://youtu.be/HFHVBlhADvA
 
 - title: Conway’s Game of Life
   image:
