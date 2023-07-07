@@ -224,7 +224,7 @@
   date: Mar '19
   description: Programmed ESP8266 (Wi-Fi microchip) to spoof an access point and send de-authentication frames, exploiting vulnerability in IEEE 802.11 standards of the absence of encryption for management frames
   links:
-    demo: https://youtu.be/HFHVBlhADvA
+    # demo: 
 
 - title: Gyro Brick Breaker
   image:
