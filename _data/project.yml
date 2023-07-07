@@ -1,13 +1,46 @@
+- title: Quadruped Robot Challenge | ICRA '23, London
+  image:
+    src: /assets/img/project/qrc.png
+    alt: 
+  date: Feb '23 - May '23
+  description: Programmed quadruped robot control to navigate a challenge course delineating where the wheeled/tracked robots will fail
+  links:
+    # repo: 
+    demo: https://youtu.be/GlidNFKa-us
+    # blog: 
+
+- title: 2D Footstep Planning
+  image:
+    src: /assets/img/project/2D-footstep-planning.png
+    alt: 
+  date: Jan '23 - May '23
+  description: Implementation of footstep planner for a biped robot on discontinuous 2D environments
+  links:
+    repo: https://github.com/trunc8/2D-footstep-planning
+    demo: https://github.com/trunc8/2D-footstep-planning#demo
+    blog: https://github.com/trunc8/2D-footstep-planning/blob/main/report.pdf
+
+- title: Jenga Playing Manipulator Arm
+  image:
+    src: /assets/img/project/jenga.png
+    alt: 
+  date: Jan '23 - May '23
+  description: Designed probe and grasp pipeline for the Franka Emika Panda robot to build Jenga tower
+  links:
+    # repo: https://github.com/trunc8/2D-footstep-planning
+    demo: https://youtu.be/u-DxPaPN3sg
+    # blog: https://github.com/trunc8/2D-footstep-planning/blob/main/report.pdf
+
 - title: Project DarkBot
   image:
     src: /assets/img/project/darkbot.png
-    alt: 
+    alt: Darkbot image
   date: Sep '22 - Dec '23
   description: Quadruped Robot for Assistive Search in Narrow and Cluttered Environment. Capstone Project at CMU Robotics Institute under Prof. Sebastian Scherer, AirLab
   links:
     blog: https://trunc8.github.io/2022/11/03/capstone-first-progress
   #   repo: https://github.com/trunc8/Dynamic-Octomap
-  #   demo: https://youtu.be/rUUqPmobm1k
+    demo: https://youtu.be/iyLnfotGtfM
 
 
 - title: ROS2 RADI and single-robot warehouse exercise
