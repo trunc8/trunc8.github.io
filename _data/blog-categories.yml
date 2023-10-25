@@ -16,5 +16,5 @@
 - name: Miscellany
   category: miscellany
 
-- name: Scribbles and Thoughts
-  category: scribbles
+# - name: Scribbles and Thoughts
+#   category: scribbles
