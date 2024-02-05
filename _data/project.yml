@@ -1,9 +1,42 @@
+- title: Long Horizon Task Planning for Quadruped Robot
+  image:
+    src: /assets/img/project/default.jpg
+    alt: 
+  date: Sep '23 - Present
+  description: Obtained controller using curriculum-based learning in Isaac Gym; distilling vision-based policy to real Go1 robot. Generated local motion time & energy costs dataset and trained cost predictor as a multi-head convolutional NN. Demonstrated long horizon task planning with user-defined objective using A* search guided by the cost predictor
+  links:
+    # repo: https://github.com/trunc8/2D-footstep-planning
+    # demo: https://github.com/trunc8/2D-footstep-planning#demo
+    # blog: https://github.com/trunc8/2D-footstep-planning/blob/main/report.pdf
+
+- title: Autonomous Quadruped in Unknown Cluttered Terrains
+  image:
+    src: /assets/img/project/darkbot.png
+    alt: Darkbot image
+  date: Sep '22 - Dec '23
+  description: MRSD Capstone Project at CMU Robotics Institute under Prof. Sebastian Scherer, AirLab. Devised non-linear model predictive control tracked using reactive whole-body control and deployed to quadruped. Implemented safety features for disaster sites & demonstrated on-demand temporary takeover by safety operator. Integrated localization (Superodometry), controller (custom), and exploration (TARE Planner) sub-systems. Demonstrated robust exploration at 16.5 m2/min coverage rate of unknown, cluttered room with trapped humans
+  links:
+    blog: https://trunc8.github.io/2022/11/03/capstone-first-progress
+  #   repo: https://github.com/trunc8/Dynamic-Octomap
+    demo: https://youtu.be/iyLnfotGtfM
+
+- title: Breadth vs Depth - Benchmarking Generalists and Specialists in Robot Agility Learning
+  image:
+    src: /assets/img/project/default.jpg
+    alt: 
+  date: Sep '23 - Dec '23
+  description: Implemented an RL+PPO based Selector Policy to select the most effective specialist skill in varying environmental conditions
+  links:
+    # repo: https://github.com/trunc8/2D-footstep-planning
+    # demo: https://github.com/trunc8/2D-footstep-planning#demo
+    # blog: https://github.com/trunc8/2D-footstep-planning/blob/main/report.pdf
+
 - title: Quadruped Robot Challenge | ICRA '23, London
   image:
     src: /assets/img/project/qrc.png
     alt: 
-  date: Feb '23 - May '23
-  description: Programmed quadruped robot control to navigate a challenge course delineating where the wheeled/tracked robots will fail
+  date: May '23 - Jun '23
+  description: Deployed controller to Unitree Go1 & navigated challenge course using Beyond Visual Line-of-Sight teleoperation. Recovered from falls using pre-defined maneuvers and achieved the third position representing Carnegie Mellon.
   links:
     # repo: 
     demo: https://youtu.be/GlidNFKa-us
@@ -30,18 +63,6 @@
     # repo: https://github.com/trunc8/2D-footstep-planning
     demo: https://youtu.be/u-DxPaPN3sg
     # blog: https://github.com/trunc8/2D-footstep-planning/blob/main/report.pdf
-
-- title: Project DarkBot
-  image:
-    src: /assets/img/project/darkbot.png
-    alt: Darkbot image
-  date: Sep '22 - Dec '23
-  description: Quadruped Robot for Assistive Search in Narrow and Cluttered Environment. Capstone Project at CMU Robotics Institute under Prof. Sebastian Scherer, AirLab
-  links:
-    blog: https://trunc8.github.io/2022/11/03/capstone-first-progress
-  #   repo: https://github.com/trunc8/Dynamic-Octomap
-    demo: https://youtu.be/iyLnfotGtfM
-
 
 - title: ROS2 RADI and single-robot warehouse exercise
   image:
