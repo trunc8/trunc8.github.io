@@ -4,7 +4,7 @@ title:  "Tutorial: Quick guide to using make and Makefile"
 date:   2021-04-03 01:20:00 +0530
 blurb: ""
 og_image: /assets/img/content/PLACEHOLDER-IMG/Banner.jpg
-category: random
+category: cs
 tags: tutorials
 ---
 

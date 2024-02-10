@@ -71,7 +71,7 @@ git clone https://github.com/ANYbotics/grid_map.git
 catkin build grid_map
 ```
 
-*Interesting aside here:* The `grid_map` package is a metapackage. The other packages like `grid_map_core` and `grid_map_octomap` are where the actual code is implemented. So what's the difference between a package and a metapackage? I answer it in a [short blog post]({{ site.baseurl }}{% link _posts/robotics/2023-03-27-metapackage.md %}).
+*Interesting aside here:* The `grid_map` package is a metapackage. The other packages like `grid_map_core` and `grid_map_octomap` are where the actual code is implemented. So what's the difference between a package and a metapackage? I answer it in a [short blog post]({{ site.baseurl }}{% link _posts/cs/2023-03-27-metapackage.md %}).
 
 ### Simpletest package
 [trunc8/grid_map_simpletest](https://github.com/trunc8/grid_map_simpletest)
