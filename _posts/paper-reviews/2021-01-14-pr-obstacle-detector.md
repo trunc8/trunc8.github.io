@@ -4,7 +4,7 @@ title:  "Paper Review: Detection  and  Tracking  of  2D  Geometric  Obstacles  f
 date:   2021-01-14 20:00:00 +0530
 blurb: ""
 og_image: /assets/img/content/obstacle-detector/Banner.png
-category: paper-reviews
+category: robotics
 ---
 
 <img src="{{ "/assets/img/content/obstacle-detector/Banner.png" | absolute_url }}" alt="Banner image" class="post-pic"/>

@@ -43,3 +43,9 @@ Robot halts if the planner uncertainty exceeds threshold or if requested command
 
 ### Joint Level Controller
 Non-linear model predictive controller (NMPC) designed to convert the center of mass trajectory into precise joint states. Responding swiftly to environmental disturbances, the joint controller solves a high-frequency whole-body optimization problem, generating accurate joint torques as output. Leveraging the SQP algorithm from ETH Zurich's OCS2 package, the optimization process ensures efficient and effective problem-solving.
+
+
+
+Notes
+---
+Devised non-linear model predictive control tracked using reactive whole-body control and deployed to quadruped. Implemented safety features for disaster sites & demonstrated on-demand temporary takeover by safety operator. Integrated localization (Superodometry), controller (custom), and exploration (TARE Planner) sub-systems. Demonstrated robust exploration at 16.5 m2/min coverage rate of unknown, cluttered room with trapped humans

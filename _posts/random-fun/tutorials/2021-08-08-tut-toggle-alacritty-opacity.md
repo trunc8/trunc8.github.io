@@ -4,7 +4,8 @@ title:  "Tutorial: Key-binding to toggle Alacritty background opacity"
 date:   2021-08-08 09:56:00 +0530
 blurb: ""
 og_image: /assets/img/content/PLACEHOLDER-IMG/Banner.jpg
-category: tutorials
+category: random
+tags: tutorials
 ---
 
 <img src="{{ "/assets/img/content/PLACEHOLDER-IMG/Banner.jpg" | absolute_url }}" alt="Banner image" class="post-pic"/>

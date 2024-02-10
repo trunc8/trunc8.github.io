@@ -1,9 +1,9 @@
 - title: Long Horizon Task Planning for Quadruped Robot
   image:
-    src: /assets/img/project/default.jpg
+    src: /assets/img/project/task-planning-quadruped.png
     alt: 
   date: Sep '23 - Present
-  description: Obtained controller using curriculum-based learning in Isaac Gym; distilling vision-based policy to real Go1 robot. Generated local motion time & energy costs dataset and trained cost predictor as a multi-head convolutional NN. Demonstrated long horizon task planning with user-defined objective using A* search guided by the cost predictor
+  description: We obtained quadruped controller using curriculum-based learning in Isaac Gym. We collected time & energy costs dataset for local motions and trained cost predictor as a multi-head convolutional NN. We demonstrated long horizon task planning with user-defined objective using A* search guided by the cost predictor
   links:
     # repo: https://github.com/trunc8/2D-footstep-planning
     # demo: https://github.com/trunc8/2D-footstep-planning#demo
@@ -14,7 +14,7 @@
     src: /assets/img/project/darkbot.png
     alt: Darkbot image
   date: Sep '22 - Dec '23
-  description: MRSD Capstone Project at CMU Robotics Institute under Prof. Sebastian Scherer, AirLab. Devised non-linear model predictive control tracked using reactive whole-body control and deployed to quadruped. Implemented safety features for disaster sites & demonstrated on-demand temporary takeover by safety operator. Integrated localization (Superodometry), controller (custom), and exploration (TARE Planner) sub-systems. Demonstrated robust exploration at 16.5 m2/min coverage rate of unknown, cluttered room with trapped humans
+  description: This was my MRSD Capstone Project at CMU with Prof. Sebastian Scherer, AirLab. The MRSD capstone is a three-semester long project with a budget of $5000 from MRSD + funding from sponsors. At the end of the project, our robot was able to explore unknown and cluttered disaster sites to search for trapped humans.
   links:
     blog: https://trunc8.github.io/2022/11/03/capstone-first-progress
   #   repo: https://github.com/trunc8/Dynamic-Octomap
@@ -22,10 +22,10 @@
 
 - title: Breadth vs Depth - Benchmarking Generalists and Specialists in Robot Agility Learning
   image:
-    src: /assets/img/project/default.jpg
+    src: /assets/img/project/breadth-depth.png
     alt: 
   date: Sep '23 - Dec '23
-  description: Implemented an RL+PPO based Selector Policy to select the most effective specialist skill in varying environmental conditions
+  description: We trained specialist skills like jumping, climbing, and narrow beam walking. I implemented an RL+PPO-based Selector Policy to select the most effective specialist skill in varying environmental conditions. We compared its performance against a generalist policy trained on a combination of all skills.
   links:
     # repo: https://github.com/trunc8/2D-footstep-planning
     # demo: https://github.com/trunc8/2D-footstep-planning#demo

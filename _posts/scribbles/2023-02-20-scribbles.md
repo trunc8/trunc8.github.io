@@ -14,6 +14,7 @@ draft: True
 
 There's so much I want to catch up on. Especially starting with optimization.
 
+Some of my rough notes below:
 
 # OCRL
 - Lec 1

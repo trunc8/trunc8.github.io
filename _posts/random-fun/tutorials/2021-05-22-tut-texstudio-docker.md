@@ -4,7 +4,8 @@ title:  "Tutorial: TeXstudio inside Docker container"
 date:   2021-05-22 19:15:00 +0530
 blurb: ""
 og_image: /assets/img/content/tut-texstudio/Banner.png
-category: tutorials
+category: random
+tags: tutorials
 ---
 
 <img src="{{ "/assets/img/content/tut-texstudio/Banner.png" | absolute_url }}" alt="Banner image" class="post-pic"/>

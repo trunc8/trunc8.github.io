@@ -4,7 +4,8 @@ title:  "Tutorial: Quick guide to using make and Makefile"
 date:   2021-04-03 01:20:00 +0530
 blurb: ""
 og_image: /assets/img/content/PLACEHOLDER-IMG/Banner.jpg
-category: tutorials
+category: random
+tags: tutorials
 ---
 
 <img src="{{ "/assets/img/content/PLACEHOLDER-IMG/Banner.jpg" | absolute_url }}" alt="Banner image" class="post-pic"/>

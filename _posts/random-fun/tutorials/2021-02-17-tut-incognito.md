@@ -4,7 +4,8 @@ title:  "Tutorial: Disable incognito mode in Chrome (Linux)"
 date:   2021-02-17 12:00:00 +0530
 blurb: ""
 og_image: /assets/img/content/PLACEHOLDER-IMG/Banner.jpg
-category: tutorials
+category: random
+tags: tutorials
 ---
 
 <img src="{{ "/assets/img/content/PLACEHOLDER-IMG/Banner.jpg" | absolute_url }}" alt="Banner image" class="post-pic"/>

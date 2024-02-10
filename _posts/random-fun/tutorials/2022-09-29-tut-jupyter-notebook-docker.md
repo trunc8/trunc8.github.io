@@ -4,7 +4,8 @@ title:  "Tutorial: Jupyter Notebook inside Docker container"
 date:   2022-09-29 10:08:00 -0400
 blurb: ""
 og_image: /assets/img/content/tut-jupyter/Banner.png
-category: tutorials
+category: random
+tags: tutorials
 ---
 
 <img src="{{ "/assets/img/content/tut-jupyter/Banner.png" | absolute_url }}" alt="Banner image" class="post-pic"/>

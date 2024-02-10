@@ -25,23 +25,18 @@
             </ol>
           </details> -->
 
-            <ol>
-              <li><a href="https://theroboticsclub.github.io/gsoc2021-Siddharth_Saha/blog" target="_blank">GSoC Blog &nbsp;<i class="fa fa-external-link fa-xs" aria-hidden="true"></i> </a> </li>
+          <ol>
+            <li><a href="https://theroboticsclub.github.io/gsoc2021-Siddharth_Saha/blog" target="_blank">GSoC Blog &nbsp;<i class="fa fa-external-link fa-xs" aria-hidden="true"></i> </a> </li>
 
-              {% for member in site.data.blog-categories %}
-                <li><a href="#{{ member.category }}">{{ member.name }}</a></li>
-              {% endfor %}              
-            </ol>
+            {% for member in site.data.blog-categories %}
+              <li><a href="#{{ member.id }}">{{ member.name }}</a></li>
+            {% endfor %}
+          </ol>
 
-            <center><i class="fa fa-dog" aria-hidden="true"></i></center>
+          <center><i class="fa fa-dog" aria-hidden="true"></i></center>
 
-          {% for member in site.data.blog-categories %}
-            <h2 id="{{ member.category }}">{{ member.name }}</h2>
-            {% include category-posts.html %}
-          {% endfor %}
-          
-          <br/>
 
+          <h2>GSoC Blog</h2>
           <p style="color: #4f4944; font-size: 80%;">
               GSoC blog on external site 
               <a href="https://theroboticsclub.github.io/gsoc2021-Siddharth_Saha/blog" target="_blank">
@@ -49,7 +44,11 @@
               </a>
           </p>
 
-          <br/>
+          {% for member in site.data.blog-categories %}
+            <h2 id="{{ member.id }}">{{ member.name }}</h2>
+            {% include category-posts.html %}
+            <p> <!-- To create whitespace at end of category list -->
+          {% endfor %}
 
         </div>
       

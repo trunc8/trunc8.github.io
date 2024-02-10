@@ -4,7 +4,7 @@ title:  "Paper Review: OctoMap - 3D mapping framework based on octrees"
 date:   2020-12-20 16:00:00 +0530
 blurb: ""
 og_image: /assets/img/content/pr-octomap/Banner.png
-category: paper-reviews
+category: robotics
 ---
 
 <img src="{{ "/assets/img/content/pr-octomap/Banner.png" | absolute_url }}" alt="Banner image" class="post-pic"/>

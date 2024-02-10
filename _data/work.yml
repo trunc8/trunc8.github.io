@@ -1,38 +1,52 @@
-- title: System Dev Intern (C++ Specialist)
+
+- title: Graduate Teaching Assistant
+  company: The Robotics Institute, CMU, Pittsburgh, PA
+  image:
+    src: /assets/img/work/ri-logo.png
+    alt: The Robotics Institute
+  date: Jan '24 - May '24
+  description: Planning Techniques for Robotics (Prof. Maxim Likhachev). This is my last semester at CMU. I took this course last semester and discovered my love for robot planning. I'm sharing my joy with students and helping them get better at it
+
+- title: SDE Intern (C++ Specialist)
   company: Amazon Robotics, Westborough, MA
   image:
     src: /assets/img/work/ar-logo.png
     alt: Amazon Robotics
   date: May '23 - Aug '23
-  description: Prototyping a novel perceptual approach to guide manipulation robots using a rich understanding of the scene
-- title: Graduate Research Assistant (Robotic Exploration Lab)
-  company: Carnegie Mellon University, Pittsburgh, PA
-  image:
-    src: /assets/img/work/rex-logo.png
-    alt: Robotic Exploration Lab
-  date: Nov '22 - Present
-  description: Implemented hybrid trajectory optimization for a biped in simulation to traverse unknown rough terrains
+  description: I spent my first summer in the U.S. in the lovely city of Boston. The internship was off to a rough start. During the second week, I was at my competition in London when my manager informed that he was leaving. I turned things around and delivered a terrific project by the end of the internship
+
 - title: Structuring Analyst
   company: Goldman Sachs, Bengaluru
   image:
     src: /assets/img/work/gs-logo.png
     alt: Goldman Sachs
   date: Jul '21 - Jul '22
-  description: Returned to a full-time role in the Mortgage Structuring Strategies team, Global Markets Division
+  description: I returned to a full-time role in the Mortgage Structuring Strategies team, Global Markets Division until I left for my Master's at CMU
+
 - title: Student Developer
   company: Google Summer of Code @JdeRobot
   image:
     src: /assets/img/work/gsoc-logo.png
     alt: Google Summer of Code
   date: Jun '21 - Aug '21
-  description: Worked on the project titled *ROS2-RADI and Amazon warehouse exercise in web-based template for ROS2*
+  description: This was in the summer that I graduated from IITB. My project was titled *ROS2-RADI and Amazon warehouse exercise in web-based template for ROS2*. I learned about Docker, ROS2, and web servers. We deployed the project and I continued contributing till Aug '22
+
 - title: Quantitative Summer Analyst
   company: Goldman Sachs, Bengaluru
   image:
     src: /assets/img/work/gs-logo.png
     alt: Goldman Sachs
   date: May '20 - Jun '20
-  description: Interned in the Mortgage Structuring Strategies team, GMD. We achieved a sharp improvement in arbitrage by optimizing cash-flows through different derivative instruments
+  description: I interned in the Mortgage Structuring Strategies team, GMD. My project resulted in a sharp improvement in arbitrage by optimizing cash-flows through multiple derivative instruments
+
+- title: Teaching Assistant | Department of Physics
+  company: IIT Bombay, Mumbai, India
+  image:
+    src: /assets/img/education/iitb-logo.png
+    alt: IIT Bombay
+  date: Jan '24 - May '24
+  description: Electricity and Magnetism (Prof. Mithun Mitra). This was in my third semester at IITB. This was a compulsory course for freshmen. I enjoyed Prof. Mithun's teaching so much, that I was keen to give back. I conducted recitations for a batch of 52 students
+
 - title: Developer Intern
   company: Synergistic Financial Network Pvt Ltd, Mumbai
   image:
@@ -40,3 +54,11 @@
     alt: Mosambee
   date: Dec '18 - Feb '19
   description: The firm offers payment solutions by providing EMV enabled mobile Point of Sale (POS) devices. My team delivered a Java platform to migrate existing Transaction Manager to Apache Kafka in order to process 100+ transaction requests/second
+
+- title: Teaching Assistant
+  company: Department of Chemistry, IIT Bombay, Mumbai, India
+  image:
+    src: /assets/img/education/iitb-logo.png
+    alt: IIT Bombay
+  date: Apr '18 - May '18
+  description: Physical Chemistry (Prof. Shobhna Kapoor). This was my first summer at IITB. I was the only student in freshmen year selected to serve as a teaching assistant. I guided a class of 15 students with problem-solving skills and concepts in physical chemistry

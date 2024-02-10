@@ -4,7 +4,8 @@ title:  "Tutorial: Getting shell-escape in TeXStudio to use python pygments"
 date:   2023-10-24 23:48:00 +0530
 blurb: ""
 og_image: /assets/img/content/PLACEHOLDER-IMG/Banner.jpg
-category: tutorials
+category: random
+tags: tutorials
 ---
 
 <img src="{{ "/assets/img/content/PLACEHOLDER-IMG/Banner.jpg" | absolute_url }}" alt="Banner image" class="post-pic"/>
@@ -22,3 +23,6 @@ And add:
 
 ### Reference
 https://tex.stackexchange.com/questions/99475/how-to-invoke-latex-with-the-shell-escape-flag-in-texstudio-former-texmakerx
+
+
+TODO: Write the error message and add screenshots of what it looks like before and after.

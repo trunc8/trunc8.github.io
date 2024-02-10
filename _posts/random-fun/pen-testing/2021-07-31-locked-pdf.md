@@ -4,7 +4,8 @@ title:  "Accessing locked pdf using crunch and JohnTheRipper"
 date:   2021-07-31 19:20:00 +0530
 blurb: ""
 og_image: /assets/img/content/locked-pdf/Banner.png
-category: hack
+category: random
+tags: pen-testing
 ---
 
 <img src="{{ "/assets/img/content/locked-pdf/Banner.png" | absolute_url }}" alt="Banner image" class="post-pic"/>

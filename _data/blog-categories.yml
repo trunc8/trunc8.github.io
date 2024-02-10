@@ -1,20 +1,18 @@
 - name: Robotics
+  id: robotics
   category: robotics
 
-- name: Personal Anecdotes
+- name: CS/Programming
+  id: cs
+  category: cs
+
+- name: Personal Updates
+  id: personal-updates
   category: life-events
 
-- name: Paper Reviews
-  category: paper-reviews
-
-- name: Hacking
-  category: tutorials
-
-- name: Penetration Testing
-  category: hack
-
-- name: Miscellany
-  category: miscellany
+- name: Random Fun
+  id: random-fun
+  category: random
 
 # - name: Scribbles and Thoughts
 #   category: scribbles
