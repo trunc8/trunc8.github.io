@@ -20,7 +20,7 @@ category: cs
 1. [Principles while Choosing Data Structure]()
 1. [How to Optimize Code?]()
 1. [What is Debugging and Profiling?]()
-1. [Debugging](#debugging)
+1. [Debugging Across Multiple C++ Files](#debugging-across-multiple-c-files)
 1. [Debugging Demos](#debugging-demos)
 1. [Profiling](#profiling)
 1. [Features of C++]()
