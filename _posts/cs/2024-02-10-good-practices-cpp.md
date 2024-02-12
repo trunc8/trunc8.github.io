@@ -24,21 +24,10 @@ category: cs
 1. [Debugging Demos](#debugging-demos)
 1. [Profiling](#profiling)
 1. [Features of C++]()
-    + STL
-    + Assert
-    + Inheritance
-    + Operator overloading
-    + Lambda and Capturing
-    + Smart Pointers
-    + File IO
-    + C++11 Features: auto, range-based loops, initializer lists
-    + Template
-    + Exception
 1. [Gotcha Moments for me]()
 1. [Repository of C++ code for Common Tasks]()
-1. [Appendix]()
-    + Tools for Memory Analysis and Debugging
-1. [References]()
+1. [Appendix](#appendix)
+1. [References](#references)
 
 ### Introduction
 This blog contains material that I prepared for my recitation "Efficient C++." I will present this on Feb 12, 2024 to the *Planning Techniques for Robotics* class at CMU.
@@ -171,7 +160,8 @@ Steps:
 src="https://www.youtube.com/embed/5e0M7F8CB1U?rel=0&amp;controls=1&amp;start=0" 
 frameborder="0" 
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
+allowfullscreen></iframe>  
+[Guide on what those shortcuts mean](https://www.tutorialspoint.com/gnu_debugger/gdb_commands.htm)
 <br>
 
 #### VSCode
@@ -357,3 +347,4 @@ Testing:
 - [https://www.reddit.com/r/cpp_questions/comments/fxrkb6/learning_to_write_efficient_c/](https://www.reddit.com/r/cpp_questions/comments/fxrkb6/learning_to_write_efficient_c/)
 - [https://www.agner.org/optimize/optimizing_cpp.pdf](https://www.agner.org/optimize/optimizing_cpp.pdf)
 - [https://stackoverflow.com/questions/41725613/definition-of-debugging-profiling-and-tracing#:~:text=Remote%20debugging%20is%20the%20process,analysis%20tool%20called%20a%20profiler.](https://stackoverflow.com/questions/41725613/definition-of-debugging-profiling-and-tracing#:~:text=Remote%20debugging%20is%20the%20process,analysis%20tool%20called%20a%20profiler.)
+- [https://man7.org/linux/man-pages/man1/g++.1.html](https://man7.org/linux/man-pages/man1/g++.1.html)
