@@ -19,13 +19,13 @@ category: cs
 1. [Data Structures](#data-structures)
 1. [Principles while Choosing Data Structure]()
 1. [How to Optimize Code?]()
-1. [What is Debugging and Profiling?]()
+1. [What is Debugging and Profiling?](#what-is-debugging-and-profiling)
 1. [Debugging Across Multiple C++ Files](#debugging-across-multiple-c-files)
 1. [Debugging Demos](#debugging-demos)
-1. [Profiling](#profiling)
+1. [Profiling Methods](#profiling-methods)
 1. [Features of C++]()
 1. [Gotcha Moments for me]()
-1. [Repository of C++ code for Common Tasks]()
+1. [Repository of C++ code for Common Tasks](#repository-of-c-code-for-common-tasks)
 1. [Appendix](#appendix)
 1. [References](#references)
 
@@ -33,24 +33,54 @@ category: cs
 This blog contains material that I prepared for my recitation "Efficient C++." I will present this on Feb 12, 2024 to the *Planning Techniques for Robotics* class at CMU.
 
 ### Data Structures
-- Array
-- Stack: LIFO
-- Queue: FIFO
-- Linked List and Doubly linked list
-- Hash table: O(1) access -> unordered_set, unordered_map
-- Graph
-- Tree: Binary Tree, BST, Tries, Heap (max heap, min heap) -> set, map
-- Custom data structure: When do you think of it? (??)
+An Abstract Data Type is an interface for interacting with data. It defines operations and results, but not how they're implemented. Examples: list, stack, set, queue, map, tree, priority queue, graph, etc.
+
+Data Structure is an implementation of an Abstract Data Type.
+
+#### Array
+<!-- ```cpp
+int arr[5] = {10,20,30};
+std::vector<int> vec = {10,20,30};
+``` -->
+
+#### Stack
+
+
+#### Queue
+
+
+#### Linked List and Doubly linked list
+
+
+#### Hash table
+
+
+#### Graph
+
+
+#### Tree
+
+
+#### Custom data structure
+
+
 
 ### Principles while Choosing Data Structure
+1. Data Access Patterns: If you need fast access to elements by index, arrays or hash tables are suitable. For sequential access, linked lists are efficient.
+2. Data Relationship: Use trees for hierarchical data, graphs for interconnected data. For example, trees are ideal for family trees, while graphs suit social networks.
+3. Frequency of Operations: If your application involves frequent additions and deletions, dynamic data structures like linked lists or balanced trees can be more efficient than arrays.
+4. Memory Efficiency: Consider the memory overhead of each data structure. For instance, linked lists consume more memory than arrays due to storage of additional pointers.
+
+Specific to robot planning problems:
+
+- Breadth-first-search uses the Queue data structure
+- Depth-first-search uses the Stack data structure. It can also be implemented using recursion. DFS still uses the same data structure because recursion follows the call stack.
 
 
 ### How to Optimize Code?
 - Strength reduction: Replace sum of first N integers with the formula
-- Data structures (like lookup table)
-- Algorithms
-    - Dynamic programming
-    - Recursion
+- Check if there are more efficient data structures based on the most frequent operation on the data structure (like lookup table)
+- Use Algorithms with faster time complexity (Big O)
 
 
 ### What is Debugging and Profiling?
@@ -155,6 +185,7 @@ Steps:
 
 
 ### Debugging Demos
+*If you want to follow along with these demos, please clone [this repository](https://github.com/trunc8/efficient-cpp)*
 #### Terminal
 <iframe width="600" height="350"
 src="https://www.youtube.com/embed/5e0M7F8CB1U?rel=0&amp;controls=1&amp;start=0" 
@@ -166,16 +197,28 @@ allowfullscreen></iframe>
 
 #### VSCode
 <iframe width="600" height="350"
-src="https://www.youtube.com/embed/5e0M7F8CB1U?rel=0&amp;controls=1&amp;start=0" 
+src="https://www.youtube.com/embed/chUfsvwmjEI?rel=0&amp;controls=1&amp;start=0" 
 frameborder="0" 
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 allowfullscreen></iframe>
 <br>
 
 
-### Profiling
+### Profiling Methods
 #### Without tools:
 This is the simplest form of profiling based on timing blocks of code. Print time taken between two points in the code using `chrono`
+
+```cpp
+#include <chrono> // At the top
+
+auto start = std::chrono::high_resolution_clock::now();
+/**
+* Some computation
+*/
+auto end = std::chrono::high_resolution_clock::now();
+auto duration = std::chrono::duration_cast<std::chrono::seconds>(end - start).count();
+printf("Wall clock time: %.2f s\n", duration / 1.0e6);
+```
 
 #### With tools:
 CPU Profiler: Samples CPU each millisecond to check execution is currently inside which function
@@ -191,7 +234,11 @@ Names of some tools:
 
 
 #### Assert
-
+When to use?
+- Universal truths
+- For ensuring that assumptions which the code is based on are actually true in reality, before the code continues processing under those assumptions
+- Indicate that you're breaking your own contract, your program invariants
+- Example: Frequency calculated from a stream of functions becomes negative. Useful in debugging. Asserts must never fail
 
 #### Inheritance
 
@@ -218,6 +265,22 @@ Names of some tools:
 
 
 
+
+### Repository of C++ code for Common Tasks
+Sort vector `nums` while keeping track of indices
+
+```cpp
+vector<pair<int,int>> vp(nums.size());
+for(int i=0; i<nums.size(); i++){
+    vp[i] = make_pair(nums[i],i);
+}
+sort(vp.begin(), vp.end()); // By default sorts using the first item
+```
+
+Convert a string `str` to upper case
+```cpp
+std::transform(str.begin(), str.end(), str.begin(), ::toupper);
+```
 
 ### Gotcha Moments for me
 - Clarification about pointers
@@ -246,10 +309,10 @@ public:
     }
 
 
-    // This works-
+    // This will work-
     void reverse(ListNode* curr, ListNode* prev, ListNode* &reverse_head) {
     
-    // This does not-
+    // This will not-
     // void reverse(ListNode* curr, ListNode* prev, ListNode* reverse_head) {
     // Because even a pointer reverse_head needs to be passed by reference
 
@@ -272,24 +335,12 @@ public:
 };
 ```
 
-### Repository of C++ code for Common Tasks
-Sort vector `nums` while keeping track of indices
-
-```cpp
-vector<pair<int,int>> vp(nums.size());
-for(int i=0; i<nums.size(); i++){
-    vp[i] = make_pair(nums[i],i);
-}
-sort(vp.begin(), vp.end()); // By default sorts using the first item
-```
-
-Convert a string `str` to upper case
-```cpp
-std::transform(str.begin(), str.end(), str.begin(), ::toupper);
-```
-
 
 ### Appendix
+#### FAQs
+1. Why is it `std::string` but simply `int` or `float`?
+    - The string data type is not built into the C++ language, but is implemented as part of the C++ standard library, in the std namespace. `std` is the namespace in which all of the C++ standard library functions, classes, and objects reside.
+
 #### Memory Analysis & Debugging Tools
 - GDB
 - Valgrind
@@ -334,10 +385,6 @@ Testing:
 - Code coverage: gcov
 
 
-#### FAQs
-1. Why is it `std::string` but simply `int` or `float`?
-    - The string data type is not built into the C++ language, but is implemented as part of the C++ standard library, in the std namespace. `std` is the namespace in which all of the C++ standard library functions, classes, and objects reside.
-
 ### References:
 - [https://www.einfochips.com/wp-content/uploads/resources/a-practical-approach-to-optimize-code-implementation.pdf](https://www.einfochips.com/wp-content/uploads/resources/a-practical-approach-to-optimize-code-implementation.pdf)
 - [https://missing.csail.mit.edu/2020/debugging-profiling/](https://missing.csail.mit.edu/2020/debugging-profiling/)
@@ -348,3 +395,4 @@ Testing:
 - [https://www.agner.org/optimize/optimizing_cpp.pdf](https://www.agner.org/optimize/optimizing_cpp.pdf)
 - [https://stackoverflow.com/questions/41725613/definition-of-debugging-profiling-and-tracing#:~:text=Remote%20debugging%20is%20the%20process,analysis%20tool%20called%20a%20profiler.](https://stackoverflow.com/questions/41725613/definition-of-debugging-profiling-and-tracing#:~:text=Remote%20debugging%20is%20the%20process,analysis%20tool%20called%20a%20profiler.)
 - [https://man7.org/linux/man-pages/man1/g++.1.html](https://man7.org/linux/man-pages/man1/g++.1.html)
+- [https://www.linkedin.com/advice/0/whats-best-way-determine-data-structure-algorithm-right-qtw0c](https://www.linkedin.com/advice/0/whats-best-way-determine-data-structure-algorithm-right-qtw0c?utm_source=share&utm_campaign=copy_contribution_link&utm_medium=member_desktop&contributionUrn=urn%3Ali%3Acomment%3A%28articleSegment%3A%28urn%3Ali%3AlinkedInArticle%3A7151999305568931840%2C7151999307347382273%29%2C7152191285741674496%29&articleSegmentUrn=urn%3Ali%3AarticleSegment%3A%28urn%3Ali%3AlinkedInArticle%3A7151999305568931840%2C7151999307347382273%29&dashContributionUrn=urn%3Ali%3Afsd_comment%3A%287152191285741674496%2CarticleSegment%3A%28urn%3Ali%3AlinkedInArticle%3A7151999305568931840%2C7151999307347382273%29%29)
