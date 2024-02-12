@@ -16,12 +16,13 @@ category: cs
 <!-- 1. [Debugging](#debugging) -->
 
 1. [Introduction](#introduction)
-1. [Data Structures]()
+1. [Data Structures](#data-structures)
 1. [Principles while Choosing Data Structure]()
 1. [How to Optimize Code?]()
 1. [What is Debugging and Profiling?]()
-1. [Debugging]()
-1. [Profiling]()
+1. [Debugging](#debugging)
+1. [Debugging Demos](#debugging-demos)
+1. [Profiling](#profiling)
 1. [Features of C++]()
     + STL
     + Assert
@@ -65,25 +66,41 @@ This blog contains material that I prepared for my recitation "Efficient C++." I
 
 ### What is Debugging and Profiling?
 #### Debugging
-Looking for bugs and their cause in applications. A bug can be an error or just some unexpected behaviour (e.g. a user complains that he/she receives an error when he/she uses an invalid date format). The problem is that the error may occur several lines of code after the actual bug. Therefore, we need principles of debugging to quickly locate the bug. Typically a debugger is used that can pause the execution of an application, examine variables and manipulate them.
+Debugging means to look for bugs and their cause in applications. A bug can be an error or just some unexpected behaviour (e.g. a user complains that he/she receives an error when he/she uses an invalid date format). The problem is that the error may occur several lines of code after the actual bug. Therefore, we need principles of debugging to quickly locate the bug. Typically a debugger is used that can pause the execution of an application, examine variables and manipulate them.
 
 #### Profiling
-Typically refers to CPU Profiling. It's a method to detect how long each function or line of code takes to run and how often it gets executed. The profiler is used to find the bottlenecks in the code. Once you detect the bottleneck, you can greatly increase the speed of execution by applying efficient C++ principles to the bottleneck.
+Profiling typically refers to CPU Profiling. It's a method to detect how long each function or each line of code takes to run and how often it gets executed. The profiler is used to find the bottlenecks in the code. Once you detect it, you might greatly increase the speed of execution by applying efficient C++ principles to the bottleneck.
 
 
-### Debugging
+### Debugging Across Multiple C++ Files
 #### Without tools
 This is the simplest form of debugging. Make expecations on what the variable values should be for a certain input. Print variables at various steps to check that it matches expectation.
 
 Something I use a lot is the pincer move. If my function containing the bug is a large block of code, I will put print statements at the beginning and end. Let's say, the former print statement is alright but the latter print statement shows that something went wrong. Like a pincer, I keep moving my print statements inwards from the front and the back. It converges to the line(s) that are actually causing the bug. This principle becomes more useful with larger code spanning multiple files. I quickly reduce my search space by converging like this.
 
-#### With Tools (Via Terminal)
+#### With Tools (Terminal)
+Check the [Debugging Demos](#debugging-demos) section to see an example of using these.
 ```sh
 g++ -g hello_world.cpp helper.cpp
+# -g flag produces debugging information in the operating 
+# system's native format that gdb can use
 gdb -tui ./a.out
+# -tui flag opens the terminal user interface
 ```
 
-#### With Tools (Via VSCode)
+#### With Tools (VSCode)
+Check the [Debugging Demos](#debugging-demos) section to see an example of using these.
+
+Steps:
+
+- Create a `.vscode` folder in your project folder
+- Create and add the below two `json` files to the `.vscode` folder
+- Open the `.cpp` file containing the `int main()` function
+- Click on `Run and Debug` or press `Ctrl+Shift+D`
+- Select the `(gdb) Launch` configuration from the list
+- The debugger should begin working
+- If your executable takes input arguments, add them as comma-separated strings to the `"args": []` field in `launch.json` and run the debugger again
+
 `tasks.json`
 ```json
 {
@@ -124,7 +141,7 @@ gdb -tui ./a.out
         "request": "launch",
         "program": "${fileDirname}/${fileBasenameNoExtension}",
         "preLaunchTask": "C/C++: g++ build active file",
-        "args": [],
+        "args": [], // Remember to add arguments needed by your program
         "stopAtEntry": false,
         "cwd": "${fileDirname}",
         "environment": [],
@@ -148,6 +165,22 @@ gdb -tui ./a.out
 ```
 
 
+### Debugging Demos
+#### Terminal
+<iframe width="600" height="350"
+src="https://www.youtube.com/embed/5e0M7F8CB1U?rel=0&amp;controls=1&amp;start=0" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+<br>
+
+#### VSCode
+<iframe width="600" height="350"
+src="https://www.youtube.com/embed/5e0M7F8CB1U?rel=0&amp;controls=1&amp;start=0" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+<br>
 
 
 ### Profiling
