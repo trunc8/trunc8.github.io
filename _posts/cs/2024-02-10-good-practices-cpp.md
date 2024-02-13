@@ -17,8 +17,6 @@ allowfullscreen></iframe>
 <br />
 
 #### Table of Contents
-<!-- 1. [Debugging](#debugging) -->
-
 1. [Introduction](#introduction)
 1. [Data Structures](#data-structures)
 1. [Principles while Choosing Data Structure](#principles-while-choosing-data-structure)
@@ -27,11 +25,12 @@ allowfullscreen></iframe>
 1. [Debugging Across Multiple C++ Files](#debugging-across-multiple-c-files)
 1. [Debugging Demos](#debugging-demos)
 1. [Profiling Methods](#profiling-methods)
-1. [Features of C++]()
-1. [Gotcha Moments for me]()
+1. [Features of C++](#features-of-c)
+1. [Gotcha Moments for me](#gotcha-moments-for-me)
 1. [Repository of C++ code for Common Tasks](#repository-of-c-code-for-common-tasks)
 1. [Appendix](#appendix)
 1. [References](#references)
+
 
 ### Introduction
 This blog contains material that I prepared for my recitation "Efficient C++." I presented this on Feb 12, 2024 to the *Planning Techniques for Robotics* class at CMU.
