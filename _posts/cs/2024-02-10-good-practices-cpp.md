@@ -37,9 +37,27 @@ allowfullscreen></iframe>
 This blog contains material that I prepared for my recitation "Efficient C++." I presented this on Feb 12, 2024 to the *Planning Techniques for Robotics* class at CMU.
 
 ### Data Structures
-An Abstract Data Type is an interface for interacting with data. It defines operations and results, but not how they're implemented. Examples: list, stack, set, queue, map, tree, priority queue, graph, etc.
+An Abstract Data Type is an interface for interacting with data. It defines operations and results, but not how they're implemented. Examples:
 
-Data Structure is an implementation of an Abstract Data Type.
+- Min/Max Heap
+- Lookup Table
+- Singly and doubly Linked List
+- Set
+- Stack
+- Queue
+- Map
+- Tree
+
+
+Data Structure is an implementation of an Abstract Data Type. Data structures you should know for robot planning:
+
+- unordered_map and unordered_set: O(1) access
+- map and set: Always sorted and no repetitions
+- priority_queue: Implements a min heap
+- stack and queue
+- list
+- Graph: Adjacency Matrix, Adjacency List, (Vertices, Edges)
+- Tree: struct Node
 
 #### Array
 <!-- ```cpp
