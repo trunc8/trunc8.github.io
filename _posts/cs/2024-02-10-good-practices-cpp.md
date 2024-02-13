@@ -21,8 +21,8 @@ allowfullscreen></iframe>
 
 1. [Introduction](#introduction)
 1. [Data Structures](#data-structures)
-1. [Principles while Choosing Data Structure]()
-1. [How to Optimize Code?]()
+1. [Principles while Choosing Data Structure](#principles-while-choosing-data-structure)
+1. [How to Optimize Code?](#how-to-optimize-code)
 1. [What is Debugging and Profiling?](#what-is-debugging-and-profiling)
 1. [Debugging Across Multiple C++ Files](#debugging-across-multiple-c-files)
 1. [Debugging Demos](#debugging-demos)
@@ -48,7 +48,6 @@ An Abstract Data Type is an interface for interacting with data. It defines oper
 - Map
 - Tree
 
-
 Data Structure is an implementation of an Abstract Data Type. Data structures you should know for robot planning:
 
 - unordered_map and unordered_set: O(1) access
@@ -58,33 +57,6 @@ Data Structure is an implementation of an Abstract Data Type. Data structures yo
 - list
 - Graph: Adjacency Matrix, Adjacency List, (Vertices, Edges)
 - Tree: struct Node
-
-#### Array
-<!-- ```cpp
-int arr[5] = {10,20,30};
-std::vector<int> vec = {10,20,30};
-``` -->
-
-#### Stack
-
-
-#### Queue
-
-
-#### Linked List and Doubly linked list
-
-
-#### Hash table
-
-
-#### Graph
-
-
-#### Tree
-
-
-#### Custom data structure
-
 
 
 ### Principles while Choosing Data Structure
@@ -252,9 +224,6 @@ Names of some tools:
 
 
 ### Features of C++
-#### STL
-
-
 #### Assert
 When to use?
 - Universal truths
@@ -262,19 +231,77 @@ When to use?
 - Indicate that you're breaking your own contract, your program invariants
 - Example: Frequency calculated from a stream of functions becomes negative. Useful in debugging. Asserts must never fail
 
+#### Operator overloading
+Check the example usage in my [Foreign Exchange Converter](https://github.com/trunc8/fx-converter-cpp) project. Relevant snippets from the project code:
+```cpp
+ostream &operator<<(ostream &os, const set<string> &s) {
+  for (auto const &i: s) {
+    os << i << " ";
+  }
+  os << "\n";
+  return os;
+}
+```
+
+#### Function Template
+Check the example usage in my [Foreign Exchange Converter](https://github.com/trunc8/fx-converter-cpp) project. Relevant snippets from the project code:
+```cpp
+template<typename T>
+void printSet(set<T> const &s) {
+  // for(auto i : s) makes a copy of each element of s
+  for (auto const &i: s) {
+    cout << i << " ";
+  }
+  cout << endl;
+}
+```
+
+#### Lambda and Capturing
+Check the example usage in my [Foreign Exchange Converter](https://github.com/trunc8/fx-converter-cpp) project. Relevant snippets from the project code:
+```cpp
+int main(void) {
+  ...
+
+  // Using lambda expression
+  auto validateCurrency = [valid_curr](string curr) -> bool {
+    return valid_curr.find(curr) != valid_curr.end();
+  };
+
+  if (!validateCurrency(curr1) || !validateCurrency(curr2)) {
+    cout << "Please use valid currency code. Exiting.\n";
+  }
+  else {
+    ...
+  }
+  ...
+}
+```
+
+#### File IO
+Check the example usage in my [Foreign Exchange Converter](https://github.com/trunc8/fx-converter-cpp) project. We have `currency_codes.txt` as a text file in the same directory. Relevant snippets from the project code:
+```cpp
+#include <fstream>
+
+void fetchValidCurrency(set<string> &valid_curr) {
+  if (ifstream input{"currency_codes.txt"}) {
+    
+    while (input) {
+      string line;
+      getline(input, line);
+      
+      if (line.empty())
+        continue;
+      
+      valid_curr.insert(line);
+    }
+  }
+}
+```
+
 #### Inheritance
 
 
-#### Operator overloading
-
-
-#### Lambda and Capturing
-
-
 #### Smart Pointers
-
-
-#### File IO
 
 
 #### C++11 Features: auto, range-based loops, initializer lists
@@ -286,6 +313,35 @@ When to use?
 #### Exception
 
 
+#### STL Examples
+- Vector
+<!-- ```cpp
+int arr[5] = {10,20,30};
+std::vector<int> vec = {10,20,30};
+``` -->
+
+- Deque
+
+
+- List
+
+
+- Array
+
+
+- Set
+
+
+- Map
+
+
+- Multiset and Multimap
+
+
+- Unordered_set
+
+
+- Unordered_map
 
 
 ### Repository of C++ code for Common Tasks
