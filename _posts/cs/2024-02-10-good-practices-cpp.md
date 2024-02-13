@@ -8,7 +8,11 @@ draft: False
 category: cs
 ---
 
-<img src="{{ "/assets/img/content/PLACEHOLDER-IMG/Banner.jpg" | absolute_url }}" alt="Banner image" class="post-pic"/>
+<iframe width="600" height="350"
+src="https://www.youtube.com/embed/37RpDsCqOYA?rel=0&amp;controls=1&amp;start=0" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>  
 <br />
 <br />
 
@@ -30,7 +34,7 @@ category: cs
 1. [References](#references)
 
 ### Introduction
-This blog contains material that I prepared for my recitation "Efficient C++." I will present this on Feb 12, 2024 to the *Planning Techniques for Robotics* class at CMU.
+This blog contains material that I prepared for my recitation "Efficient C++." I presented this on Feb 12, 2024 to the *Planning Techniques for Robotics* class at CMU.
 
 ### Data Structures
 An Abstract Data Type is an interface for interacting with data. It defines operations and results, but not how they're implemented. Examples: list, stack, set, queue, map, tree, priority queue, graph, etc.
@@ -205,7 +209,7 @@ allowfullscreen></iframe>
 
 
 ### Profiling Methods
-#### Without tools:
+#### Without tools
 This is the simplest form of profiling based on timing blocks of code. Print time taken between two points in the code using `chrono`
 
 ```cpp
@@ -220,7 +224,7 @@ auto duration = std::chrono::duration_cast<std::chrono::seconds>(end - start).co
 printf("Wall clock time: %.2f s\n", duration / 1.0e6);
 ```
 
-#### With tools:
+#### With tools
 CPU Profiler: Samples CPU each millisecond to check execution is currently inside which function
 
 Names of some tools:
