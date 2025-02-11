@@ -1,4 +1,12 @@
 
+- title: Robotics Machine Learning Engineer
+  company: Tesla
+  image:
+    src: /assets/img/work/tesla-logo.png
+    alt: Tesla
+  date: Jul '24 - Present
+  description: Motion Planning and Navigation Team in Optimus, Tesla's humanoid robot
+
 - title: Graduate Teaching Assistant
   company: The Robotics Institute, CMU, Pittsburgh, PA
   image:

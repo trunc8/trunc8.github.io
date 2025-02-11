@@ -5,9 +5,9 @@ profile_picture:
     alt: Siddharth Saha
 ---
 
-Welcome! I am Siddharth Saha. My friends call me *Saha*. 
+Welcome! I am Siddharth Saha. 
 
-I am currently living my dream — studying at the mecca of robotics, [The Robotics Institute @ CMU](https://www.ri.cmu.edu/), and working on quadrupeds. I am in the [M.S. Robotic Systems Development](https://mrsd.ri.cmu.edu/) program, Batch of 2024. My program's cornerstone is the 1.5-year-long capstone project, which I was fortunate to have with [Prof. Sebastian Scherer](https://www.ri.cmu.edu/ri-faculty/sebastian-scherer/), [AirLab](https://www.ri.cmu.edu/robotics-groups/air-lab/). I used the Unitree quadruped robot for search and rescue in unknown and cluttered environments. Through my life’s work, I want to advance robotic capabilities in unstructured environments with three focuses: motion planning, legged locomotion, and optimization.
+I graduated from the mecca of robotics, [The Robotics Institute @ CMU](https://www.ri.cmu.edu/) where I worked on quadruped robot. I was in the [M.S. Robotic Systems Development](https://mrsd.ri.cmu.edu/) program, Batch of 2024. My program's cornerstone was the 1.5-year-long capstone project, which I was fortunate to have with [Prof. Sebastian Scherer](https://www.ri.cmu.edu/ri-faculty/sebastian-scherer/), [AirLab](https://www.ri.cmu.edu/robotics-groups/air-lab/). I used the Unitree quadruped robot for search and rescue in unknown and cluttered environments. Through my life’s work, I want to advance robotic capabilities in unstructured environments with three focuses: motion planning, legged locomotion, and optimization.
 
 
 I graduated from [IIT Bombay](https://www.iitb.ac.in/) in 2021, attaining a Bachelor's (with Honors) in [Mechanical Engineering](https://www.me.iitb.ac.in/) and a Minor degree in the [Department of Computer Science](https://www.cse.iitb.ac.in/). During my undergraduate, I was fortunate to work under the guidance of wonderful mentors. I worked with [Prof. Leena Vachhani](https://www.sc.iitb.ac.in/~leena/) on my Undergraduate Thesis and [Prof. Prasanna Gandhi](https://www.me.iitb.ac.in/~gandhi/) on another research project related to modeling ultra-flexible inverted pendulum
