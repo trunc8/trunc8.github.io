@@ -221,6 +221,7 @@ Names of some tools:
 - Valgrind
 - TAU - Tuning and Analysis Utilities
 
+Steps: [1](https://stackoverflow.com/a/771005), [2](https://stackoverflow.com/questions/40323919/profile-c-program-in-perf)
 
 ### Features of C++
 #### Assert
@@ -301,6 +302,60 @@ void fetchValidCurrency(set<string> &valid_curr) {
 
 
 #### Smart Pointers
+```cpp
+#include <iostream>
+#include <memory>
+#include <math.h>
+
+/** WITHOUT UNIQUE POINTERS
+ struct Node {
+     int* arr;
+     int* num;
+     Node() {
+         arr = new int[26];
+         num = new int();
+     }
+     ~Node() {
+         delete[] arr;
+         delete num;
+     }
+ };
+ */
+
+// WITH UNIQUE POINTERS
+struct Node {
+    std::unique_ptr<int[]> arr;
+    std::unique_ptr<int> num;
+    Node() {
+        arr = std::make_unique<int[]>(26);
+        num = std::make_unique<int>();
+    }
+};
+
+std::unique_ptr<Node> returnNode(int num) {
+    std::unique_ptr<Node> node_ptr = std::make_unique<Node>();
+    *node_ptr->num = num;
+    return node_ptr;
+}
+
+int main() {
+    Node node1;
+    node1.arr[3] = 5;
+    for (int i = 0; i < 26; i++) {
+        std::cout << node1.arr[i] << " ";
+    }
+
+    *node1.num = 2;
+    std::cout << std::endl << *node1.num << std::endl;
+
+    std::unique_ptr<Node> node2 = returnNode(5);
+    for (int i = 0; i < 26; i++) {
+        std::cout << node2->arr[i] << " ";
+    }
+    std::cout << std::endl << *node2->num << std::endl;
+    
+}
+```
 
 
 #### C++11 Features: auto, range-based loops, initializer lists
