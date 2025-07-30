@@ -9,122 +9,122 @@
 #     demo: 
 #     blog:
 
-- title: Comparative study of SLAM Backends — iSAM2 and Levenberg-Marquardt
-  image:
-    src: /assets/img/project/default.jpg
-    alt: 
-  date: Apr '24
-  description: 
-  links:
-    repo: https://github.com/trunc8/slam-project
-    demo: 
-    blog: 
+# - title: Comparative study of SLAM Backends — iSAM2 and Levenberg-Marquardt
+#   image:
+#     src: /assets/img/project/default.jpg
+#     alt: 
+#   date: Apr '24
+#   description: 
+#   links:
+#     repo: https://github.com/trunc8/slam-project
+#     demo: 
+#     blog: 
 
-- title: Iterative Closest Points
-  image:
-    src: /assets/img/project/default.jpg
-    alt: 
-  date: 
-  description: 
-  links:
-    repo: 
-    demo: 
-    blog: 
-
-
-- title: Solvers
-  image:
-    src: /assets/img/project/default.jpg
-    alt: 
-  date: 
-  description: 
-  links:
-    repo: 
-    demo: 
-    blog: 
+# - title: Iterative Closest Points
+#   image:
+#     src: /assets/img/project/default.jpg
+#     alt: 
+#   date: 
+#   description: 
+#   links:
+#     repo: 
+#     demo: 
+#     blog: 
 
 
-- title: Extended Kalman Filter
-  image:
-    src: /assets/img/project/default.jpg
-    alt: 
-  date: 
-  description: 
-  links:
-    repo: 
-    demo: 
-    blog: 
+# - title: Solvers
+#   image:
+#     src: /assets/img/project/default.jpg
+#     alt: 
+#   date: 
+#   description: 
+#   links:
+#     repo: 
+#     demo: 
+#     blog: 
 
 
-- title: Particle Filters
-  image:
-    src: /assets/img/project/default.jpg
-    alt: 
-  date: 
-  description: 
-  links:
-    repo: 
-    demo: 
-    blog: 
+# - title: Extended Kalman Filter
+#   image:
+#     src: /assets/img/project/default.jpg
+#     alt: 
+#   date: 
+#   description: 
+#   links:
+#     repo: 
+#     demo: 
+#     blog: 
 
 
-- title: Vehicle Tracking using Lucas Kanade Forward Alignment Method
-  image:
-    src: /assets/img/project/default.jpg
-    alt: 
-  date: Mar '24 - Apr '24
-  description: 
-  links:
-    repo: https://github.com/trunc8/vehicle-tracking-lucas-kanade-alignment
-    demo: https://youtu.be/Kp99f36Dc38
-    blog: 
+# - title: Particle Filters
+#   image:
+#     src: /assets/img/project/default.jpg
+#     alt: 
+#   date: 
+#   description: 
+#   links:
+#     repo: 
+#     demo: 
+#     blog: 
 
 
-- title: Tinder for Fashion
-  image:
-    src: /assets/img/project/default.jpg
-    alt: 
-  date: Oct '23
-  description: 
-  links:
-    repo: https://github.com/trunc8/tinder_for_fashion
-    demo: 
-    blog: 
-
-- title: Catching a moving target
-  image:
-    src: /assets/img/project/default.jpg
-    alt: 
-  date: 
-  description: 
-  links:
-    repo: 
-    demo: 
-    blog: 
+# - title: Vehicle Tracking using Lucas Kanade Forward Alignment Method
+#   image:
+#     src: /assets/img/project/default.jpg
+#     alt: 
+#   date: Mar '24 - Apr '24
+#   description: 
+#   links:
+#     repo: https://github.com/trunc8/vehicle-tracking-lucas-kanade-alignment
+#     demo: https://youtu.be/Kp99f36Dc38
+#     blog: 
 
 
-- title: High Degree of Freedom Planning
-  image:
-    src: /assets/img/project/default.jpg
-    alt: 
-  date: 
-  description: 
-  links:
-    repo: 
-    demo: 
-    blog: 
+# - title: Tinder for Fashion
+#   image:
+#     src: /assets/img/project/default.jpg
+#     alt: 
+#   date: Oct '23
+#   description: 
+#   links:
+#     repo: https://github.com/trunc8/tinder_for_fashion
+#     demo: 
+#     blog: 
+
+# - title: Catching a moving target
+#   image:
+#     src: /assets/img/project/default.jpg
+#     alt: 
+#   date: 
+#   description: 
+#   links:
+#     repo: 
+#     demo: 
+#     blog: 
 
 
-- title: Symbolic Planning
-  image:
-    src: /assets/img/project/default.jpg
-    alt: 
-  date: 
-  description: 
-  links:
-    repo: 
-    demo: 
-    blog: 
+# - title: High Degree of Freedom Planning
+#   image:
+#     src: /assets/img/project/default.jpg
+#     alt: 
+#   date: 
+#   description: 
+#   links:
+#     repo: 
+#     demo: 
+#     blog: 
+
+
+# - title: Symbolic Planning
+#   image:
+#     src: /assets/img/project/default.jpg
+#     alt: 
+#   date: 
+#   description: 
+#   links:
+#     repo: 
+#     demo: 
+#     blog: 
 
 
 
