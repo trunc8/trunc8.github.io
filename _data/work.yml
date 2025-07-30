@@ -5,7 +5,7 @@
     src: /assets/img/work/tesla-logo.png
     alt: Tesla
   date: Jul '24 - Present
-  description: Motion Planning and Navigation Team in Optimus, Tesla's humanoid robot
+  description: Trying to understand the world through the lens of Optimus (Tesla's humanoid robot)
 
 - title: Graduate Teaching Assistant
   company: The Robotics Institute, CMU, Pittsburgh, PA
@@ -13,7 +13,7 @@
     src: /assets/img/work/ri-logo.png
     alt: The Robotics Institute
   date: Jan '24 - May '24
-  description: Planning Techniques for Robotics (Prof. Maxim Likhachev). This is my last semester at CMU. I took this course last semester and discovered my love for robot planning. I'm sharing my joy with students and helping them get better at it
+  description: Planning Techniques for Robotics (Prof. Maxim Likhachev). I TA'ed this course in my last semester at CMU. I had taken this course in the previous semester and discovered my love for robot planning. I'm sharing my joy with students and helping them get better at it
 
 - title: SDE Intern (C++ Specialist)
   company: Amazon Robotics, Westborough, MA
@@ -55,13 +55,13 @@
   date: Jan '24 - May '24
   description: Electricity and Magnetism (Prof. Mithun Mitra). This was in my third semester at IITB. This was a compulsory course for freshmen. I enjoyed Prof. Mithun's teaching so much, that I was keen to give back. I conducted recitations for a batch of 52 students
 
-- title: Developer Intern
-  company: Synergistic Financial Network Pvt Ltd, Mumbai
-  image:
-    src: /assets/img/work/mosbi-logo.png
-    alt: Mosambee
-  date: Dec '18 - Feb '19
-  description: The firm offers payment solutions by providing EMV enabled mobile Point of Sale (POS) devices. My team delivered a Java platform to migrate existing Transaction Manager to Apache Kafka in order to process 100+ transaction requests/second
+# - title: Developer Intern
+#   company: Synergistic Financial Network Pvt Ltd, Mumbai
+#   image:
+#     src: /assets/img/work/mosbi-logo.png
+#     alt: Mosambee
+#   date: Dec '18 - Feb '19
+#   description: The firm offers payment solutions by providing EMV enabled mobile Point of Sale (POS) devices. My team delivered a Java platform to migrate existing Transaction Manager to Apache Kafka in order to process 100+ transaction requests/second
 
 - title: Teaching Assistant
   company: Department of Chemistry, IIT Bombay, Mumbai, India

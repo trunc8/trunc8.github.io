@@ -4,7 +4,8 @@
     src: /assets/img/education/cmu-logo.png
     alt: Carnegie Mellon University
   date: Aug '22 - May '24
-  description: Awarded the prestigious J.N. Tata scholarship. Student representative of the MRSD cohort. Represented CMU at ICRA '23 in Quadruped Robot Challenge (3rd Prize).
+  description: Awarded the prestigious J.N. Tata scholarship. Student representative of the MRSD cohort. Represented CMU at ICRA '23 in Quadruped Robot Challenge (3rd Prize)
+
 - title: Sakura Research Exchange
   company: Hiroshima University, Japan
   image:
@@ -12,10 +13,11 @@
     alt: Hiroshima University
   date: Jun '19
   description: My visit was under the Sakura Research Exchange Programme spanning a week. I was among 15 students from India to be awarded the Sakura Science Plan scholarship ’19 from Japan Science & Technology Agency
+
 - title: B.Tech in Mechanical Engineering
   company: IIT Bombay, India
   image:
     src: /assets/img/education/iitb-logo.png
     alt: IIT Bombay
   date: Jul '17 - Aug '21
-  description: Citation award for technical excellence. Department rank 5 in Mechanical Engineering. Founded and led a student technical quadruped robot team. Highest number of projects in the graduating batch. Achieved 99.7 percentile in JEE Advanced (All India Rank 698).
+  description: Citation award for technical excellence. Department rank 5 in Mechanical Engineering. Founded and led a student technical quadruped robot team. Highest number of projects in the graduating batch. Achieved All India Rank 698 in JEE Advanced 2017 (~99.7 percentile, it's a lot of people)

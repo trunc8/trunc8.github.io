@@ -3,9 +3,6 @@
 
 - name: Blog
 
-# - name: CV
-#   slug: cv/Siddharth-Saha-CV.pdf
-
 - name: Projects
   slug: project
 

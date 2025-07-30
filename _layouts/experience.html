@@ -11,9 +11,9 @@
           <h1 class="page-heading">{{ page.title }}</h1>
           {{ content }}
 
-          <h1 class="page-heading">Education</h1>
+          <h1 class="page-heading">Work</h1>
 
-          {% for item in site.data.education %}
+          {% for item in site.data.work %}
           <div class="work-item">
             <!-- <img
               src="{{ item.image.src | absolute_url }}"
@@ -37,11 +37,11 @@
             </p>
           </div>
           {% endfor %}
-          
+
           <hr>
-          <h1 class="page-heading">Work</h1>
-          
-          {% for item in site.data.work %}
+          <h1 class="page-heading">Education</h1>
+
+          {% for item in site.data.education %}
           <div class="work-item">
             <!-- <img
               src="{{ item.image.src | absolute_url }}"
