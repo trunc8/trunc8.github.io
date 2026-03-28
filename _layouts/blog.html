@@ -47,7 +47,7 @@
           {% for member in site.data.blog-categories %}
             <h2 id="{{ member.id }}">{{ member.name }}</h2>
             {% include category-posts.html %}
-            <p> <!-- To create whitespace at end of category list -->
+            <div style="margin-bottom: 2em;"></div>
           {% endfor %}
 
         </div>

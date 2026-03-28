@@ -133,7 +133,7 @@
 - title: Long Horizon Task Planning for Quadruped Robot
   image:
     src: /assets/img/project/task-planning-quadruped.png
-    alt: 
+    alt: Long Horizon Task Planning for Quadruped Robot
   date: Sep '23 - Present
   description: We obtained quadruped controller using curriculum-based learning in Isaac Gym. We collected time & energy costs dataset for local motions and trained cost predictor as a multi-head convolutional NN. We demonstrated long horizon task planning with user-defined objective using A* search guided by the cost predictor
   links:
@@ -155,7 +155,7 @@
 - title: Breadth vs Depth - Benchmarking Generalists and Specialists in Robot Agility Learning
   image:
     src: /assets/img/project/breadth-depth.png
-    alt: 
+    alt: Benchmarking Generalists and Specialists in Robot Agility Learning
   date: Sep '23 - Dec '23
   description: We trained specialist skills like jumping, climbing, and narrow beam walking. I implemented an RL+PPO-based Selector Policy to select the most effective specialist skill in varying environmental conditions. We compared its performance against a generalist policy trained on a combination of all skills.
   links:
@@ -166,7 +166,7 @@
 - title: Quadruped Robot Challenge | ICRA '23, London
   image:
     src: /assets/img/project/qrc.png
-    alt: 
+    alt: Quadruped Robot Challenge at ICRA 2023
   date: May '23 - Jun '23
   description: Deployed controller to Unitree Go1 & navigated challenge course using Beyond Visual Line-of-Sight teleoperation. Recovered from falls using pre-defined maneuvers and achieved the third position representing Carnegie Mellon.
   links:
@@ -177,7 +177,7 @@
 - title: 2D Footstep Planning
   image:
     src: /assets/img/project/2D-footstep-planning.png
-    alt: 
+    alt: 2D Footstep Planning
   date: Jan '23 - May '23
   description: Implementation of footstep planner for a biped robot on discontinuous 2D environments
   links:
@@ -188,7 +188,7 @@
 - title: Jenga Playing Manipulator Arm
   image:
     src: /assets/img/project/jenga.png
-    alt: 
+    alt: Jenga Playing Manipulator Arm
   date: Jan '23 - May '23
   description: Designed probe and grasp pipeline for the Franka Emika Panda robot to build Jenga tower
   links:
@@ -199,7 +199,7 @@
 - title: ROS2 RADI and single-robot warehouse exercise
   image:
     src: /assets/img/project/amazon-single-slam.gif
-    alt: 
+    alt: ROS2 RADI warehouse exercise
   date: Jun '21 - Aug '21
   description: Google Summer of Code project at JdeRobot. Built RADI 4 based on ROS2 Foxy, implemented BT (Behavior Tree) Navigator, and extended warehouse pick-and-delivery exercise to ROS2 web-based template
   links:
@@ -210,7 +210,7 @@
 - title: Mapping Regions of Dynamic Activity & Building Dynamic-free 3D Occupancy Maps
   image:
     src: /assets/img/project/dynamic-octomap.png
-    alt: 
+    alt: Dynamic-free 3D Occupancy Maps
   date: Jun '20 - Jul '21
   description: Bachelor's Thesis at IIT Bombay under Prof. Vachhani. Designed and implemented a novel clustering algorithm in ROS OctoMap to reject nodes with high dynamic activity
   links:
@@ -220,14 +220,14 @@
 - title: Quadruped Robot
   image:
     src: /assets/img/project/stride.png
-    alt: 
+    alt: Quadruped Robot
   date: Dec '19 - May '21
   description: Founding member and Team Lead of an institute funded team to solve the urban search and rescue challenge -- RoboCup Rescue League. Simulated gait trajectory, and implemented sensor fusion between Intel D435 and IMU
 
 - title: Hilti SLAM Challenge | IROS '21, Prague
   image:
     src: /assets/img/project/hilti.jpg
-    alt: 
+    alt: Hilti SLAM Challenge
   date: Sep '21
   description: Explored Visual Inertial Odometry. Understood and calibrated Kannala-brandt camera model. Used VINS-Fusion. Calibrated IMU noise parameters using imu_utils on provided bag files
   links:
@@ -236,24 +236,24 @@
 - title: Robot Vision Scene Understanding Challenge | CVPR '21
   image:
     src: /assets/img/project/rvsu.jpg
-    alt: 
+    alt: Robot Vision Scene Understanding Challenge
   date: Mar '21 - Apr '21
   description: Implemented multiple approaches using Votenet, GroupFree3D, Votenet Ensemble. Trained Votenet model on subset of sunrgbd dataset. Trained YOLOv4 on subset of MS COCO dataset, and executed it in parallel to achieve higher confidence through a consensus mechanism
   links:
     repo: https://github.com/trunc8/robot-vision-scene-understanding-challenge
     blog: https://github.com/parth-shettiwar/3D-Object-Detection-and-Semantic-Map-Generation/blob/main/Presentation/Final_Presentation.pdf
 
-- title: F1/10th — Autonomous Grand Prix | IROS ’20, Las Vegas
+- title: F1/10th — Autonomous Grand Prix | IROS ‘20, Las Vegas
   image:
     src: /assets/img/project/f1tenth.png
-    alt: 
+    alt: F1/10th Autonomous Grand Prix
   date: Oct '20
   description: Used Bernstein polynomial based local trajectory planner. Optimized global reference path using an OSQP solver. Implemented obstacle detection.
 
 - title: Two-wheeled Self-Balancing Bot
   image:
     src: /assets/img/project/self-balancing-bot.jpg
-    alt: 
+    alt: Two-wheeled Self-Balancing Bot
   date: Aug '20 - Nov '20
   description: Demonstrates the inverted pendulum problem using a two-wheeled bot and input from gyroscope+accelerometer module
   links:
@@ -263,7 +263,7 @@
 - title: Autonomous Drone Exploration
   image:
     src: /assets/img/project/interiit.png
-    alt: 
+    alt: Autonomous Drone Exploration
   date: Mar '21
   description: (Team leader in *Inter IIT Tech Meet '21* ) Quadrotor simulation capable of navigating in a complex static environment by avoiding on-field obstacle-collision and reaching the target destination after its correct detection. 
   links:
@@ -272,7 +272,7 @@
 - title: Multi-robot Capture of Non-adversarial Target
   image:
     src: /assets/img/project/mespp.png
-    alt: 
+    alt: Multi-robot Capture of Non-adversarial Target
   date: Mar '21 - Apr '21
   description: Capture of a moving target using Mixed Integer Linear Programming. Implementation from scratch of 'MILP Models for Multi-Robot Non-Adversarial Search' paper
   links:
@@ -282,7 +282,7 @@
 - title: International Micromouse Challenge
   image:
     src: /assets/img/project/comp-imc.png
-    alt: 
+    alt: International Micromouse Challenge
   date: Dec '20
   description: Reach from the corner square to the center of an unknown maze in the shortest time
   links:
@@ -293,7 +293,7 @@
 - title: Shortest Path in Maze using Reinforcement Learning
   image:
     src: /assets/img/project/gridworld_maze.png
-    alt: 
+    alt: Shortest Path in Maze using Reinforcement Learning
   date: Oct '20 - Nov '20
   description: Modelled 2D maze as an MDP with appropriate states, actions, rewards & transition probabilities. Implemented Howard’s Policy Iteration, Value Iteration and Linear Programming to find best policy that minimizes number of steps between 2 given points while following constraints
   links:
@@ -302,7 +302,7 @@
 - title: Automated Graph Reader
   image:
     src: /assets/img/project/auto-graph-reader-demo.png
-    alt: 
+    alt: Automated Graph Reader
   date: Aug '20 - Nov '20
   description: Deployed live on Heroku server, the web-app accepts queries for y-values in simple input graphs. The solution is based on image processing, OCR, and a lot of algorithm design
   links:
@@ -311,7 +311,7 @@
 - title: Optimization of vehicle suspension
   image:
     src: /assets/img/project/suspension.png
-    alt: 
+    alt: Optimization of vehicle suspension
   date: Jan '21 - Apr '21
   description: Comparison of standard library functions and our own implementations of genetic algorithm, simulated annealing, and particle swarm optimization for the vehicle suspension optimization
   links:
@@ -320,7 +320,7 @@
 - title: Snippet-to-text Extraction
   image:
     src: /assets/img/project/snippet-to-text-demo.png
-    alt: 
+    alt: Snippet-to-text Extraction
   date: Aug '20 - Nov '20
   description: Deployed live on Heroku server, the web-app allows you to read image snippets as continuous text
   links:
@@ -329,7 +329,7 @@
 - title: Panoramic Mosaicing
   image:
     src: /assets/img/project/panorama.jpg
-    alt: 
+    alt: Panoramic Mosaicing
   date: Mar '21
   description: Uses ORB feature extractor, Brute Force Matcher with Hamming Norm, and RANSAC algorithm to mosaic any number of input images
   links:
@@ -338,7 +338,7 @@
 - title: Image Quilting
   image:
     src: /assets/img/project/image-quilting.png
-    alt: 
+    alt: Image Quilting
   date: Sep '19 - Oct '19
   description: This achieves *Texture Transfer* using simple memoization-based Image Quilting technique (where people are nowadays using deep learning techniques). The *Texture Synthesis* implementation is useful for creating background in video games with cheap computation
   links:
@@ -347,7 +347,7 @@
 - title: Sudoku Solver Using Block Printing
   image:
     src: /assets/img/project/sudoku-block-printer.png
-    alt: 
+    alt: Sudoku Solver Using Block Printing
   date: Apr '18 - May '18
   description: Implemented a Raspian-based automated Machine to physically fill into any given unsolved Sudoku grid using computer-vision
   links:
@@ -357,7 +357,7 @@
 - title: Ball Tracking using OpenCV and ROS
   image:
     src: /assets/img/project/ball-tracking.png
-    alt: 
+    alt: Ball Tracking using OpenCV and ROS
   date: Oct '20
   description: Python implementation of Ball tracking using OpenCV and CvBridge in ROS1
   links:
@@ -367,7 +367,7 @@
 - title: Ricart-Agrawala Algorithm
   image:
     src: /assets/img/project/ricart-agrawal.png
-    alt: 
+    alt: Ricart-Agrawala Algorithm
   date: Aug '19 - Nov '19
   description: The Ricart-Agrawala algorithm provides an optimal solution to the problem of mutually exclusive access to a critical section in computer networks, whose nodes communicate only by messages and do not share memory
   links:
@@ -376,7 +376,7 @@
 - title: Wifi De-auth Attacker
   image:
     src: /assets/img/project/esp8266.jpg
-    alt: 
+    alt: Wifi De-auth Attacker
   date: Mar '19
   description: Programmed ESP8266 (Wi-Fi microchip) to spoof an access point and send de-authentication frames, exploiting vulnerability in IEEE 802.11 standards of the absence of encryption for management frames
   links:
@@ -385,7 +385,7 @@
 - title: Gyro Brick Breaker
   image:
     src: /assets/img/project/gyro-brick-breaker.jpg
-    alt: 
+    alt: Gyro Brick Breaker
   date: Jul '18
   description: Led 5-membered team to develop hand-gesture controlled brick-breaking game coded in Processing IDE. One among 3 projects showcased at Undergraduate Freshmen Technical Orientation 2018
   links:
@@ -394,7 +394,7 @@
 - title: Conway’s Game of Life
   image:
     src: /assets/img/project/conway.png
-    alt: 
+    alt: Conway’s Game of Life
   date: Apr '21
   description: Terminal based version of the hacker's favorite game. The source code is accompanied with unittesting. Developed as part of JdeRobot's GSoC Python Challenge
   links:
@@ -403,7 +403,7 @@
 - title: Labyrinth CMake app
   image:
     src: /assets/img/project/labyrinth.png
-    alt: 
+    alt: Labyrinth CMake app
   date: Apr '21
   description: CMakeLists based app to find the longest route in a text map. Developed as part of JdeRobot's GSoC C++ Challenge
   links:
