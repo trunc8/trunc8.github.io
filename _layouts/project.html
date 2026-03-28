@@ -35,13 +35,13 @@
               {{ item.description | markdownify  | remove: '<p>' | remove: '</p>' | strip }}
               <br/>
               {% if item.links.repo %}
-                » <a href={{ item.links.repo }}>Repo</a>
+                » <a href="{{ item.links.repo }}">Repo</a>
               {% endif %}
               {% if item.links.demo %}
-                » <a href={{ item.links.demo }}>Demo</a>
+                » <a href="{{ item.links.demo }}">Demo</a>
               {% endif %}
               {% if item.links.blog %}
-                » <a href={{ item.links.blog }}>Blog</a>
+                » <a href="{{ item.links.blog }}">Blog</a>
               {% endif %}
             </p>
           </div>

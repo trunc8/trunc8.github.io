@@ -15,7 +15,7 @@
           />{% endcomment %}
           <span class="wrap-link contact">
             <i class="{{ contact.icon | downcase }} fa-fw" aria-hidden="true"></i>
-            <a href="{{ contact.link }}" id="{{ contact.name | downcase }}-link"  target="_blank">
+            <a href="{{ contact.link }}" id="{{ contact.name | downcase }}-link" target="_blank" rel="noopener noreferrer">
               {% if contact.value and contact.value != "" and contact.value != nil %}
                 {{ contact.value }}
               {% else %}
@@ -50,7 +50,7 @@
               https://stackoverflow.com/questions/25797627/why-is-font-awesome-not-working-on-my-jekyll-built-github-site
             {% endcomment %}
             <i class="fa fa-{{ follow.name | downcase }} fa-fw" aria-hidden="true"></i>
-            <a href="{{ follow.link }}" target="_blank">
+            <a href="{{ follow.link }}" target="_blank" rel="noopener noreferrer">
               {% if follow.value and follow.value != "" and follow.value != nil %}
                 {{ follow.value }}
               {% else %}

@@ -7,7 +7,7 @@ og_image: /assets/img/content/self-balancing-bot/Banner.jpg
 category: robotics
 ---
 
-<img src="{{ "/assets/img/content/self-balancing-bot/Banner.jpg" | absolute_url }}" alt="self-balancing-bot-doc" class="post-pic" width=300/>
+<img src="{{ "/assets/img/content/self-balancing-bot/Banner.jpg" | absolute_url }}" alt="self-balancing-bot-doc" class="post-pic" width="300"/>
 <br />
 <br />
 
