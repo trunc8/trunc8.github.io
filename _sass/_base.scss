@@ -102,7 +102,6 @@ h4,
 h5,
 h6 {
   font-weight: 300;
-  // font-family: "Futura", sans-serif;
 }
 
 h4 {
@@ -116,10 +115,6 @@ a {
   transition: all .2s;
   color: $brand-color;
   text-decoration: none;
-  
-  // &:visited {
-  //   color: darken($brand-color, 15%);
-  // }
 
   &:hover {
     color: $text-color;
@@ -208,25 +203,6 @@ pre {
     clear: both;
   }
 }
-
-// Obsolete perhaps
-/**
- * Icons
- */
-/**
-.icon {
-  > svg {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    vertical-align: middle;
-
-    path {
-      fill: $grey-color;
-    }
-  }
-}
-*/
 
 .styled-table {
     // margin: 25px 0;
