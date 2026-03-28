@@ -3,7 +3,6 @@ layout: post
 title:  "Tutorial: Disable incognito mode in Chrome (Linux)"
 date:   2021-02-17 12:00:00 +0530
 blurb: ""
-og_image: /assets/img/content/PLACEHOLDER-IMG/Banner.jpg
 category: random
 tags: tutorials
 ---

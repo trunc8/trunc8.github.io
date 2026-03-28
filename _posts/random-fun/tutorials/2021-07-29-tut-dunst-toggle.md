@@ -3,7 +3,6 @@ layout: post
 title:  "Tutorial: Toggle Dunst notification indicator in i3blocks"
 date:   2021-07-29 13:15:00 +0530
 blurb: ""
-og_image: /assets/img/content/PLACEHOLDER-IMG/Banner.jpg
 category: random
 tags: tutorials
 ---

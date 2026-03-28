@@ -15,9 +15,12 @@
   }
 
   .blog-post-title {
-    // font-size: 100%;
-    // letter-spacing: normal;
     overflow:hidden;
     margin-bottom: -25px;
+  }
+
+  .blog-post-highlight {
+    background-color: #FDFFE3;
+    padding: 0;
   }
 }

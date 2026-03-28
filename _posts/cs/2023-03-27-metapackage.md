@@ -3,7 +3,6 @@ layout: post
 title:  "Metapackage vs Package"
 date:   2023-03-27 00:00:00 +0530
 blurb: ""
-og_image: /assets/img/content/PLACEHOLDER-IMG/Banner.jpg
 category: cs
 draft: False
 ---

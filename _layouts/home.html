@@ -11,6 +11,7 @@
           <a href="blog">
             <img
               src="{{ page.profile_picture.src | absolute_url }}"
+              srcset="{{ page.profile_picture.src | replace: '.jpg', '@2x.jpg' | absolute_url }} 2x"
               alt="{{ page.profile_picture.alt }}"
               class="profilepic"
             />

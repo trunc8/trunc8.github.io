@@ -3,7 +3,6 @@ layout: post
 title:  "Tutorial: Revive Android device booted into wrong partition slot"
 date:   2021-07-27 18:45:00 +0530
 blurb: ""
-og_image: /assets/img/content/PLACEHOLDER-IMG/Banner.jpg
 category: random
 tags: tutorials
 ---

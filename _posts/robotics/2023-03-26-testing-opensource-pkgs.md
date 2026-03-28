@@ -3,7 +3,6 @@ layout: post
 title:  "Familiarizing with Opensource Robotics Packages (Running Post)"
 date:   2023-03-26 00:00:00 +0530
 blurb: ""
-og_image: /assets/img/content/PLACEHOLDER-IMG/Banner.jpg
 category: robotics
 draft: False
 ---

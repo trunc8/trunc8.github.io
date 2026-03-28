@@ -3,7 +3,6 @@ layout: post
 title:  "Tutorial: Getting shell-escape in TeXStudio to use python pygments"
 date:   2023-10-24 23:48:00 +0530
 blurb: ""
-og_image: /assets/img/content/PLACEHOLDER-IMG/Banner.jpg
 category: random
 tags: tutorials
 ---

@@ -3,7 +3,6 @@ layout: post
 title:  "MRSD Capstone: Technical Details"
 date:   2024-02-05 00:00:00 +0530
 blurb: ""
-og_image: /assets/img/content/PLACEHOLDER-IMG/Banner.jpg
 category: robotics
 draft: False
 ---
