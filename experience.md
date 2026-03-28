@@ -1,5 +1,5 @@
 ---
 layout: experience
-title: 
+title: Experience
 slug: /experience
 ---
