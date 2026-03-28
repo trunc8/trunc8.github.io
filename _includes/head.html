@@ -29,7 +29,7 @@
     {% assign page_image = site.url + page.og_image %}
   {% endif %}
 
-  {% for follow in site.footer.follow %}
+  {% for follow in site.data.footer.follow %}
     {% if follow.name == 'Twitter' %}
       {% assign twitter_username = follow.username %}
       {% break %}

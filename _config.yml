@@ -33,7 +33,3 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
 
-# Used for defeating caching
-version: 1
-
-
