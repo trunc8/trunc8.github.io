@@ -25,3 +25,6 @@ gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 
 # Solves: Yikes! It looks like you don't have kramdown-parser-gfm or one of its dependencies installed.
 gem "kramdown-parser-gfm"
+
+# Required for Ruby >= 3.0 (removed from standard library)
+gem "webrick"
