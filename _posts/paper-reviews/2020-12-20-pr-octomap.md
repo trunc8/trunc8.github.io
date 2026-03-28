@@ -48,4 +48,4 @@ The key characteristics that contribute to the efficiency of OctoMap are noted b
 
 ### References
 
-[^1]: [Hornung, A., Wurm, K.M., Bennewitz, M. et al. OctoMap: an efficient probabilistic 3D mapping framework based on octrees. Auton Robot 34, 189–206 (2013). https://doi.org/10.1007/s10514-012-9321-0](http://www.arminhornung.de/Research/pub/hornung13auro.pdf)
+[^1]: [Hornung, A., Wurm, K.M., Bennewitz, M. et al. OctoMap: an efficient probabilistic 3D mapping framework based on octrees. Auton Robot 34, 189–206 (2013). https://doi.org/10.1007/s10514-012-9321-0](https://www.arminhornung.de/Research/pub/hornung13auro.pdf)

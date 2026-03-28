@@ -8,11 +8,6 @@
 
         {% for contact in site.data.footer.contact %}
 
-          {% comment %}{% assign contact_icon_path = "/assets/img/icons/" | append: contact.name | downcase | append: ".png" | absolute_url %}
-          <img
-            src="{{ contact_icon_path }}"
-            alt="{{ contact.name | downcase }}"
-          />{% endcomment %}
           <span class="wrap-link contact">
             <i class="{{ contact.icon | downcase }} fa-fw" aria-hidden="true"></i>
             <a href="{{ contact.link }}" id="{{ contact.name | downcase }}-link" target="_blank" rel="noopener noreferrer">
@@ -40,15 +35,6 @@
         {% for follow in site.data.footer.follow %}
           <span class="wrap-link follow">
 
-            {% comment %}{% assign follow_icon_path = "/assets/img/icons/" | append: follow.name | downcase | append: ".png" | absolute_url %}
-            <img
-              src="{{ follow_icon_path }}"
-              alt="{{ follow.name | downcase }}"
-            />{% endcomment %}
-            {% comment %}
-              Courtesy:
-              https://stackoverflow.com/questions/25797627/why-is-font-awesome-not-working-on-my-jekyll-built-github-site
-            {% endcomment %}
             <i class="fa fa-{{ follow.name | downcase }} fa-fw" aria-hidden="true"></i>
             <a href="{{ follow.link }}" target="_blank" rel="noopener noreferrer">
               {% if follow.value and follow.value != "" and follow.value != nil %}
