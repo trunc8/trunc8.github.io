@@ -5,6 +5,7 @@ date:   2020-12-20 16:00:00 +0530
 blurb: ""
 og_image: /assets/img/content/pr-octomap/Banner.png
 category: robotics
+mathjax: true
 ---
 
 <img src="{{ "/assets/img/content/pr-octomap/Banner.png" | absolute_url }}" alt="Banner image" class="post-pic"/>

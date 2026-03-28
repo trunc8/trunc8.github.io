@@ -1,6 +1,6 @@
 var btn = $('#button');
 
-$(window).scroll(function() {
+$(window).on('scroll', function() {
   if ($(window).scrollTop() > 300) {
     btn.addClass('show');
   } else {
@@ -10,5 +10,5 @@ $(window).scroll(function() {
 
 btn.on('click', function(e) {
   e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
