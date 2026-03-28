@@ -5,15 +5,15 @@ contact:
     icon: fa fa-envelope
 follow:
   - name: GitHub
-    link: http://github.com/trunc8
+    link: https://github.com/trunc8
     value: trunc8
   - name: Facebook
-    link: http://facebook.com/sahasiddharth611
+    link: https://facebook.com/sahasiddharth611
   - name: Twitter
-    link: http://twitter.com/trunc8s
+    link: https://twitter.com/trunc8s
     value: "@trunc8s"
   - name: LinkedIn
-    link: http://linkedin.com/in/sahasiddharth611
+    link: https://linkedin.com/in/sahasiddharth611
   - name: RSS
     link: /feed.xml
   - name: YouTube
