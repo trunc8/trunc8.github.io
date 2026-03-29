@@ -84,16 +84,16 @@
 \entry{Tesla}{Jul 2024 -- Present}
   {Robotics Machine Learning Engineer}{Palo Alto, CA}
 \resumeItemListStart
-  % TODO: Replace with specific ML contributions — architecture, data scale, metrics
-  \resumeItem{Trained and deployed behavior models for Optimus, contributing across vision-based planning, RL locomotion, tokenizer development, data collection pipelines, and robot policy rollout}
+  \resumeItem{Trained multimodal generative transformer for Optimus locomanipulation --- model ingests vision, proprioception, and language instructions from human data to produce whole-body joint trajectories}
+  \resumeItem{Designed lane-conditioning encoder trunk for the generative planner, enabling lane guidance following with learned obstacle avoidance}
   \resumeItem{Rewrote the navigation task used across the robot fleet, increasing resilience and slashing runtime by 95\%}
-  \resumeItem{Developed deadlock mitigation strategy achieving 50\% reduction in operator interventions due to bot traffic}
+  \resumeItem{Deployed policies to physical Optimus via sim-to-real transfer with domain randomization}
 \resumeItemListEnd
 
 \entry{Amazon Robotics}{May 2023 -- Aug 2023}
   {SDE Intern (C{++} Specialist)}{Westborough, MA}
 \resumeItemListStart
-  \resumeItem{Implemented RRT-based motion planning for suction-based manipulator arms operating on unpackaged items}
+  \resumeItem{Implemented RRT-based motion planning for 6-DOF suction-based manipulator arms operating on unpackaged items}
   \resumeItem{Identified and resolved a mutex deadlock in the behavior tree's blackboard, achieving 50\% speedup in failure recovery}
 \resumeItemListEnd
 
@@ -110,7 +110,7 @@
 \entry{Stride -- Quadruped Team}{Dec 2019 -- May 2021}
   {Co-founder and Team Lead}{Mumbai, India}
 \resumeItemListStart
-  \resumeItem{Founded institute-funded team of 15 to build a quadruped robot for the RoboCup Rescue League urban search and rescue challenge; simulated gait trajectories and implemented IMU + Intel D435 sensor fusion}
+  \resumeItem{Founded institute-funded team of 15 to build a custom quadruped robot for the RoboCup Rescue League; implemented static walking gait and IMU + Intel D435 sensor fusion on physical hardware}
 \resumeItemListEnd
 
 %----------EDUCATION----------
@@ -130,13 +130,22 @@
   \resumeItem{\textbf{1st Prize:} Micromouse Challenge (International), Off-track Bot (National), Operations Challenge (IIT Bombay)}
 \resumeItemListEnd
 
+%----------PUBLICATIONS----------
+\section{Publications}
+
+\vspace{3pt}
+\noindent\small
+S. Saha et al., ``Quadruped Robot for Assistive Search in Narrow and Cluttered Environments,''
+\textit{MRSD Capstone Project Report}, CMU, 2023.
+\href{https://mrsdprojects.ri.cmu.edu/2023teamb/}{[Project Page]}
+
 %----------PROJECTS----------
 \section{Projects \hfill \normalfont\small\href{https://trunc8.github.io/projects}{Portfolio: trunc8.github.io/projects}}
 
 \projectentry{Long Horizon Task Planning for Quadruped Robot {\normalfont\textit{| Research Project, CMU}}}{Sep 2023 -- Apr 2024}
 \resumeItemListStart
   \resumeItem{Learned locomotion skills like climbing, jumping, and walking using PPO and curriculum-learning in Isaac Gym}
-  \resumeItem{Constructed an A* planner, guided by a learned cost predictor, to generate time and energy-efficient paths}
+  \resumeItem{Constructed an A* planner guided by a 3-head CNN cost predictor (time, energy, risk) trained on tens of thousands of Isaac Gym terrain-motion samples}
   \resumeItem{Implemented a novel anytime dataset generation method in Isaac Gym with diversity guarantees for training data}
   \resumeItem{Achieved 13\% reduction in energy and 29\% reduction in time compared to a walking-only planner}
 \resumeItemListEnd
@@ -144,9 +153,7 @@
 \projectentry{Autonomous Quadruped in Unknown Cluttered Terrains {\normalfont\textit{| MRSD Capstone, CMU}}}{Sep 2022 -- Dec 2023}
 \resumeItemListStart
   \resumeItem{Devised NMPC tracked using reactive WBC and integrated with exploration and LiDAR-based localization stacks}
-  \resumeItem{Implemented safety features for disaster sites \& demonstrated on-demand temporary takeover by safety operator}
-  \resumeItem{Exploration rate of 16 m\textsuperscript{2}/min and 95\% repeatability in debris-filled terrain with narrow doors}
-  \resumeItem{Secured 3rd prize at ICRA 2023 Quadruped Robot Challenge (London) for CMU, competing against MIT and KAIST}
+  \resumeItem{Achieved 16 m\textsuperscript{2}/min exploration rate and 95\% repeatability in debris-filled terrain; 3rd prize at ICRA 2023 QRC}
 \resumeItemListEnd
 
 \projectentry{Robot Vision Scene Understanding Challenge {\normalfont\textit{| CVPR 2021}}}{Mar 2021 -- Apr 2021}
@@ -154,10 +161,6 @@
   \resumeItem{Built 3D semantic map from RGBD \& odometry; devised YOLOv4 + VoteNet consensus with 3D NMS post-processing}
 \resumeItemListEnd
 
-\projectentry{F1/10th Autonomous Grand Prix {\normalfont\textit{| IROS 2020}}}{Oct 2020}
-\resumeItemListStart
-  \resumeItem{Bernstein-polynomial local planner with MPC for Ackermann steering; global path optimization via OSQP solver}
-\resumeItemListEnd
 
 %----------SKILLS----------
 \section{Skills}
