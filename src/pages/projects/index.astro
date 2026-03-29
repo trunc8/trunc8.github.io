@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import FilterBar from '../../components/FilterBar.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+import { getCollection } from 'astro:content';
+
+const allProjects = await getCollection('projects');
+const sorted = allProjects.sort((a, b) => a.data.order - b.data.order);
+const categories = [...new Set(allProjects.map((p) => p.data.category))].sort();
+---
+
+<BaseLayout title="Projects | Siddharth Saha" description="Technical projects spanning robotics, computer vision, motion planning, and machine learning.">
+  <div class="py-12">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl sm:text-4xl font-bold text-on-surface mb-2">Projects</h1>
+      <p class="text-on-surface-muted mb-8">A collection of technical projects spanning robotics, CV, motion planning, and ML.</p>
+
+      <FilterBar categories={categories} />
+
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {sorted.map((project) => (
+          <div data-category={project.data.category.toLowerCase()}>
+            <ProjectCard
+              title={project.data.title}
+              description={project.data.description}
+              image={project.data.image}
+              imageAlt={project.data.imageAlt}
+              slug={project.slug}
+              tags={project.data.tags}
+              date={project.data.date}
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</BaseLayout>

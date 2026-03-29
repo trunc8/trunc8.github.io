@@ -1,0 +1,768 @@
+---
+title: "Command Repository (Running Post)"
+pubDate: 2019-01-01
+description: "A running collection of useful commands and snippets for C++, Docker, Git, Python, ROS, MATLAB, and more"
+theme: "Programming & Systems"
+tags: []
+mathjax: true
+draft: false
+---
+
+<img src="/img/content/PLACEHOLDER-IMG/Banner.jpg" alt="Banner image" class="post-pic"/>
+<br />
+<br />
+
+#### Table of Contents
+1. [C++](#c)
+1. [Docker](#docker)
+1. [Git](#git)
+1. [Julia](#julia)
+1. [Markdown Snippets](#markdown-snippets)
+1. [MATLAB](#matlab)
+1. [Python](#python)
+1. [PyTorch](#pytorch)
+1. [Recover Unsaved Sublime Text](#recover-unsaved-sublime-text)
+1. [ROS 1](#ros-1)
+1. [ROS 2](#ros2)
+1. [Terminal tools](#terminal-tools)
+1. [Benchbot](#benchbot)
+1. [Acknowledgements](#acknowledgements)
+
+
+### C++
+Sort vector `nums` while keeping track of indices
+
+```cpp
+vector<pair<int,int>> vp(nums.size());
+for(int i=0; i<nums.size(); i++){
+    vp[i] = make_pair(nums[i],i);
+}
+sort(vp.begin(), vp.end());
+```
+
+### Docker
+Run an interactive bash
+```sh
+docker run -it --gpus all nvidia/cuda:11.1-base bash
+```
+
+Start docker container (epic_faraday)
+```sh
+docker start epic_faraday
+```
+
+Execute bash in docker container (epic_faraday)
+```sh
+docker exec -it epic_faraday bash
+```
+
+Stop docker container
+```sh
+docker stop epic_faraday
+```
+
+View active containers
+```sh
+docker ps -a
+```
+
+For GUI
+
+> Check xeyes Dockerfile and [reference](https://nelkinda.com/blog/xeyes-in-docker/)
+> For matplotlib, check Dockerfile in cs747 repo
+
+
+
+
+### Git
+For cloning single branch
+```sh
+git clone --single-branch --branch 2020_Autumn git@github.com:trunc8/Sem_Coursework.git
+```
+
+For cloning another branch after that
+```sh
+git remote set-branches --add origin 2019_Autumn
+git fetch origin 2019_Autumn:2019_Autumn
+```
+
+Realizing that there is a submodule
+```sh
+git rm -r --cached projectfolder
+git submodule add url_to_repo projectfolder
+```
+
+After committing in submodule, in superset repo
+```sh
+git submodule update --remote --merge
+git add .
+gcmsg "Message"
+git push
+```
+
+Delete local branch
+```sh
+git branch -d <local-branch>
+git branch -D <local-branch> (forceful)
+```
+
+Delete remote branch
+```sh
+git push origin --delete <remote-branch-name>
+```
+
+Discard local changes
+```sh
+# Discard all local changes, but save them for possible re-use later
+git stash
+# Discarding local changes (permanently) to a file
+git checkout -- <file>
+# Discard all local changes to all files permanently
+git reset --hard
+```
+
+
+
+### Julia
+`...` used in function calls for spreading the arguments
+
+Hello world in Julia
+```julia
+println("Hello world")
+```
+
+Plotting tangent to sine curve
+```julia
+import Pkg; Pkg.add("Plots"); Pkg.add("ForwardDiff")
+using Plots
+import ForwardDiff as FD
+
+function first_order_taylor(f::Function, x_bar::Float64, x::Float64)::Float64
+      return f(x_bar) + FD.derivative(f, x_bar) * (x - x_bar)
+end
+
+let
+      x = -2*pi:0.01:2*pi
+      y = sin.(x)
+      x_bar = randn()
+
+      tangent_at_xbar = [first_order_taylor(sin, x_bar, x[i]) for i=1:length(x)]
+
+      scatter([x_bar], [sin(x_bar)])
+      plot!(x, y)
+      plot!(x, tangent_at_xbar)
+end
+```
+
+
+Concatenate matrices in block diagonal form
+```julia
+cat(I(3),-I(3); dims=(1,2))
+```
+
+
+### Markdown Snippets
+Collapsible Section
+```html
+<details>
+  <summary>Update!</summary>
+  Our repository is now public <a href="https://github.com/trunc8/international-micromouse-techfest2020">here</a>. All elements for the simulation are self-contained.
+</details>
+```
+
+Footnote
+```md
+### Author(s)
+
+* **Siddharth Saha** - [trunc8](https://github.com/trunc8)
+
+<p align='center'>Created with :heart: by <a href="https://www.linkedin.com/in/sahasiddharth611/">Siddharth</a></p>
+```
+---
+
+Emojis
+```md
+Github markdown allows :heart: to be rendered, but converting it to html doesn't render it on a webpage.
+For that purpose, use fa fa-icons (css)-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+How to use?
+<i class="fa fa-heart" aria-hidden="true"/>
+```
+---
+
+Basic Tags
+```md
+#### Headings
+# H1
+## H2
+### H3
+#### H4
+##### H5
+
+#### Bold
+**bold text**
+
+#### Italic
+*italicized text*
+
+#### Blockquote
+> blockquote
+
+#### Ordered List
+1. First item
+2. Second item
+3. Third item
+
+#### Unordered List
+- First item
+- Second item
+- Third item
+
+#### Code
+`code`
+
+#### Link
+[title](https://www.example.com)
+
+#### Horizontal Rule
+---
+```
+---
+Image
+````md
+# Example:
+<p align="center">
+![alt text](image.jpg){:width="200px" height="200px"}
+</p>
+
+# Only works in Markdown Preview Renderer
+<p align="center">
+![Siddharth](https://trunc8.github.io/assets/img/profile-pic.jpg "Siddharth Saha"){:width="200px" height="200px"}
+</p>
+
+# Left aligned (Height doesn't work with Kramdown; Fails for GitHub)
+![Siddharth](https://trunc8.github.io/assets/img/profile-pic.jpg "Siddharth Saha"){:width="200px"}
+
+# Centering for GitHub and Kramdown:
+<p align="center">
+    <img src="https://trunc8.github.io/assets/img/profile-pic.jpg" width="200">
+</p>
+````
+---
+Video
+```html
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/VIDEO_ID?rel=0&amp;controls=1&amp;start=0"
+frameborder="0"
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen></iframe>
+<br />
+```
+---
+Extended Syntax
+````md
+Not all Markdown applications support these elements.
+
+#### Table (Doesn't work with Kramdown)
+| Syntax | Description |
+| ----------- | ----------- |
+| Header | Title |
+| Paragraph | Text |
+
+#### Fenced Code Block
+```
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+```
+
+#### Footnote
+Here's a sentence with a footnote. [^1]
+
+[^1]: This is the footnote.
+
+#### Custom Heading ID
+### My Great Heading {#custom-id}
+
+#### Definition List (Doesn't work with Kramdown)
+term
+: definition
+
+#### Strikethrough
+~~The world is flat.~~
+
+#### Task List
+- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the media
+
+### Rendering this md from Sublime (If Markdown Preview is installed)
+Press `Alt+M`
+````
+---
+
+Latex in HTML (works with Kramdown)
+```md
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  tex2jax: {
+  inlineMath: [['$','$'], ['\\(','\\)']],
+  processEscapes: true},
+  jax: ["input/TeX","input/MathML","input/AsciiMath","output/CommonHTML"],
+  extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js","AssistiveMML.js", "[Contrib]/a11y/accessibility-menu.js"],
+  TeX: {
+  extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"],
+  equationNumbers: {
+  autoNumber: "AMS"
+  }
+  }
+  });
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+```
+---
+
+Latex in Markdown Preview
+```md
+# VARIANT 1
+<!DOCTYPE html><script src="https://cdn.jsdelivr.net/npm/texme@0.7.0"></script><textarea>
+## Euler's Identity
+
+In mathematics, **Euler's identity** is the equality
+$$ e^{i \pi} + 1 = 0. $$
+
+## Explanation
+
+Euler's identity is a special case of Euler's formula from complex
+analysis, which states that for any real number $ x $,
+$$ e^{ix} = \cos x + i \sin x. $$
+
+Further reference: https://github.com/codeassign/markjax
+
+# VARIANT 2.1 (Markdown Preview)
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+# VARIANT 2.2 (Markdown Preview)
+> mathjax-config.js (filename)
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+# How to use VARIANT 2?
+Inline: `\\(a^2\\)`
+Outline: `\\[ a^2 = b^2 + c^2 \\]`
+Inline: `$|\vec{A}|=\sqrt{A_x^2 + A_y^2 + A_z^2}.$`
+Outline: `$$|\vec{A}|=\sqrt{A_x^2 + A_y^2 + A_z^2}.$$`
+```
+
+
+### MATLAB
+Starter comment
+```matlab
+%==========================================
+% Title:  TITLE
+% Author: trunc8
+% Date:   DATE
+%==========================================
+```
+
+
+Create a legend for a variable used as for loop iteration
+```matlab
+% Declare your legend_values in a column vector Pr
+legend(strcat('p=',num2str(Pr')),'Interpreter','latex');
+```
+
+MATLAB matrix to LaTeX
+```matlab
+% Credits: Lu Ce
+%% Clear command window
+clc;
+
+
+%% Choose matrix to convert
+M = rand(4, 5);
+
+
+%% Convert
+
+% Get matrix dimensions
+m = size(M, 1);
+n = size(M, 2);
+
+% Create first line
+s = sprintf('  \\begin{bmatrix}\n  ');
+
+% Add matrix content
+for k = 1:m
+    for l = 1:n
+        s = sprintf('%s %6.3f', s, M(k, l)); % print 3 decimal places, align to 6 characters
+        if l < n
+            s = sprintf('%s &', s);
+        end
+    end
+    if k < m
+        s = sprintf('%s \\cr', s);
+    end
+    s = sprintf('%s\n  ', s);
+end
+
+% Add last line
+s = sprintf('%s\\end{bmatrix}\n', s);
+
+% Print the result
+disp(s);
+```
+
+### Python
+
+Nested for loops in one line
+```py
+import itertools
+for i, j in itertools.product(range(x), range(y)):
+```
+
+Loop simultaneously
+```py
+for i, j in zip(range(x), range(y)):
+```
+
+Difference between `zip` and `itertools.product`:
+```py
+import itertools
+x=3; y=2
+print(list(itertools.product(range(x), range(y))))
+# Output: [(0, 0), (0, 1), (1, 0), (1, 1), (2, 0), (2, 1)]
+print(list(zip(range(x), range(y))))
+# Output: [(0, 0), (1, 1)]
+```
+
+Identical elements in two lists
+```py
+list(set(t1).intersection(set(t2)))
+```
+
+Append to script's path location
+```py
+cwd = os.path.dirname(os.path.abspath(__file__))
+os.path.join(cwd,FILEPATH)
+```
+
+
+Idiom to reverse a sequence
+```py
+a = np.arange(10)
+print(a[::-1])
+```
+
+Matplotlib: Plot cv2 image in matplotlib
+```py
+im1 = cv2.imread('kind_doggo.png')
+plt.imshow(im1[:,:,::-1])
+# Effectively flipping last dimension order: BGR (cv2) -> RGB (plt)
+plt.show()
+```
+
+Numpy: Divide each row by a vector element
+```py
+data  = np.array([[1,1,1],
+                  [2,2,2],
+                  [3,3,3]])
+vector = np.array([1,2,3])
+# Inherently each element divides across entire column, so take transpose
+sub_result = (data.T - vector).T
+# array([[0, 0, 0],
+#        [0, 0, 0],
+#        [0, 0, 0]])
+div_result = (data.T / vector).T
+# array([[1., 1., 1.],
+#        [1., 1., 1.],
+#        [1., 1., 1.]])
+```
+
+Numpy: Stack and axis
+```py
+# arr.shape = (4,3)
+np.stack((arr, arr), axis=0) # shape: (2,4,3)
+np.stack((arr, arr), axis=1) # shape: (4,2,3)
+np.stack((arr, arr), axis=2) # shape: (4,3,2)
+np.stack((arr, arr), axis=-1) # shape: (4,3,2)
+```
+
+Numpy: Precision of 3 decimal places and suppress scientific notation
+```py
+np.set_printoptions(precision=3, supress=True)
+```
+
+Numpy: Sum axis
+```py
+data  = np.array([[1,1],
+                  [2,2],
+                  [3,3]])
+np.sum(data, axis=0) # array([6, 6])
+np.sum(data, axis=1) # array([2, 4, 6])
+'''
+Explanation: Shape is (3,2)
+- Axis 0 will sum along shape "3"
+- Axis 1 will sum along shape "2"
+'''
+```
+
+Numpy: Sum or Mean over multiple axis
+```py
+data = np.arange(24).reshape(1,2,3,4)
+'''
+array([[[[ 0,  1,  2,  3],
+         [ 4,  5,  6,  7],
+         [ 8,  9, 10, 11]],
+
+        [[12, 13, 14, 15],
+         [16, 17, 18, 19],
+         [20, 21, 22, 23]]]])
+'''
+np.mean(data, axis=(2,3), keepdims=True) # Shape: (1, 2, 1, 1)
+np.mean(data, axis=(2,3)) # Shape: (1, 2)
+'''
+Explanation: As before, the axes specified in the list get squashed to 1
+If you don't do keepdims=True, then the corresponding axes
+(that got squashed to length 1) will also get squeezed out
+'''
+
+```
+
+
+### PyTorch
+Load a model's weights
+```py
+# Import model's class somehow or define it here
+model = Model_Class().to("cuda")
+model.load_state_dict(torch.load(model_filename))
+model.eval()
+model(inputs)
+```
+
+
+### Recover Unsaved Sublime Text
+```sh
+cd ~/.config/sublime-text-3/Local
+vim Session.sublime_session
+## Press the '/' key
+## Search for whatever string you remember from the lost file
+## Press 'Enter' and iterate through results using 'n' key
+## After finding the lost text, convert all the '\n' into newlines
+```
+
+### ROS 1
+Barebones package
+
+```sh
+catkin create pkg hello_package
+cd hello_package
+mkdir src && cd src
+touch hello_package_node.cpp
+```
+
+`package.xml`
+```xml
+<?xml version="1.0"?>
+<package format="2">
+  <name>hello_package</name>
+  <version>0.0.0</version>
+  <description>The hello_package package</description>
+  <maintainer email="trunc8@todo.todo">trunc8</maintainer>
+  <license>TODO</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>roscpp</depend>
+</package>
+```
+
+`CMakeLists.txt`
+```cmake
+cmake_minimum_required(VERSION 3.0.2)
+project(hello_package)
+find_package(catkin REQUIRED
+    roscpp
+)
+
+catkin_package(
+)
+
+## Specify additional locations of header files
+include_directories(
+${catkin_INCLUDE_DIRS}
+)
+
+## Declare a C++ executable
+## With catkin_make all packages are built within a single CMake context
+## The recommended prefix ensures that target names across packages don't collide
+add_executable(${PROJECT_NAME}_node src/hello_package_node.cpp)
+
+## Specify libraries to link a library or executable target against
+target_link_libraries(${PROJECT_NAME}_node
+  ${catkin_LIBRARIES}
+)
+```
+
+`hello_package_node.cpp`
+```cpp
+#include "ros/ros.h"
+#include <iostream>
+
+int main()
+{
+    std::cout << "Hello rtr_world" << std::endl;
+    ROS_INFO("Hello");
+    return 0;
+}
+```
+
+### ROS 2
+cd into package (e.g., turtlesim)
+```sh
+colcon_cd turtlesim
+```
+
+Return a list of package's executables:
+```sh
+ros2 pkg executables turtlesim
+```
+
+Start package
+```sh
+ros2 run turtlesim turtlesim_node
+```
+
+Passing ros arguments
+```sh
+ros2 run turtlesim turtlesim_node --ros-args --remap __node:=my_turtle
+```
+
+Nodes
+```sh
+ros2 node list
+ros2 node info /my_turtle
+```
+
+Give 2D Pose Estimate from Terminal
+```sh
+ros2 topic pub -r 1 /initialpose geometry_msgs/msg/PoseWithCovarianceStamped "{header: {frame_id: 'map'}}"
+```
+
+
+
+
+### Terminal tools
+
+Copy from vim to clipboard
+```sh
+# Linux Xorg
+:'<,'>w !xclip -selection clipboard
+```
+
+Color print from vim
+```sh
+# Inside vim
+:hardcopy > mydocument.ps
+# Exit vim
+ps2pdf mydocument.ps
+```
+
+
+Replace in all files recursively under current directory
+```sh
+# GREP: Replace "/home/trunc8d/catkin_ws/src/chaos" with "$(find chaos)"
+grep -rl "/home/trunc8d/catkin_ws/src/chaos" . | xargs sed -i 's/\/home\/trunc8d\/catkin_ws\/src\/chaos/\$\(find chaos\)/g'
+
+# RG: Replace 'category: scribbles' with 'category: ""'
+rg --files-with-matches 'category: scribbles' | xargs sed -i 's/category: scribbles/category: ""/g'
+```
+
+Disable caps lock key
+```sh
+xmodmap -e "clear lock"
+```
+
+Toggle caps lock key
+```sh
+xdotool key Caps_Lock
+```
+
+Join Zoom meeting
+```sh
+/bin/xdg-open zoommtg://zoom.us/join?action=join&confno=MEETING_ID&pwd=PWD
+```
+
+Edit pdf
+```sh
+xournal PDF_NAME
+```
+
+Speed-up Video by 2x
+```sh
+mencoder -speed 2 -o OUTPUT.mp4 -ovc lavc - INPUT.webm -oac mp3lame -srate 8000
+
+ffmpeg -i INPUT.webm -filter_complex "[0:v]setpts=2*PTS[v];[0:a]atempo=2[a]" -map "[v]" -map "[a]" -c:v libx264 -c:a aac OUTPUT.mp4
+
+# If input has no audio
+ffmpeg -i champ_crude_line_follower.webm -filter_complex "[0:v]setpts=0.5*PTS[v]" -map "[v]" -c:v libx264 -c:a aac champ_crude_line_follower2x.mp4
+
+```
+
+Convert Google Slides slideshow into video
+```sh
+## Download Google Slides slideshow as PDF_FILE.pdf
+## cd into the download location
+mkdir Images
+pdftoppm -png PDF_FILE.pdf Images/IMAGE_PREFIX
+ffmpeg -framerate 1 -i Images/IMAGE_PREFIX-%02d.png -c:v libx264 -profile:v high -crf 20 -pix_fmt yuv420p -r 10 IMAGE_PREFIX.mp4
+# Above "%02d" stands for two-digit sequential numbering like 01,02,...10,11,...
+# The first framerate (-framerate 1) denotes delay for each slide
+# The second framerate (-r 10) denotes number of times each slide image
+# is duplicated. Adds smoothness, I believe.
+
+# See acknowledgement references below for more information
+```
+
+### Benchbot
+```sh
+cd $HOME
+
+benchbot_run --robot carter --env miniroom:1 --task semantic_slam:passive:ground_truth -f
+benchbot_run --robot carter --env house:1 --task semantic_slam:passive:ground_truth -f
+
+benchbot_submit --evaluate-results omq --native python3 my_semantic_slam/my_semantic_slam.py
+
+benchbot_submit --evaluate-results omq --results results/YV2.json --native python3 yolo-votenet/main.py > results/YV_frames2.sh
+
+benchbot_submit --evaluate-results omq --results results/votenet.json --native python3 my_semantic_slam/my_semantic_slam.py | tee results/votenet_results2.sh
+
+benchbot_submit --evaluate-results omq --results results/groupfree.json --native python3 shetti-group/my_groupfree_slam.py | tee results/groupfree_results2.sh
+
+benchbot_batch --task semantic_slam:passive:ground_truth --robot carter --envs miniroom:1,miniroom:5 --native python3 my_semantic_slam/my_semantic_slam.py
+```
+
+### Acknowledgements
+- [The Markdown Guide](https://www.markdownguide.org)
+- [Markdown Preview](https://plaintext-productivity.net/2-04-how-to-set-up-sublime-text-for-markdown-editing.html#:~:text=When%20working%20on%20a%20Markdown,command%20using%20the%20Command%20Palette.)
+- [pdftoppm](https://www.tecmint.com/convert-pdf-to-image-in-linux-commandline/)
+- [ffmpeg png to video](https://unix.stackexchange.com/questions/68770/converting-png-frames-to-video-at-1-fps)
+- [MATLAB matrix to LaTeX](https://www.mathworks.com/matlabcentral/fileexchange/80629-matlab-matrix-to-latex-conversion-example)
+- [Vim export to pdf in color](https://www.brunoparmentier.be/blog/vim-export-document-to-pdf/)

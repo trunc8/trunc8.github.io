@@ -1,0 +1,87 @@
+---
+import YouTubeEmbed from './YouTubeEmbed.astro';
+
+const featuredVideoId = "GlidNFKa-us";
+
+const thumbnails = [
+  { videoId: "GlidNFKa-us", title: "Quadruped Robot Challenge ICRA '23" },
+  { videoId: "iyLnfotGtfM", title: "DarkBot Capstone Demo" },
+  { videoId: "RfW2hI_8j74", title: "ROS2 RADI Warehouse Exercise" },
+  { videoId: "rUUqPmobm1k", title: "Dynamic OctoMap" },
+];
+---
+
+<section class="py-12 sm:py-20">
+  <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-8">
+      <h1 class="text-4xl sm:text-5xl font-bold text-on-surface mb-4">
+        Siddharth Saha
+      </h1>
+      <p class="text-lg text-on-surface-muted max-w-2xl mx-auto">
+        Robotics & ML Engineer at Tesla. Building intelligent robots that navigate and interact with the real world.
+      </p>
+    </div>
+
+    <div class="max-w-3xl mx-auto" id="spotlight-container">
+      <YouTubeEmbed videoId={featuredVideoId} title="Quadruped Robot Challenge ICRA '23" />
+    </div>
+
+    <div class="mt-6 flex justify-center gap-3 overflow-x-auto pb-2">
+      {thumbnails.map((t, i) => (
+        <button
+          type="button"
+          class="flex-shrink-0 group text-left cursor-pointer bg-transparent border-0 p-0 thumb-btn"
+          data-video-id={t.videoId}
+          data-video-title={t.title}
+          title={t.title}
+        >
+          <img
+            src={`https://i.ytimg.com/vi/${t.videoId}/mqdefault.jpg`}
+            alt={t.title}
+            class:list={[
+              "w-28 sm:w-36 rounded-lg border-2 transition-colors",
+              i === 0 ? "border-brand" : "border-transparent group-hover:border-brand"
+            ]}
+            loading="lazy"
+          />
+          <p class="text-xs text-on-surface-muted mt-1 text-center max-w-[9rem] truncate">{t.title}</p>
+        </button>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script is:inline>
+  (function initShowreel() {
+    var container = document.getElementById('spotlight-container');
+    var buttons = document.querySelectorAll('.thumb-btn');
+
+    buttons.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var videoId = btn.dataset.videoId;
+        var videoTitle = btn.dataset.videoTitle;
+
+        // Update spotlight video
+        container.innerHTML =
+          '<div class="yt-wrapper">' +
+            '<lite-youtube videoid="' + videoId + '" playlabel="Play: ' + videoTitle + '" ' +
+              'style="background-image: url(\'https://i.ytimg.com/vi/' + videoId + '/hqdefault.jpg\');">' +
+              '<a href="https://youtube.com/watch?v=' + videoId + '" class="lty-playbtn" title="Play: ' + videoTitle + '">' +
+                '<span class="lyt-visually-hidden">Play: ' + videoTitle + '</span>' +
+              '</a>' +
+            '</lite-youtube>' +
+          '</div>';
+
+        // Update active thumbnail border
+        buttons.forEach(function(b) {
+          var img = b.querySelector('img');
+          img.classList.remove('border-brand');
+          img.classList.add('border-transparent');
+        });
+        var activeImg = btn.querySelector('img');
+        activeImg.classList.remove('border-transparent');
+        activeImg.classList.add('border-brand');
+      });
+    });
+  })();
+</script>

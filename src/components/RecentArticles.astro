@@ -1,0 +1,28 @@
+---
+import { getCollection } from 'astro:content';
+import ArticleCard from './ArticleCard.astro';
+
+const allPosts = await getCollection('blog');
+const recent = allPosts
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+---
+
+<section class="py-12">
+  <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between mb-6">
+      <h2 class="text-2xl font-bold text-on-surface">Recent Writing</h2>
+      <a href="/writing" class="text-sm text-brand hover:underline">View all &rarr;</a>
+    </div>
+    <div class="divide-y divide-border">
+      {recent.map((post) => (
+        <ArticleCard
+          title={post.data.title}
+          date={post.data.pubDate}
+          slug={post.slug}
+          description={post.data.description}
+        />
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Timeline from '../components/Timeline.astro';
+---
+
+<BaseLayout title="About | Siddharth Saha" description="Robotics & ML Engineer at Tesla. M.S. from Carnegie Mellon, B.Tech from IIT Bombay.">
+  <div class="py-12">
+    <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+      <!-- Bio section -->
+      <div class="flex flex-col sm:flex-row items-center sm:items-start gap-8 mb-12">
+        <img
+          src="/img/profile-pic.jpg"
+          srcset="/img/profile-pic.jpg 1x, /img/profile-pic@2x.jpg 2x"
+          alt="Siddharth Saha"
+          class="w-36 h-36 rounded-full object-cover border-2 border-border flex-shrink-0"
+        />
+        <div>
+          <h1 class="text-3xl sm:text-4xl font-bold text-on-surface mb-3">About Me</h1>
+          <div class="space-y-3 text-on-surface-muted leading-relaxed">
+            <p>
+              I'm a Robotics & ML Engineer at Tesla, working on Optimus — Tesla's humanoid robot.
+              I try to understand the world through the lens of intelligent machines.
+            </p>
+            <p>
+              I hold an M.S. in Robotic Systems Development from Carnegie Mellon University (MRSD '24)
+              and a B.Tech in Mechanical Engineering from IIT Bombay. At CMU, I was the student
+              representative of the MRSD cohort and represented the university at ICRA '23 in the
+              Quadruped Robot Challenge, winning 3rd place.
+            </p>
+            <p>
+              My technical interests span motion planning, legged locomotion, computer vision, SLAM,
+              and reinforcement learning. Before robotics, I worked in quantitative finance at Goldman Sachs.
+            </p>
+          </div>
+          <a
+            href="/resume/Siddharth_Saha_Resume.pdf"
+            target="_blank"
+            class="inline-flex items-center gap-2 mt-4 px-5 py-2.5 rounded-lg bg-brand text-white font-medium text-sm hover:bg-brand-hover hover:no-underline transition-colors"
+          >
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            Download Resume
+          </a>
+        </div>
+      </div>
+
+      <!-- Timeline -->
+      <h2 class="text-2xl font-bold text-on-surface mb-6">Experience & Education</h2>
+      <Timeline />
+    </div>
+  </div>
+</BaseLayout>

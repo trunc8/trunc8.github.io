@@ -1,0 +1,87 @@
+---
+import ThemeToggle from './ThemeToggle.astro';
+import SearchDialog from './SearchDialog.astro';
+import { navigation } from '../data/navigation';
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="sticky top-0 z-50 border-b border-border bg-surface/80 backdrop-blur-md">
+  <nav class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+    <div class="flex h-16 items-center justify-between">
+      <a href="/" class="text-lg font-bold text-on-surface hover:no-underline">
+        Siddharth Saha
+      </a>
+
+      <!-- Desktop nav -->
+      <div class="hidden sm:flex items-center gap-6">
+        {navigation.map((item) => (
+          <a
+            href={item.href}
+            class:list={[
+              'text-sm font-medium transition-colors hover:text-brand hover:no-underline',
+              currentPath === item.href || (item.href !== '/' && currentPath.startsWith(item.href))
+                ? 'text-brand'
+                : 'text-on-surface-muted'
+            ]}
+          >
+            {item.name}
+          </a>
+        ))}
+        <a href="/resume/Siddharth_Saha_Resume.pdf" class="text-sm font-medium text-on-surface-muted hover:text-brand hover:no-underline" target="_blank">CV</a>
+        <SearchDialog />
+        <ThemeToggle />
+      </div>
+
+      <!-- Mobile menu button -->
+      <div class="flex items-center gap-2 sm:hidden">
+        <ThemeToggle />
+        <button id="mobile-menu-btn" type="button" aria-label="Toggle menu" class="p-2 rounded-lg hover:bg-surface-alt">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path id="menu-open-icon" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            <path id="menu-close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile nav -->
+    <div id="mobile-menu" class="hidden sm:hidden pb-4">
+      <div class="flex flex-col gap-2">
+        {navigation.map((item) => (
+          <a
+            href={item.href}
+            class:list={[
+              'block px-3 py-2 rounded-lg text-sm font-medium hover:bg-surface-alt hover:no-underline',
+              currentPath === item.href || (item.href !== '/' && currentPath.startsWith(item.href))
+                ? 'text-brand bg-surface-alt'
+                : 'text-on-surface-muted'
+            ]}
+          >
+            {item.name}
+          </a>
+        ))}
+        <a href="/resume/Siddharth_Saha_Resume.pdf" class="block px-3 py-2 rounded-lg text-sm font-medium text-on-surface-muted hover:bg-surface-alt hover:no-underline" target="_blank">CV</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  function initMobileMenu() {
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const openIcon = document.getElementById('menu-open-icon');
+    const closeIcon = document.getElementById('menu-close-icon');
+
+    btn?.addEventListener('click', () => {
+      const isOpen = !menu!.classList.contains('hidden');
+      menu!.classList.toggle('hidden');
+      openIcon!.classList.toggle('hidden');
+      closeIcon!.classList.toggle('hidden');
+    });
+  }
+
+  initMobileMenu();
+  document.addEventListener('astro:after-swap', initMobileMenu);
+</script>

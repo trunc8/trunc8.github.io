@@ -1,0 +1,30 @@
+---
+interface Props {
+  title: string;
+  company: string;
+  image: string;
+  imageAlt: string;
+  date: string;
+  description: string;
+  type: 'work' | 'education';
+}
+
+const { title, company, image, imageAlt, date, description, type } = Astro.props;
+---
+
+<div class="relative flex gap-4 sm:gap-6">
+  <div class="flex-shrink-0 w-12 h-12 rounded-full border border-border bg-surface overflow-hidden z-10">
+    <img src={image} alt={imageAlt} class="w-full h-full object-contain p-1" loading="lazy" />
+  </div>
+  <div class="flex-1 pb-2">
+    <div class="flex flex-wrap items-center gap-2 mb-1">
+      <span class="text-xs px-2 py-0.5 rounded-full bg-surface-alt text-on-surface-muted">
+        {type === 'work' ? 'Work' : 'Education'}
+      </span>
+      <span class="text-xs text-on-surface-muted">{date}</span>
+    </div>
+    <h3 class="font-semibold text-on-surface">{title}</h3>
+    <p class="text-sm text-on-surface-muted">{company}</p>
+    <p class="mt-1 text-sm text-on-surface-muted leading-relaxed">{description}</p>
+  </div>
+</div>

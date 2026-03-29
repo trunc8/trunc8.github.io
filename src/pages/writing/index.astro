@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const sorted = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const themes = [
+  "Motion Planning & Navigation",
+  "Legged Locomotion",
+  "CV & SLAM",
+  "Paper Reviews",
+  "Programming & Systems",
+];
+
+const grouped = themes
+  .map((theme) => ({
+    theme,
+    posts: sorted.filter((p) => p.data.theme === theme),
+  }))
+  .filter((g) => g.posts.length > 0);
+---
+
+<BaseLayout title="Writing | Siddharth Saha" description="Technical articles on robotics, motion planning, computer vision, and programming.">
+  <div class="py-12">
+    <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl sm:text-4xl font-bold text-on-surface mb-2">Writing</h1>
+      <p class="text-on-surface-muted mb-10">Technical articles on robotics, planning, vision, and systems programming.</p>
+
+      {grouped.map((group) => (
+        <section class="mb-10">
+          <h2 class="text-xl font-semibold text-on-surface mb-4 pb-2 border-b border-border">{group.theme}</h2>
+          <div class="divide-y divide-border">
+            {group.posts.map((post) => (
+              <ArticleCard
+                title={post.data.title}
+                date={post.data.pubDate}
+                slug={post.slug}
+                description={post.data.description}
+              />
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+  </div>
+</BaseLayout>

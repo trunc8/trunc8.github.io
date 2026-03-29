@@ -1,0 +1,56 @@
+---
+interface Props {
+  categories: string[];
+}
+
+const { categories } = Astro.props;
+---
+
+<div class="flex flex-wrap gap-2 mb-8" id="filter-bar">
+  <button
+    data-filter="all"
+    class="filter-btn px-3 py-1.5 text-sm rounded-full border border-brand bg-brand text-white transition-colors"
+  >
+    All
+  </button>
+  {categories.map((cat) => (
+    <button
+      data-filter={cat.toLowerCase()}
+      class="filter-btn px-3 py-1.5 text-sm rounded-full border border-border text-on-surface-muted hover:border-brand hover:text-brand transition-colors"
+    >
+      {cat}
+    </button>
+  ))}
+</div>
+
+<script>
+  function initFilters() {
+    const buttons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('[data-category]');
+
+    buttons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const filter = (btn as HTMLElement).dataset.filter!;
+
+        buttons.forEach((b) => {
+          b.classList.remove('border-brand', 'bg-brand', 'text-white');
+          b.classList.add('border-border', 'text-on-surface-muted');
+        });
+        btn.classList.add('border-brand', 'bg-brand', 'text-white');
+        btn.classList.remove('border-border', 'text-on-surface-muted');
+
+        cards.forEach((card) => {
+          const el = card as HTMLElement;
+          if (filter === 'all' || el.dataset.category === filter) {
+            el.style.display = '';
+          } else {
+            el.style.display = 'none';
+          }
+        });
+      });
+    });
+  }
+
+  initFilters();
+  document.addEventListener('astro:after-swap', initFilters);
+</script>

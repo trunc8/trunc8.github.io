@@ -1,0 +1,27 @@
+---
+import TimelineEntry from './TimelineEntry.astro';
+import { work } from '../data/work';
+import { education } from '../data/education';
+
+type TimelineItem = (typeof work)[number] | (typeof education)[number];
+
+const allEntries: TimelineItem[] = [...work, ...education]
+  .sort((a, b) => b.sortDate.localeCompare(a.sortDate));
+---
+
+<div class="relative">
+  <div class="absolute left-6 top-0 bottom-0 w-px bg-border hidden sm:block"></div>
+  <div class="space-y-8">
+    {allEntries.map((entry) => (
+      <TimelineEntry
+        title={entry.title}
+        company={entry.company}
+        image={entry.image}
+        imageAlt={entry.imageAlt}
+        date={entry.date}
+        description={entry.description}
+        type={entry.type}
+      />
+    ))}
+  </div>
+</div>

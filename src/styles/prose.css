@@ -1,0 +1,47 @@
+/* Blog post typography overrides */
+.prose img {
+  border-radius: 0.5rem;
+  margin: 1.5rem auto;
+}
+
+.prose pre {
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-border);
+}
+
+.prose code:not(pre code) {
+  background-color: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+  border-radius: 0.25rem;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.875em;
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.prose th,
+.prose td {
+  border: 1px solid var(--color-border);
+  padding: 0.5rem 0.75rem;
+}
+
+.prose th {
+  background-color: var(--color-surface-alt);
+}
+
+.prose blockquote {
+  border-left: 4px solid var(--color-brand);
+  padding-left: 1rem;
+  font-style: italic;
+}
+
+.prose video,
+.prose iframe {
+  max-width: 100%;
+  border-radius: 0.5rem;
+  margin: 1.5rem auto;
+}
+

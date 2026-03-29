@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "San Francisco Display";
+  src: url("/fonts/sanfranciscodisplay-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-brand: #2563eb;
+  --color-brand-hover: #1d4ed8;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f8fafc;
+  --color-on-surface: #0f172a;
+  --color-on-surface-muted: #64748b;
+  --color-border: #e2e8f0;
+  --color-card-shadow: rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="dark"] {
+  --color-brand: #60a5fa;
+  --color-brand-hover: #93bbfd;
+  --color-surface: #0f172a;
+  --color-surface-alt: #1e293b;
+  --color-on-surface: #f1f5f9;
+  --color-on-surface-muted: #94a3b8;
+  --color-border: #334155;
+  --color-card-shadow: rgba(0, 0, 0, 0.3);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  font-family: "San Francisco Display", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+a {
+  color: var(--color-brand);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-brand-hover);
+  text-decoration: underline;
+}
+
+::selection {
+  background-color: var(--color-brand);
+  color: white;
+}
+
+/* MathJax: inline math must stay inline */
+mjx-container {
+  display: inline !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: visible !important;
+}
+
+mjx-container svg {
+  display: inline !important;
+}
+
+/* MathJax: block/display math is centered on its own line */
+mjx-container[display="true"] {
+  display: block !important;
+  text-align: center;
+  margin: 1.5rem 0 !important;
+  overflow-x: auto !important;
+}
+
+mjx-container[display="true"] svg {
+  display: inline-block !important;
+}

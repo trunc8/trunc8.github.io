@@ -1,0 +1,23 @@
+---
+interface Props {
+  title: string;
+  date: Date;
+  slug: string;
+  description?: string;
+}
+
+import { formatDateShort } from '../utils/helpers';
+
+const { title, date, slug, description } = Astro.props;
+---
+
+<a href={`/writing/${slug}`} class="group block py-3 hover:no-underline">
+  <div class="grid grid-cols-[8rem_1fr] gap-4 items-start">
+    <time class="text-sm text-on-surface-muted whitespace-nowrap pt-0.5" datetime={date.toISOString()}>
+      {formatDateShort(date)}
+    </time>
+    <div class="min-w-0">
+      <h3 class="font-medium text-on-surface group-hover:text-brand transition-colors">{title}</h3>
+    </div>
+  </div>
+</a>
