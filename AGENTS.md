@@ -180,11 +180,12 @@ Each post in `src/content/blog/` must have:
 ## Known Issues & Technical Debt
 
 ### High Priority
-1. **LaTeX build artifacts committed**: `.aux`, `.log`, `.out` files in `public/resume/` should be gitignored
-2. **Image optimization**: Profile pics are 80KB/261KB — should be compressed or converted to WebP
-3. **No font preloading**: San Francisco Display woff loads late, causing FOUT
-4. **HeroShowreel JS builds HTML via string concatenation**: Brittle, potential XSS vector with untrusted data
-5. **Button styling inconsistent**: Mix of `rounded-lg` and `rounded-full`, different padding scales
+All resolved:
+1. ~~**LaTeX build artifacts committed**~~: Fixed — `.aux`, `.log`, `.out` added to `.gitignore`
+2. ~~**Image optimization**~~: Fixed — profile pics resized to display size (87KB→29KB, 284KB→96KB)
+3. ~~**No font preloading**~~: Fixed — added `rel="preload"` for San Francisco Display woff
+4. ~~**HeroShowreel JS builds HTML via string concatenation**~~: Fixed — rewritten to use DOM API (`createElement`, `replaceChildren`)
+5. ~~**Button styling inconsistent**~~: Fixed — standardized tag padding to `py-0.5` across ProjectCard and ProjectLayout
 
 ### Medium Priority
 6. **Filter state not persisted**: Project category filter resets on navigation

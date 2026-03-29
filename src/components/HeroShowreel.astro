@@ -61,16 +61,29 @@ const thumbnails = [
         var videoId = btn.dataset.videoId;
         var videoTitle = btn.dataset.videoTitle;
 
-        // Update spotlight video
-        container.innerHTML =
-          '<div class="yt-wrapper">' +
-            '<lite-youtube videoid="' + videoId + '" playlabel="Play: ' + videoTitle + '" ' +
-              'style="background-image: url(\'https://i.ytimg.com/vi/' + videoId + '/hqdefault.jpg\');">' +
-              '<a href="https://youtube.com/watch?v=' + videoId + '" class="lty-playbtn" title="Play: ' + videoTitle + '">' +
-                '<span class="lyt-visually-hidden">Play: ' + videoTitle + '</span>' +
-              '</a>' +
-            '</lite-youtube>' +
-          '</div>';
+        // Build new embed via DOM (no string concatenation)
+        var wrapper = document.createElement('div');
+        wrapper.className = 'yt-wrapper';
+
+        var lite = document.createElement('lite-youtube');
+        lite.setAttribute('videoid', videoId);
+        lite.setAttribute('playlabel', 'Play: ' + videoTitle);
+        lite.style.backgroundImage = "url('https://i.ytimg.com/vi/" + videoId + "/hqdefault.jpg')";
+
+        var link = document.createElement('a');
+        link.href = 'https://youtube.com/watch?v=' + videoId;
+        link.className = 'lty-playbtn';
+        link.title = 'Play: ' + videoTitle;
+
+        var span = document.createElement('span');
+        span.className = 'lyt-visually-hidden';
+        span.textContent = 'Play: ' + videoTitle;
+
+        link.appendChild(span);
+        lite.appendChild(link);
+        wrapper.appendChild(lite);
+
+        container.replaceChildren(wrapper);
 
         // Update active thumbnail border
         buttons.forEach(function(b) {
