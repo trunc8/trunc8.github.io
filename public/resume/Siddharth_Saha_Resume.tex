@@ -1,0 +1,171 @@
+%-------------------------
+% Resume in LaTeX
+% Author: Siddharth Saha
+%-------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=0.45in, top=0.3in, bottom=0.25in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+% ATS-friendly PDF metadata
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% Colors
+\definecolor{linkblue}{HTML}{2563EB}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    urlcolor=linkblue,
+    pdfauthor={Siddharth Saha},
+    pdftitle={Siddharth Saha - Resume},
+}
+
+% Section formatting — text above rule, proper spacing
+\titleformat{\section}{\normalsize\bfseries\scshape}{}{0em}{}[\vspace{1pt}\hrule height 0.4pt]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Two-line entry: Company | Date, then Role | Location
+\newcommand{\entry}[4]{%
+  \vspace{3pt}%
+  \noindent\textbf{#1}\hfill\textbf{#2}\\%
+  \noindent\textit{\small #3}\hfill\textit{\small #4}%
+  \vspace{1pt}%
+}
+
+% One-line entry (no bullets): Company, Role | Date
+\newcommand{\entryoneline}[2]{%
+  \vspace{3pt}%
+  \noindent\textbf{#1}\hfill\textbf{#2}%
+  \vspace{1pt}%
+}
+
+% One-line entry for projects: Title | Date
+\newcommand{\projectentry}[2]{%
+  \vspace{3pt}%
+  \noindent\textbf{#1}\hfill\textbf{#2}%
+  \vspace{1pt}%
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=14pt, label=\textbullet, nosep, topsep=2pt, parsep=1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+  {\LARGE\bfseries Siddharth Saha} \\[4pt]
+  \small
+  +1-412-214-2516 \enspace$\mid$\enspace
+  \href{mailto:sahasiddharth611@gmail.com}{sahasiddharth611@gmail.com} \enspace$\mid$\enspace
+  \href{https://linkedin.com/in/sahasiddharth611}{linkedin.com/in/sahasiddharth611} \enspace$\mid$\enspace
+  \href{https://cs.cmu.edu/~ssaha3}{cs.cmu.edu/\textasciitilde ssaha3} \enspace$\mid$\enspace
+  \href{https://github.com/trunc8}{github.com/trunc8}
+\end{center}
+
+\vspace{-8pt}
+
+%----------EXPERIENCE----------
+\section{Experience}
+
+\entry{Tesla}{Jul 2024 -- Present}
+  {Robotics Machine Learning Engineer}{Palo Alto, CA}
+\resumeItemListStart
+  % TODO: Replace with specific ML contributions — architecture, data scale, metrics
+  \resumeItem{Trained and deployed behavior models for Optimus, contributing across vision-based planning, RL locomotion, tokenizer development, data collection pipelines, and robot policy rollout}
+  \resumeItem{Rewrote the navigation task used across the robot fleet, increasing resilience and slashing runtime by 95\%}
+  \resumeItem{Developed deadlock mitigation strategy achieving 50\% reduction in operator interventions due to bot traffic}
+\resumeItemListEnd
+
+\entry{Amazon Robotics}{May 2023 -- Aug 2023}
+  {SDE Intern (C{++} Specialist)}{Westborough, MA}
+\resumeItemListStart
+  \resumeItem{Implemented RRT-based motion planning for suction-based manipulator arms operating on unpackaged items}
+  \resumeItem{Identified and resolved a mutex deadlock in the behavior tree's blackboard, achieving 50\% speedup in failure recovery}
+\resumeItemListEnd
+
+\entry{Goldman Sachs}{Jul 2021 -- Jul 2022}
+  {Analyst}{Bengaluru, India}
+
+\entry{Google Summer of Code -- JdeRobot}{Jun 2021 -- Aug 2021}
+  {Student Developer}{Remote}
+\resumeItemListStart
+  \resumeItem{Migrated Docker Image from ROS 1 to ROS 2 Foxy, constructed RViz 2 web interface, and deployed to production}
+  \resumeItem{Post-GSoC, headed JdeRobot's ROS 2 Working Group for a year as an open-source contributor}
+\resumeItemListEnd
+
+\entry{Stride -- Quadruped Team}{Dec 2019 -- May 2021}
+  {Co-founder and Team Lead}{Mumbai, India}
+\resumeItemListStart
+  \resumeItem{Founded institute-funded team of 15 to build a quadruped robot for the RoboCup Rescue League urban search and rescue challenge; simulated gait trajectories and implemented IMU + Intel D435 sensor fusion}
+\resumeItemListEnd
+
+%----------EDUCATION----------
+\section{Education}
+
+\entry{Carnegie Mellon University, School of Computer Science}{Pittsburgh, PA}
+  {M.S. in Robotic Systems Development (MRSD) -- GPA: 3.97/4.00}{May 2024}
+\resumeItemListStart
+  \resumeItem{\textbf{Courses:} Deep Learning, Optimal Control, SLAM, Planning and Decision-making}
+  \resumeItem{\textbf{Achievements:} J.N. Tata Scholar}
+\resumeItemListEnd
+
+\entry{Indian Institute of Technology Bombay}{Mumbai, India}
+  {B.Tech in Mechanical (with Honors), Minor in Computer Science -- GPA: 9.43/10.00}{Aug 2021}
+\resumeItemListStart
+  \resumeItem{\textbf{Courses:} Foundations of Learning Agents, Design \& Analysis of Algorithms, Design of Mechatronic Systems}
+  \resumeItem{\textbf{1st Prize:} Micromouse Challenge (International), Off-track Bot (National), Operations Challenge (IIT Bombay)}
+\resumeItemListEnd
+
+%----------PROJECTS----------
+\section{Projects \hfill \normalfont\small\href{https://trunc8.github.io/projects}{Portfolio: trunc8.github.io/projects}}
+
+\projectentry{Long Horizon Task Planning for Quadruped Robot {\normalfont\textit{| Research Project, CMU}}}{Sep 2023 -- Apr 2024}
+\resumeItemListStart
+  \resumeItem{Learned locomotion skills like climbing, jumping, and walking using PPO and curriculum-learning in Isaac Gym}
+  \resumeItem{Constructed an A* planner, guided by a learned cost predictor, to generate time and energy-efficient paths}
+  \resumeItem{Implemented a novel anytime dataset generation method in Isaac Gym with diversity guarantees for training data}
+  \resumeItem{Achieved 13\% reduction in energy and 29\% reduction in time compared to a walking-only planner}
+\resumeItemListEnd
+
+\projectentry{Autonomous Quadruped in Unknown Cluttered Terrains {\normalfont\textit{| MRSD Capstone, CMU}}}{Sep 2022 -- Dec 2023}
+\resumeItemListStart
+  \resumeItem{Devised NMPC tracked using reactive WBC and integrated with exploration and LiDAR-based localization stacks}
+  \resumeItem{Implemented safety features for disaster sites \& demonstrated on-demand temporary takeover by safety operator}
+  \resumeItem{Exploration rate of 16 m\textsuperscript{2}/min and 95\% repeatability in debris-filled terrain with narrow doors}
+  \resumeItem{Secured 3rd prize at ICRA 2023 Quadruped Robot Challenge (London) for CMU, competing against MIT and KAIST}
+\resumeItemListEnd
+
+\projectentry{Robot Vision Scene Understanding Challenge {\normalfont\textit{| CVPR 2021}}}{Mar 2021 -- Apr 2021}
+\resumeItemListStart
+  \resumeItem{Built 3D semantic map from RGBD \& odometry; devised YOLOv4 + VoteNet consensus with 3D NMS post-processing}
+\resumeItemListEnd
+
+\projectentry{F1/10th Autonomous Grand Prix {\normalfont\textit{| IROS 2020}}}{Oct 2020}
+\resumeItemListStart
+  \resumeItem{Bernstein-polynomial local planner with MPC for Ackermann steering; global path optimization via OSQP solver}
+\resumeItemListEnd
+
+%----------SKILLS----------
+\section{Skills}
+
+\vspace{2pt}
+\noindent\small
+\textbf{ML/DL:}\enspace PyTorch, TensorFlow, Isaac Gym, PPO, curriculum learning, sim-to-real transfer \\[3pt]
+\textbf{Robotics:}\enspace ROS/ROS2, MuJoCo, motion planning (RRT, A*), NMPC, LiDAR SLAM, computer vision \\[3pt]
+\textbf{Languages:}\enspace C{++}, Python
+
+\end{document}
