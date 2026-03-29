@@ -17,6 +17,11 @@ vendor
 *.swp
 *.swo
 
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+
 # Environment
 .env
 .env.*
