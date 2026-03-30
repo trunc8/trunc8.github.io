@@ -22,7 +22,7 @@ export default {
           "Roboto",
           "sans-serif",
         ],
-        mono: ["JetBrains Mono", "Fira Code", "monospace"],
+        mono: ["ui-monospace", "SFMono-Regular", "Menlo", "Consolas", "monospace"],
       },
       typography: {
         DEFAULT: {

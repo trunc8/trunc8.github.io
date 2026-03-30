@@ -197,9 +197,10 @@ All resolved:
 11. ~~**No `rel="preconnect"` for YouTube domains**~~: Fixed — preconnect to `i.ytimg.com` in BaseHead
 
 ### Low Priority
-12. **Monospace font declared in Tailwind config but never loaded**: "JetBrains Mono" in font stack
-13. **`@/*` path alias configured but never used**: All imports use relative paths
-14. **Legacy Jekyll references in .gitignore**: `_site`, `.sass-cache`, etc. can be removed
-15. **No reading time on blog posts**: Would help readers decide whether to commit
-16. **No "copy code" button on code blocks**: Common expectation for technical blogs
-17. **Search button missing from mobile header**: Only visible on desktop
+All resolved:
+12. ~~**Monospace font declared but never loaded**~~: Fixed — replaced JetBrains Mono with system monospace stack
+13. ~~**`@/*` path alias unused**~~: Fixed — removed from tsconfig.json
+14. ~~**Legacy Jekyll references in .gitignore**~~: Fixed — removed `_site`, `.sass-cache`, etc.
+15. ~~**No reading time on blog posts**~~: Fixed — added reading time estimate (words/200) to PostLayout header
+16. ~~**No "copy code" button on code blocks**~~: Fixed — CopyCode component with hover-reveal button on all `<pre>` blocks
+17. ~~**Search button missing from mobile header**~~: Fixed — added search button to mobile nav, refactored SearchDialog to use class-based selectors

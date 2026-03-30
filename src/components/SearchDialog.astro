@@ -1,10 +1,9 @@
 ---
 ---
 <button
-  id="search-btn"
   type="button"
   aria-label="Search"
-  class="p-2 rounded-lg hover:bg-surface-alt transition-colors text-on-surface-muted"
+  class="search-open-btn p-2 rounded-lg hover:bg-surface-alt transition-colors text-on-surface-muted"
 >
   <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
     <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -22,7 +21,7 @@
 
 <script is:inline>
   (function initSearch() {
-    var btn = document.getElementById('search-btn');
+    var buttons = document.querySelectorAll('.search-open-btn');
     var dialog = document.getElementById('search-dialog');
     var overlay = document.getElementById('search-overlay');
     var loaded = false;
@@ -58,7 +57,9 @@
       document.body.style.overflow = '';
     }
 
-    if (btn) btn.addEventListener('click', openSearch);
+    buttons.forEach(function(btn) {
+      btn.addEventListener('click', openSearch);
+    });
     if (overlay) overlay.addEventListener('click', closeSearch);
 
     document.addEventListener('keydown', function(e) {
@@ -74,4 +75,3 @@
     });
   })();
 </script>
-

@@ -3,13 +3,6 @@ dist/
 node_modules/
 .astro/
 
-# Jekyll (legacy)
-_site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
-
 # OS
 .DS_Store
 
