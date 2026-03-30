@@ -5,7 +5,7 @@ description: "A running collection of useful commands and snippets for C++, Dock
 theme: "Programming & Systems"
 tags: []
 mathjax: true
-draft: false
+draft: true
 ---
 
 #### Table of Contents

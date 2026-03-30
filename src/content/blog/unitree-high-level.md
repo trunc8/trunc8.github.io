@@ -5,7 +5,7 @@ description: "Exploring options for high-level control of Unitree robots in simu
 theme: "Legged Locomotion"
 tags: []
 mathjax: false
-draft: false
+draft: true
 ---
 
 # Trail

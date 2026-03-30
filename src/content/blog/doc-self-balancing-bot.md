@@ -6,7 +6,7 @@ ogImage: /img/content/self-balancing-bot/Banner.jpg
 theme: "Motion Planning & Navigation"
 tags: []
 mathjax: false
-draft: false
+draft: true
 ---
 
 ### Problem Definition

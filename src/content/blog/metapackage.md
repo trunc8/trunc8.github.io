@@ -5,7 +5,7 @@ description: "Explaining the difference between a ROS metapackage and a regular 
 theme: "Programming & Systems"
 tags: []
 mathjax: false
-draft: false
+draft: true
 ---
 
 A metapackage is a package of packages. It does not contain code or physically contain the other packages. It is just a convenience tool. If a group of packages *should* be together, that information can be added inside a metapackage. So you can `apt install` or `catkin build` only the metapackage's name and the coherent group of packages will all be built together.
