@@ -13,12 +13,9 @@ src="https://www.youtube.com/embed/Q_JxZE6QCvg?rel=0&amp;controls=1&amp;start=0"
 frameborder="0"
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe>
-<br />
-<br />
-
 
 ### Use Case
-First responder personnel (FPR) receives a disaster alert for trapped victims in a building, but unsafe conditions prevent entry due to unknown hazard spreads (e.g., fire/radiation). DarkBot enters the cluttered area with narrow pathways, performing exploration, reconstructing a 3D map, and marking survivors on the map. Collected information by DarkBot is sent back to FRPs, providing indoor structure insights and victim location
+First responder personnel (FPR) receives a disaster alert for trapped victims in a building, but unsafe conditions prevent entry due to unknown hazard conditions (e.g., fire/radiation). DarkBot enters the cluttered area with narrow pathways, performing exploration, reconstructing a 3D map, and marking survivors on the map. Collected information by DarkBot is sent back to FRPs, providing indoor structure insights and victim location
 
 ### TARE Planner
 The system performs area coverage to locate humans based on TARE planner. Conducts mapping and localization within unknown environments. Inputs include robot pose, Velodyne point cloud data, and terrain maps. Output is the subsequent waypoint that the robot must visit next. Solves the problem as a Traveling Salesman Problem (TSP), with an A* path between consecutive viewpoints and refines it for smoother robot navigation
@@ -31,7 +28,7 @@ Robot halts if the planner uncertainty exceeds threshold or if requested command
 
 ### Hardware Challenges
 - Networking issues
-- Superodometry state estimation flying away due to hardware issue
+- Superodometry state estimation diverging due to hardware issue
 - Network latency while running NMPC controller
 - Transfer working code from x86 to ARM computer
 
@@ -46,4 +43,4 @@ Non-linear model predictive controller (NMPC) designed to convert the center of 
 
 
 ### Results
-Devised non-linear model predictive control tracked using reactive whole-body control and deployed to quadruped. Implemented safety features for disaster sites & demonstrated on-demand temporary takeover by safety operator. Integrated localization (Superodometry), controller (custom), and exploration (TARE Planner) sub-systems. Demonstrated robust exploration at 16.5 m2/min coverage rate of unknown, cluttered room with trapped humans
+Devised non-linear model predictive control tracked using reactive whole-body control and deployed to quadruped. Implemented safety features for disaster sites & demonstrated on-demand temporary takeover by safety operator. Integrated localization (Superodometry), controller (custom), and exploration (TARE Planner) sub-systems. Demonstrated robust exploration at 16.5 m²/min coverage rate in an unknown, cluttered room with trapped humans

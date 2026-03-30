@@ -24,7 +24,7 @@ A one-line description of our project idea is --
 
 Our team name is the *NightWalkers* and the robot will be named as the *DarkBot*.
 
-Our team has been through some pretty interesting experiences. We went down from a five-membered to a four-membered team last week. The original project topic was *Heterogeneous Multi-robot Search and Rescue*. I know, reallly cool!
+Our team has been through some pretty interesting experiences. We went down from a five-membered to a four-membered team last week. The original project topic was *Heterogeneous Multi-robot Search and Rescue*. I know, really cool!
 
 We are no longer focusing on heterogeneous nor multi-robot nor rescue. The space of S&R is vast and we always had to narrow down our focuses. So we did, and at this moment, I'm super excited with our current pillars of focus:
 

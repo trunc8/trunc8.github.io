@@ -40,7 +40,7 @@ The key characteristics that contribute to the efficiency of OctoMap are noted b
   $$L(n\|z_{1:t}) = max( min(L(n\|z_{1:t-1})+L(n\|z_t), l_{max}), l_{min})$$
 
 - **Tree pruning**
-  If all the children of an inner node of the octree are known to be have the same occupancy probability, the children are pruned. This is lossless as the parent still contains the occupancy probability value. Tree pruning carried out recursively drastically reduces memory utilisation and speeds up map updates.
+  If all children of an inner node of the octree are known to have the same occupancy probability, the children are pruned. This is lossless as the parent still contains the occupancy probability value. Tree pruning, carried out recursively, drastically reduces memory utilisation and speeds up map updates.
 
 
 ### References

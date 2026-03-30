@@ -86,7 +86,7 @@ Profiling typically refers to CPU Profiling. It's a method to detect how long ea
 
 ### Debugging Across Multiple C++ Files
 #### Without tools
-This is the simplest form of debugging. Make expecations on what the variable values should be for a certain input. Print variables at various steps to check that it matches expectation.
+This is the simplest form of debugging. Make expectations on what the variable values should be for a certain input. Print variables at various steps to check that it matches expectation.
 
 Something I use a lot is the pincer move. If my function containing the bug is a large block of code, I will put print statements at the beginning and end. Let's say, the former print statement is alright but the latter print statement shows that something went wrong. Like a pincer, I keep moving my print statements inwards from the front and the back. It converges to the line(s) that are actually causing the bug. This principle becomes more useful with larger code spanning multiple files. I quickly reduce my search space by converging like this.
 
@@ -209,7 +209,7 @@ auto start = std::chrono::high_resolution_clock::now();
 * Some computation
 */
 auto end = std::chrono::high_resolution_clock::now();
-auto duration = std::chrono::duration_cast<std::chrono::seconds>(end - start).count();
+auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
 printf("Wall clock time: %.2f s\n", duration / 1.0e6);
 ```
 
@@ -434,8 +434,8 @@ class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
 
-        ListNode* reverse_head = NULL;
-        ListNode* prev = NULL;
+        ListNode* reverse_head = nullptr;
+        ListNode* prev = nullptr;
         reverse(head, prev, reverse_head);
         return reverse_head;
     }

@@ -126,7 +126,7 @@ $$ \beta_v^t \leq 1-\psi_v^t $$
 
 $$ \beta_v^t \leq \alpha_v^t $$
 
-$$ \beta_v^t \geq \alpha_v^T - \psi_v^t $$
+$$ \beta_v^t \geq \alpha_v^t - \psi_v^t $$
 
 $$ \psi_v^t \in \{0,1\} $$
 
@@ -140,7 +140,7 @@ If however no searcher is in v equality holds
 
 $$ \psi_v^t \leq \sum_{s \in S \, s.t.\, v\in V^{s,t}(t)} x_v^{s,t}, \forall v\in V, t\in T $$
 
-Probability of object getting caught of
+Probability of object being captured:
 
 $$\beta_c^t = 1 - \sum_{v\in V}\beta_v^{t}, \forall t \in T $$
 

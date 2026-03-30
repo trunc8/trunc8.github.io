@@ -21,12 +21,12 @@ This paper[^1] attempts to solve the correspondence and the update problem while
 ### Obstacle Detection
 1. Grouping: Provide a collection of point subsets representing possibly separate objects
 2. Splitting: Examine possibility of splitting into separate objects using Iterative End Point Fit algorithm
-3. Segmentation: Represent the point subset by a line segment model using total least squares regression
+3. Segmentation: Represent each point subset by a line segment model using total least squares regression
 4. Merging segments: Find pairs of segments that potentially comprise a single object. This is checked in two parts:
     - Connectivity test: If both segments are close to each other.
     - Spread test: If both segments are collinear.
 The extracted segments constitute set L
-5. Extracting circles: Consider the line segment to be the base of an equilateral triangle and draw its circumcircle. It the resulting is less than user-defined threshold, the circle is added to the set C
+5. Extracting circles: Consider the line segment to be the base of an equilateral triangle and draw its circumcircle. If the resulting radius is less than a user-defined threshold, the circle is added to the set C
 
 
 ### Obstacle Tracking
