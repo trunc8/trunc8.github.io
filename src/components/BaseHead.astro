@@ -38,6 +38,29 @@ const ogImageURL = new URL(ogImage, Astro.site);
 <meta name="twitter:image" content={ogImageURL} />
 <meta name="twitter:creator" content="@trunc8s" />
 
+<!-- Structured data -->
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Siddharth Saha",
+  "url": "https://trunc8.github.io",
+  "jobTitle": "Robotics Machine Learning Engineer",
+  "worksFor": { "@type": "Organization", "name": "Tesla" },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Carnegie Mellon University" },
+    { "@type": "CollegeOrUniversity", "name": "Indian Institute of Technology Bombay" }
+  ],
+  "sameAs": [
+    "https://github.com/trunc8",
+    "https://linkedin.com/in/sahasiddharth611",
+    "https://twitter.com/trunc8s",
+    "https://www.youtube.com/channel/UCuFFiiiCyaLEBVkKoUevKxg"
+  ]
+})} />
+
+<!-- Preconnect to external domains -->
+<link rel="preconnect" href="https://i.ytimg.com" />
+
 <!-- Dark mode prevention of FOUC -->
 <script is:inline>
   const theme = localStorage.getItem('theme') ??

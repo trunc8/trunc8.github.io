@@ -28,25 +28,39 @@ const { categories } = Astro.props;
     const buttons = document.querySelectorAll('.filter-btn');
     const cards = document.querySelectorAll('[data-category]');
 
+    function applyFilter(filter: string) {
+      buttons.forEach((b) => {
+        const btnFilter = (b as HTMLElement).dataset.filter!;
+        if (btnFilter === filter) {
+          b.classList.add('border-brand', 'bg-brand', 'text-white');
+          b.classList.remove('border-border', 'text-on-surface-muted');
+        } else {
+          b.classList.remove('border-brand', 'bg-brand', 'text-white');
+          b.classList.add('border-border', 'text-on-surface-muted');
+        }
+      });
+
+      cards.forEach((card) => {
+        const el = card as HTMLElement;
+        if (filter === 'all' || el.dataset.category === filter) {
+          el.style.display = '';
+        } else {
+          el.style.display = 'none';
+        }
+      });
+    }
+
+    // Apply filter from URL hash on load
+    const hash = window.location.hash.slice(1);
+    if (hash) {
+      applyFilter(hash);
+    }
+
     buttons.forEach((btn) => {
       btn.addEventListener('click', () => {
         const filter = (btn as HTMLElement).dataset.filter!;
-
-        buttons.forEach((b) => {
-          b.classList.remove('border-brand', 'bg-brand', 'text-white');
-          b.classList.add('border-border', 'text-on-surface-muted');
-        });
-        btn.classList.add('border-brand', 'bg-brand', 'text-white');
-        btn.classList.remove('border-border', 'text-on-surface-muted');
-
-        cards.forEach((card) => {
-          const el = card as HTMLElement;
-          if (filter === 'all' || el.dataset.category === filter) {
-            el.style.display = '';
-          } else {
-            el.style.display = 'none';
-          }
-        });
+        window.location.hash = filter === 'all' ? '' : filter;
+        applyFilter(filter);
       });
     });
   }

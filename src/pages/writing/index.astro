@@ -2,19 +2,12 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 import { getCollection } from 'astro:content';
+import { blogThemes } from '../../data/themes';
 
 const allPosts = await getCollection('blog', ({ data }) => !data.draft);
 const sorted = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
-const themes = [
-  "Motion Planning & Navigation",
-  "Legged Locomotion",
-  "CV & SLAM",
-  "Paper Reviews",
-  "Programming & Systems",
-];
-
-const grouped = themes
+const grouped = blogThemes
   .map((theme) => ({
     theme,
     posts: sorted.filter((p) => p.data.theme === theme),

@@ -188,12 +188,13 @@ All resolved:
 5. ~~**Button styling inconsistent**~~: Fixed — standardized tag padding to `py-0.5` across ProjectCard and ProjectLayout
 
 ### Medium Priority
-6. **Filter state not persisted**: Project category filter resets on navigation
-7. **No prev/next navigation on blog posts**: Reader has no way to continue to the next article
-8. **Theme strings hardcoded in writing/index.astro**: Should derive from content or config
-9. **`projectentry` macro in .tex duplicates `entry` logic**: Could be unified
-10. **No structured data (JSON-LD)**: Missing Schema.org markup for Person, Article, Project
-11. **No `rel="preconnect"` for YouTube/Google fonts domains**
+All resolved:
+6. ~~**Filter state not persisted**~~: Fixed — filter state persisted via URL hash (`/projects/#robotics`)
+7. ~~**No prev/next navigation on blog posts**~~: Fixed — older/newer links at bottom of each post
+8. ~~**Theme strings hardcoded in writing/index.astro**~~: Fixed — extracted to `src/data/themes.ts`
+9. ~~**`projectentry` macro in .tex duplicates `entry` logic**~~: Fixed — unified into `\entry` with conditional subtitle via `\ifx`
+10. ~~**No structured data (JSON-LD)**~~: Fixed — Person schema with employer, alumni, and social links in BaseHead
+11. ~~**No `rel="preconnect"` for YouTube domains**~~: Fixed — preconnect to `i.ytimg.com` in BaseHead
 
 ### Low Priority
 12. **Monospace font declared in Tailwind config but never loaded**: "JetBrains Mono" in font stack

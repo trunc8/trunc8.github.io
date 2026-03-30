@@ -4,13 +4,19 @@ import PostLayout from '../../layouts/PostLayout.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
-  return posts.map((post) => ({
+  const sorted = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+  return sorted.map((post, i) => ({
     params: { slug: post.slug },
-    props: { post },
+    props: {
+      post,
+      prevPost: sorted[i + 1] ?? null,
+      nextPost: sorted[i - 1] ?? null,
+    },
   }));
 }
 
-const { post } = Astro.props;
+const { post, prevPost, nextPost } = Astro.props;
 const { Content } = await post.render();
 ---
 
@@ -22,4 +28,21 @@ const { Content } = await post.render();
   mathjax={post.data.mathjax}
 >
   <Content />
+
+  <nav class="mt-12 pt-8 border-t border-border">
+    <div class="flex justify-between gap-4">
+      {prevPost ? (
+        <a href={`/writing/${prevPost.slug}`} class="group text-sm hover:no-underline max-w-[45%]">
+          <span class="text-on-surface-muted">&larr; Older</span>
+          <p class="font-medium text-on-surface group-hover:text-brand transition-colors truncate">{prevPost.data.title}</p>
+        </a>
+      ) : <div />}
+      {nextPost ? (
+        <a href={`/writing/${nextPost.slug}`} class="group text-sm text-right hover:no-underline max-w-[45%] ml-auto">
+          <span class="text-on-surface-muted">Newer &rarr;</span>
+          <p class="font-medium text-on-surface group-hover:text-brand transition-colors truncate">{nextPost.data.title}</p>
+        </a>
+      ) : <div />}
+    </div>
+  </nav>
 </PostLayout>
