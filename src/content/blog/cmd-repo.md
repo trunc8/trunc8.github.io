@@ -8,10 +8,6 @@ mathjax: true
 draft: false
 ---
 
-<img src="/img/content/PLACEHOLDER-IMG/Banner.jpg" alt="Banner image" class="post-pic"/>
-<br />
-<br />
-
 #### Table of Contents
 1. [C++](#c)
 1. [Docker](#docker)

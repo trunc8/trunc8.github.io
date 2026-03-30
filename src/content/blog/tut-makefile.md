@@ -8,10 +8,6 @@ mathjax: false
 draft: false
 ---
 
-<img src="/img/content/PLACEHOLDER-IMG/Banner.jpg" alt="Banner image" class="post-pic"/>
-<br />
-<br />
-
 #### bar.h
 ```cpp
 #ifndef __myproject_h__

@@ -8,7 +8,6 @@ mathjax: false
 draft: false
 ---
 
-<!-- <img src="/img/content/PLACEHOLDER-IMG/Banner.jpg" alt="Banner image" class="post-pic"/> -->
 <iframe width="600" height="350"
 src="https://www.youtube.com/embed/Q_JxZE6QCvg?rel=0&amp;controls=1&amp;start=0"
 frameborder="0"

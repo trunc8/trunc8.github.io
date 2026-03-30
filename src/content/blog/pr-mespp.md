@@ -9,10 +9,6 @@ mathjax: true
 draft: false
 ---
 
-<img src="/img/content/pr-mespp/Banner.png" alt="Banner image" class="post-pic"/>
-<br />
-<br />
-
 *My implementation is available on [this GitHub repo](https://github.com/trunc8/multirobot-efficient-search-path-planning)*
 
 ### In One Line

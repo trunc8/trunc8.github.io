@@ -9,10 +9,6 @@ mathjax: false
 draft: false
 ---
 
-<img src="/img/content/self-balancing-bot/Banner.jpg" alt="self-balancing-bot-doc" class="post-pic" width="300"/>
-<br />
-<br />
-
 ### Problem Definition
 Demonstrate the inverted pendulum problem using a two-wheeled bot and input from gyroscope+accelerometer module
 

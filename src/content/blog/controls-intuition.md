@@ -8,11 +8,6 @@ mathjax: true
 draft: false
 ---
 
-<img src="/img/content/PLACEHOLDER-IMG/Banner.jpg" alt="Banner image" class="post-pic"/>
-<br />
-<br />
-
-
 ### Listing the jargons
 - [x] $H_2$ control
 - [ ] Full state feedback (aka Pole placement)

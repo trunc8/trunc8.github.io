@@ -8,10 +8,6 @@ mathjax: false
 draft: false
 ---
 
-<img src="/img/content/PLACEHOLDER-IMG/Banner.jpg" alt="Banner image" class="post-pic"/>
-<br />
-<br />
-
 A metapackage is a package of packages. It does not contain code or physically contain the other packages. It is just a convenience tool. If a group of packages *should* be together, that information can be added inside a metapackage. So you can `apt install` or `catkin build` only the metapackage's name and the coherent group of packages will all be built together.
 
 While populating the `package.xml`, I realized that you should avoid putting only the metapackage name, and put the actual list of packages instead. Else, `catkin build` throws a warning, for example --

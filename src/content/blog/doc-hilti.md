@@ -9,10 +9,6 @@ mathjax: false
 draft: false
 ---
 
-<img src="/img/content/hilti/Banner.jpg" alt="Banner image" class="post-pic" width="300"/>
-<br />
-<br />
-
 ### Problem Definition
 The goal is to estimate the position of the handheld device as accurately as possible, utilizing any desired sensor combinations, which includes images, IMU measurements, and LIDAR data recorded with a custom handheld device.
 

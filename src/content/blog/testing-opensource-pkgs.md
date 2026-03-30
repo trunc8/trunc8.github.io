@@ -8,10 +8,6 @@ mathjax: false
 draft: false
 ---
 
-<img src="/img/content/PLACEHOLDER-IMG/Banner.jpg" alt="Banner image" class="post-pic"/>
-<br />
-<br />
-
 There are two tracks of self-development I have in mind:
 
 - **Familiarizing with famous opensource robotic packages** --- This is to know what's the best out there by running their example demonstrations, even if I don't get the maths yet
@@ -71,7 +67,7 @@ git clone https://github.com/ANYbotics/grid_map.git
 catkin build grid_map
 ```
 
-*Interesting aside here:* The `grid_map` package is a metapackage. The other packages like `grid_map_core` and `grid_map_octomap` are where the actual code is implemented. So what's the difference between a package and a metapackage? I answer it in a [short blog post](/blog/metapackage).
+*Interesting aside here:* The `grid_map` package is a metapackage. The other packages like `grid_map_core` and `grid_map_octomap` are where the actual code is implemented. So what's the difference between a package and a metapackage? I answer it in a [short blog post](/writing/metapackage).
 
 ### Simpletest package
 [trunc8/grid_map_simpletest](https://github.com/trunc8/grid_map_simpletest)
@@ -171,5 +167,3 @@ roslaunch ocs2_legged_robot_ros legged_robot_ddp.launch
 ```
 
 ---
-
-## Acknowledgements

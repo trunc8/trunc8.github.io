@@ -9,10 +9,6 @@ mathjax: true
 draft: false
 ---
 
-<img src="/img/content/pr-octomap/Banner.png" alt="Banner image" class="post-pic"/>
-<br />
-<br />
-
 ### In One Line
 This paper[^1] attempts to efficiently build a probabilistic 3D occupancy map using the octree data structure
 

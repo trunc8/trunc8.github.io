@@ -9,10 +9,6 @@ mathjax: false
 draft: false
 ---
 
-<img src="/img/content/obstacle-detector/Banner.png" alt="Banner image" class="post-pic"/>
-<br />
-<br />
-
 ### In One Line
 This paper[^1] attempts to solve the correspondence and the update problem while tracking 2D obstacles.
 

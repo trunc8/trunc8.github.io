@@ -9,9 +9,6 @@ mathjax: false
 draft: false
 ---
 
-<img src="/img/content/capstone-first-progress/Banner.png" alt="Banner image" class="post-pic"/>
-
-
 I just got done with my MRSD team's first progress presentation for our capstone project. I feel super good!
 
 [Link to recording of the entire presentation](https://youtu.be/vRf8UzTPDPk)
