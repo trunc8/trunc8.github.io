@@ -16,7 +16,7 @@ draft: false
 - [x] Classical v/s Modern control
 - [x] Optimal control
 - [x] Cost-to-go function
-- [x] Ricatti Equation
+- [x] Riccati Equation
 - [x] LQR (Linear Quadratic Regulator)
 - [x] LQE (Linear Quadratic Estimator), LQG (Linear Quadratic Gaussian), Separation Principle
 - [x] MPC (Model Predictive Control), GPC (Global Predictive Control), DMC (Dynamic Matrix Control)
@@ -54,38 +54,38 @@ Optimal control is the process of determining control and state trajectories for
 
 
 #### Cost-to-go function
-From Boreilly's MPC book, the cost over the horizon $j$ to $N$ is
+From Borrelli's MPC book (*Predictive Control for Linear and Hybrid Systems*), the cost over the horizon $j$ to $N$ is
 
 $$J_{j\rightarrow N} (x_j , u_j, u_{j+1}, . . . , u_{N−1}) = p(x_N ) + \sum_{k=j}^{N-1} q(x_k, u_k)$$
 
 The cost-to-go function emphasizes the cost of final state and cost of journey to that state. In comparison, an objective function can be more general (e.g. just cost of final state).
 
 
-#### Ricatti Equation
+#### Riccati Equation
 Any first-order ordinary differential equation that is quadratic in the unknown function. That is, of the form-
 
 $$
 y^{\prime}(x)=q_{0}(x)+q_{1}(x) y(x)+q_{2}(x) y^{2}(x)
 $$
 
-In continuous time, called Ricatti Differential Equation. In discrete time, called Ricatti Difference Equation.
+In continuous time, called Riccati Differential Equation. In discrete time, called Riccati Difference Equation.
 
-The steady-state (non-dynamic) version of the matrix version of Ricatti Equation is referred to as the algebraic Riccati equation. It arises in the context of infinite-horizon optimal control problems in continuous time (CARE: Continuous-time Algebraic Ricatti Equation)-
+The steady-state (non-dynamic) version of the matrix version of Riccati Equation is referred to as the algebraic Riccati equation. It arises in the context of infinite-horizon optimal control problems in continuous time (CARE: Continuous-time Algebraic Riccati Equation)-
 
 $$
 A^{T} P+P A-P B R^{-1} B^{T} P+Q=0
 $$
 
-or discrete time (DARE: Discrete-time Algebraic Ricatti Equation)-
+or discrete time (DARE: Discrete-time Algebraic Riccati Equation)-
 
 $$
 P=A^{T} P A-\left(A^{T} P B\right)\left(R+B^{T} P B\right)^{-1}\left(B^{T} P A\right)+Q
 $$
 
 #### LQR
-- The case where the system dynamics are described by a set of linear differential equations and the cost is described by a quadratic function is called the LQ problem. LQ usually refers to LQR
-- One of the main results in the theory is that the solution is provided by the LQR (linear–quadratic regulator)
-- LQR is the best possible controller under some assumptions
+- The case where the system dynamics are described by a set of linear differential equations and the cost is described by a quadratic function is called the LQ problem
+- The LQR (linear–quadratic regulator) is the optimal solution to the LQ problem — it provides the state-feedback gain that minimizes the quadratic cost
+- LQR is optimal for linear systems with quadratic cost and full state observation
 
 $$
 \min _{u(\cdot)} \int_{0}^{T}\left(x^{T} Q x+u^{T} R u\right) d t+x(T)^{T} Q_{f} x(T)
@@ -95,7 +95,7 @@ $$\begin{array}{ll}\text { subject to } & \dot{x}=A x+B u \\ & y=x \\ & x(0)-\te
 
 $x$ is system state, $y$ is output, $u$ is input
 Optimal controller is of the form $u(t) = K.x(t)$
-where $K$ is obtained from the Ricatti Equation
+where $K$ is obtained from the Riccati Equation
 
 - Difficulty in finding the right weighting factors limits the application of the LQR based controller synthesis
 
@@ -115,7 +115,7 @@ $$\begin{array}{ll}\text { subject to } & \dot{x}=A x+B u+w \\ & y=C x+v \\ & x(
 
 $x$ is system state, $y$ is output, $u$ is input
 Optimal controller is of the form $u(t) = K.x'(t)$
-where $K$ is obtained from the Ricatti Equation and
+where $K$ is obtained from the Riccati Equation and
 $x'$ is estimate of the state
 Due to random noise the state $x$ is not directly observed. Thus, estimate of the state $x'$ is obtained from the output $y$ using a Kalman filter
 
@@ -141,8 +141,9 @@ Due to random noise the state $x$ is not directly observed. Thus, estimate of th
 
 MPC | LQR
 --- | ---
-Optimizes in a receding time window | Optimizes across the entire time window (horizon)
-A new solution is computed often | Uses the same single (optimal) solution for the whole time horizon
+Re-solves optimization online at each timestep over a finite receding horizon | Computes a fixed optimal gain matrix (offline for infinite-horizon, or via backward pass for finite-horizon)
+Can handle constraints on states and inputs | No constraint handling
+A new solution is computed at every control step | Uses the same gain matrix $K$ for all time
 
 <br/>
 
@@ -152,7 +153,7 @@ Model predictive control and linear-quadratic regulators are both expressions of
 
 
 #### Underactuation
-Technical term used in robotics and control theory to describe mechanical systems that cannot be commanded to follow arbitrary trajectories in configuration space.q
+Technical term used in robotics and control theory to describe mechanical systems that cannot be commanded to follow arbitrary trajectories in configuration space.
 
 
 #### Admittance v/s Impedance control
